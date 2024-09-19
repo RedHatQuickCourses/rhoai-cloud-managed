@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title: Generative AI across HyperScalers with OpenShift AI
+  start_page: rhoai-hyperscaler-intermix::index.adoc
 
 content:
   sources:
