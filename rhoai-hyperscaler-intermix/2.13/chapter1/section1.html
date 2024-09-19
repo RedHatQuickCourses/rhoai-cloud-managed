@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OpenShift AI on AWS :: Generative AI across HyperScalers with OpenShift AI</title>
+    <link rel="prev" href="index.html">
+    <link rel="next" href="section2.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Generative AI across HyperScalers with OpenShift AI</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rhoai-hyperscaler-intermix" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Chapter 1</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section1.html">OpenShift AI on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">MultiCloud OpenShift AI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Chapter 2</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section1.html">Section 1</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter3/index.html">Chapter 3</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section2.html">Section 2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Generative AI across HyperScalers with OpenShift AI</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Generative AI across HyperScalers with OpenShift AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
+    <li><a href="index.html">Chapter 1</a></li>
+    <li><a href="section1.html">OpenShift AI on AWS</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">OpenShift AI on AWS</h1>
+<div class="sect1">
+<h2 id="_deployment_options"><a class="anchor" href="#_deployment_options"></a>Deployment Options</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are three deployment options for Red Hat OpenShift AI as a managed cloud service add-on:</p>
+</div>
+<div class="sect3">
+<h4 id="_openshift_dedicated_with_a_customer_cloud_subscription_on_amazon_web_services_or_google_cloud_platform"><a class="anchor" href="#_openshift_dedicated_with_a_customer_cloud_subscription_on_amazon_web_services_or_google_cloud_platform"></a>OpenShift Dedicated with a Customer Cloud Subscription on Amazon Web Services or Google Cloud Platform</h4>
+<div class="paragraph">
+<p>OpenShift Dedicated is a complete OpenShift Container Platform cluster provided as a cloud service, configured for high availability, and dedicated to a single customer. OpenShift Dedicated is professionally managed by Red Hat and hosted on Amazon Web Services (AWS) or Google Cloud Platform (GCP). The Customer Cloud Subscription (CCS) model allows Red Hat to deploy and manage clusters into a customer’s AWS or GCP account.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_red_hat_openshift_service_on_aws_rosa_classic"><a class="anchor" href="#_red_hat_openshift_service_on_aws_rosa_classic"></a>Red Hat OpenShift Service on AWS (ROSA Classic)</h4>
+<div class="paragraph">
+<p>ROSA is a fully-managed, turnkey application platform that allows you to focus on delivering value to your customers by building and deploying applications. You subscribe to the service directly from your AWS account.
+For ROSA Classic, get a subscription through the AWS Marketplace.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_red_hat_openshift_service_on_aws_with_hosted_control_plane"><a class="anchor" href="#_red_hat_openshift_service_on_aws_with_hosted_control_plane"></a>Red Hat OpenShift Service on AWS with Hosted Control Plane</h4>
+<div class="paragraph">
+<p>Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry&#8217;s most comprehensive enterprise Kubernetes platform, and the AWS public cloud. Installation, monitoring, management, maintenance, and upgrades are performed by Red Hat site reliability engineers (SRE) covering the complete stack including the control plane, worker nodes and key services. You can also deploy clusters across multiple Availability Zones in supported regions to maximize availability. With all this covered, your ops team would only need to step in when managing user access for your developers who can take advantage of the 150+ AWS cloud-native compute, database, analytics, machine learning, networking, mobile, and other services. <strong>The cluster can be scaled as your business' needs dictate. Choose from memory-optimized, compute-optimized, or general purpose EC2 instance types, with clusters sized to meet your needs.</strong> The service can be paid as you go with flexible hourly on-demand billing. You will receive a single bill from AWS for both Red Hat OpenShift &amp; AWS consumption. An annual billing model is available as well; check out the pricing information below to find out what you can save with annual contracts. Give your team the focus and tools to accelerate the development process with familiar APIs and existing Red Hat OpenShift tools for deployment in AWS, all from the AWS console.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<em>A somewhat surprising hit was our discussion of deploying OpenShift using Hosted Control Planes. It turns out that none of the customers in attendance knew about this deployment option. Therefore we spent quite some time explaining how this works and the benefits (densification, cost reduction, deployment speed) of this approach.</em>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>ROSA In this Course focus on the ROSA with HCP install as the option of choice.</p>
+</div>
+<div class="paragraph">
+<p>Hosting and managing the control plane in a ROSA service AWS account provides the most effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. With this, users experience a multitude of benefits, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quickly and easily spin up or tear down clusters when not in use for efficiency and cost savings.</p>
+</li>
+<li>
+<p>More flexibility and portability for annual billing, allowing customers to easily change between node types.</p>
+</li>
+<li>
+<p>Smaller overall footprint.</p>
+</li>
+<li>
+<p>API availability within approximately 15 minutes for a new cluster lets you get started, build, and deploy apps faster.</p>
+</li>
+<li>
+<p>Seamless autoscaling of control plane.</p>
+</li>
+<li>
+<p>Control plane is always highly available over multiple availability zones.</p>
+</li>
+<li>
+<p>Selectively upgrade control plane and worker nodes separately, giving increased control and flexibility for customers.</p>
+</li>
+<li>
+<p>Increased resiliency and reliability by offloading control plane infrastructure management, reducing the chance of error or deletion of resources.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Hosted control planes provide better cost, faster provisioning time, and security optimizations for managing your workloads. As a result, they are well suited for many use cases, such as:</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Hosting clusters with specific characteristics.</p>
+</li>
+<li>
+<p>Workload tiering.</p>
+</li>
+<li>
+<p>Flexible upgrades (control planes can be upgraded independently of workers).</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="index.html">Chapter 1</a></span>
+  <span class="next"><a href="section2.html">Section 2</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
