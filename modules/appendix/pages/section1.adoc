@@ -1,0 +1,47 @@
+= General questions
+
+What does Red Hat OpenShift Service on AWS include?
+Each Red Hat OpenShift Service on AWS cluster comes with a fully-managed control plane (master nodes) and application nodes. Installation, management, maintenance and upgrades are  monitored by Red Hat site reliability engineers (SRE) with joint Red Hat and Amazon support.  Cluster services (such as logging, metrics, monitoring) are available as well.
+
+
+How is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Container Platform?
+Red Hat OpenShift Service on AWS delivers a turnkey application platform, optimized for performance, scalability, and security. Red Hat OpenShift Service on AWS is hosted on Amazon Web Services public cloud and jointly managed by Red Hat and AWS. Some options and administrative functions may be restricted or unavailable. A Red Hat OpenShift Container Platform subscription entitles you to host and manage the software on your infrastructure of choice.
+
+
+How Is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Dedicated?
+Red Hat OpenShift Service on AWS is a fully managed implementation of OpenShift Container Platform deployed and operated on AWS, jointly managed and supported by both Red Hat and AWS. This option is purchased directly through the AWS console and offers pay-as-you-go, single-vendor invoicing. It's best for organizations that want close integration to AWS services, joint support, and a single bill.
+
+Red Hat OpenShift Dedicated is a service hosted and fully-managed by Red Hat that offers clusters in a virtual private cloud on AWS or Google Cloud Platform. It is completely managed and supported by Red Hat, and includes a guaranteed SLA. It may be best for organizations that already have a Red Hat footprint and are interested in a fully managed service from Red Hat deployed on AWS.
+
+
+What are the differences between Red Hat OpenShift Service on AWS and Kubernetes?
+Everything you need to deploy and manage containers is bundled with ROSA, including container management, automation (Operators), networking, load balancing, service mesh, CI/CD, firewall, monitoring, registry, authentication, and authorization capabilities. These components are tested together for unified operations as a complete platform. Automated cluster operations, including over-the-air platform upgrades, further enhance your Kubernetes experience.
+
+
+Will Red Hat OpenShift Service on AWS integrate with other AWS services?
+Yes. Red Hat OpenShift Service on AWS will integrate with a range of AWS compute, database, analytics, machine learning, networking, mobile, and various application services which will enable customers to benefit from the robust portfolio of AWS services which scale on-demand across the globe. These AWS native services will be directly accessible to quickly deploy and scale services through the same management interface.
+
+
+How does ROSA work?
+Red Hat OpenShift Service on AWS (ROSA) has infrastructure components (virtual machines, storage disks, etc.) and a software component (OpenShift). When you provision ROSA clusters you will incur the infrastructure and OpenShift charges at the pay-as-you-go hourly rate. Refer to the Red Hat OpenShift Service on AWS pricing page for more information. You can also do 1 or 3 year commits for even deeper discounts.
+
+
+How do I receive support for ROSA?
+ROSA is supported by AWS and Red Hat, and you have the option to contact support from either company to begin troubleshooting. Any escalations that are necessary will be facilitated as necessary by AWS and Red Hat to engage the best team to address the issues.
+
+
+Where can I learn more about using ROSA?
+Our Red Hat OpenShift Service on AWS (ROSA) learning hub has materials and tools designed to help you use Red Hat® OpenShift® Service on AWS, organized by the tasks you need to accomplish.
+
+Visit the learning hub
+
+For more, visit Red Hat OpenShift Service on AWS (ROSA) documentation.
+
+
+What is ROSA with hosted control planes? And when will it be available?
+ROSA with hosted control planes is a new deployment model for ROSA in which a highly available control plane is hosted in a Red Hat-owned AWS account instead of the customer’s AWS account, increasing efficiency and reliability while reducing costs and provisioning time. ROSA with hosted control planes is available in preview as of May 2023 with general availability expected later in the year.
+
+Learn more
+
+Where can I see a roadmap or make feature requests for the service?
+You can visit our ROSA roadmap to stay up to date with the status of features currently in development. Please feel free to open a new issue if you have any suggestions for the product team.

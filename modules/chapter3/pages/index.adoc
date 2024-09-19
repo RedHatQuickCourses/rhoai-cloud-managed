@@ -5,3 +5,35 @@ In this section, we cover... FIXME
 
 - Add or remove section entries in the `antora.yaml` file as needed.
 - Ensure you create or delete the corresponding directory for the chapter accordingly.
+
+Cloud Providers incentive is to make it easy to consume more resources
+
+ways they do this...
+
+democratize access to mathethematics - why haven't we made this easier to understand.
+
+clever to make complex problems simple.
+
+collaboration across teams - incitives to unite to provide an unified system that is easy to maintain. 
+
+hardware cost moving back to on-prem.
+
+run a bunch of experiments at the same time.
+- automatic machine learning tooling, test multiple models against your problem statement.
+
+really easy to consume more resources...
+
+easy to build complete systems, make bills easier to undertsand.
+
+model marketplace - off the shelf models from cloud vendors.
+easier to deploy something that is hard to manage.
+
+
+
+
+
+
+
+
+
+
