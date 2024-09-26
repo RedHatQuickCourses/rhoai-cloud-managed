@@ -1,3 +1,25 @@
-= Lab Environment
+= Installing OpenShift AI
 
-FIXME: Instructions for accessing the lab environment for this hands-on based training.
+== Prerequisites
+
+This section assumes that you have:
+
+* Existing Openshift Container Platform Cluster 
+**  *>=* version 4.12
+** Open Data Hub is not installed
+** Argo Workflows Operator is not installed
+
+*Recommended* use the https://demo.redhat.com/catalog?item=babylon-catalog-prod%2Fopenshift-cnv.ocpmulti-wksp-cnv.prod[Red Hat OpenShift Container Platform Cluster (AWS), window=blank] catalog item in the Red Hat Demo Platform (RHDP) to run the hands-on exercises in this course.
+
+== Objectives
+
+On completing this lesson, you should be able to:
+
+* Use OpenShift Operator Hub to install operators
+** Red Hat OpenShift Serverless Operator
+** Red Hat OpenShift Service Mesh Operator
+** Red Hat Authorino (Techical Preview) Operator
+** Red Hat OpenShift AI Operator
+*** Create OpenShift AI Data Science Cluster
+
+
