@@ -1,16 +1,39 @@
-= MultiCloud OpenShift AI
+= OpenShift and OpenShift AI
 
-https://youtu.be/-HN9gxjX9LM
+OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
 
-=== Why Red Hat OpenShift cloud services?
-Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multicloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.   
+Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. All these factors increase the pressure on Red Hat to continue differentiating on the value of the  Red Hat subscription. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms. 
 
-If your organization needs to get started quickly and would like to offload the ongoing management of your application platform, Red Hat OpenShift cloud services provides you an ideal solution.
+FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using *hyperscaler services*, into Pilot and Production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had *highly variable and unpredictable costs*. 
 
-Turnkey application platform: A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.
+During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services. 
 
-Cloud native solutions with leading cloud providers: Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services. 
+ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift), 
 
-Consistent hybrid cloud experience: Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.
+=== just holding this information here - delete
+
+
+Cloud Providers incentive is to make it easy to consume more resources
+
+ways they do this...democratize access to mathethematics - why haven't we made this easier to understand.
+
+clever to make complex problems simple.
+
+collaboration across teams - incitives to unite to provide an unified system that is easy to maintain. 
+
+hardware cost moving back to on-prem.
+
+run a bunch of experiments at the same time.
+- automatic machine learning tooling, test multiple models against your problem statement.
+
+really easy to consume more resources...
+
+easy to build complete systems, make bills easier to undertsand.
+
+model marketplace - off the shelf models from cloud vendors.
+easier to deploy something that is hard to manage.
+
+== TDB Above
+
 
 

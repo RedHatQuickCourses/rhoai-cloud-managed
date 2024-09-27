@@ -1,12 +1,19 @@
-= OpenShift AI on AWS
+= OpenShift (AI) on AWS
+
+ROSA in this Course focuses on the  *ROSA with HCP* deployment as the option of choice. However, the other options are listed as they might meet the needs of particular customer. 
+
+[NOTE]
+_A somewhat surprising hit at a recent onsite was our discussion of deploying OpenShift using Hosted Control Planes. It turns out that none of the customers in attendance knew about this deployment option. Therefore we spent quite some time explaining how this works and the benefits (densification, cost reduction, deployment speed) of this approach._
 
 
 == Deployment Options
 
-There are three deployment options for Red Hat OpenShift AI as a managed cloud service add-on:
+=== Amazon Web Services (AWS)
 
-==== OpenShift Dedicated with a Customer Cloud Subscription on Amazon Web Services or Google Cloud Platform
-OpenShift Dedicated is a complete OpenShift Container Platform cluster provided as a cloud service, configured for high availability, and dedicated to a single customer. OpenShift Dedicated is professionally managed by Red Hat and hosted on Amazon Web Services (AWS) or Google Cloud Platform (GCP). The Customer Cloud Subscription (CCS) model allows Red Hat to deploy and manage clusters into a customer’s AWS or GCP account. 
+There are three deployment options for Red Hat OpenShift AI as a managed cloud service add-on for AWS:
+
+==== OpenShift Dedicated with a Customer Cloud Subscription on Amazon Web Services 
+OpenShift Dedicated is a complete OpenShift Container Platform cluster provided as a cloud service, configured for high availability, and dedicated to a single customer. OpenShift Dedicated is professionally managed by Red Hat and hosted on Amazon Web Services (AWS) or _Google Cloud Platform (GCP)_. The Customer Cloud Subscription (CCS) model allows Red Hat to deploy and manage clusters into a customer’s AWS or GCP account. 
 
 ==== Red Hat OpenShift Service on AWS (ROSA Classic)
 ROSA is a fully-managed, turnkey application platform that allows you to focus on delivering value to your customers by building and deploying applications. You subscribe to the service directly from your AWS account.
@@ -14,12 +21,18 @@ For ROSA Classic, get a subscription through the AWS Marketplace.
 
 ==== Red Hat OpenShift Service on AWS with Hosted Control Plane
 
-Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry's most comprehensive enterprise Kubernetes platform, and the AWS public cloud. Installation, monitoring, management, maintenance, and upgrades are performed by Red Hat site reliability engineers (SRE) covering the complete stack including the control plane, worker nodes and key services. You can also deploy clusters across multiple Availability Zones in supported regions to maximize availability. With all this covered, your ops team would only need to step in when managing user access for your developers who can take advantage of the 150+ AWS cloud-native compute, database, analytics, machine learning, networking, mobile, and other services. *The cluster can be scaled as your business' needs dictate. Choose from memory-optimized, compute-optimized, or general purpose EC2 instance types, with clusters sized to meet your needs.* The service can be paid as you go with flexible hourly on-demand billing. You will receive a single bill from AWS for both Red Hat OpenShift & AWS consumption. An annual billing model is available as well; check out the pricing information below to find out what you can save with annual contracts. Give your team the focus and tools to accelerate the development process with familiar APIs and existing Red Hat OpenShift tools for deployment in AWS, all from the AWS console.
-
 [NOTE]
-_A somewhat surprising hit was our discussion of deploying OpenShift using Hosted Control Planes. It turns out that none of the customers in attendance knew about this deployment option. Therefore we spent quite some time explaining how this works and the benefits (densification, cost reduction, deployment speed) of this approach._
+Place holder text - This option is the most cost efficient solution as the Control Plane can be reduced to 2 Nodes from 3, and the other nodes can be scaled to zero for development and evaluation environments. 
 
-ROSA In this Course focus on the ROSA with HCP install as the option of choice.
+Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry's most comprehensive enterprise Kubernetes platform, and the AWS public cloud. 
+
+Installation, monitoring, management, maintenance, and upgrades are performed by Red Hat site reliability engineers (SRE) covering the complete stack including the control plane, worker nodes and key services. You can also deploy clusters across multiple Availability Zones in supported regions to maximize availability. With all this covered, your ops team would only need to step in when managing user access for your developers who can take advantage of the 150+ AWS cloud-native compute, database, analytics, machine learning, networking, mobile, and other services. *The cluster can be scaled as your business' needs dictate. Choose from memory-optimized, compute-optimized, or general purpose EC2 instance types, with clusters sized to meet your needs.* 
+
+The service can be paid as you go with flexible hourly on-demand billing. You will receive a single bill from AWS for both Red Hat OpenShift & AWS cosnsumption. An annual billing model is available as well; check out the pricing information using the links above to find out what you can save with annual contracts. 
+
+Give your team the focus and tools to accelerate the development process with familiar APIs and existing Red Hat OpenShift tools for deployment in AWS, all from the AWS console.
+
+=== Benefits of ROSA with HCP
 
 Hosting and managing the control plane in a ROSA service AWS account provides the most effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. With this, users experience a multitude of benefits, such as:
 
@@ -32,7 +45,7 @@ Hosting and managing the control plane in a ROSA service AWS account provides th
  * Selectively upgrade control plane and worker nodes separately, giving increased control and flexibility for customers.
  * Increased resiliency and reliability by offloading control plane infrastructure management, reducing the chance of error or deletion of resources.
 
- Hosted control planes provide better cost, faster provisioning time, and security optimizations for managing your workloads. As a result, they are well suited for many use cases, such as:
+Hosted control planes provide better cost, faster provisioning time, and security optimizations for managing your workloads. As a result, they are well suited for many use cases, such as:
 
  . Hosting clusters with specific characteristics.
  . Workload tiering.
