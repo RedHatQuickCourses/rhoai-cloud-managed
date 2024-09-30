@@ -1,22 +1,57 @@
-= An Example Quick Course
+= Generative AI across HyperScalers with OpenShift AI
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
 
-Description:
-Course description FIXME
+Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. All these factors increase the pressure on Red Hat to continue differentiating on the value of the Red Hat subscription. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms.
 
-Duration: FIXME hours
+Duration: 2 Hours
 
 == Objectives
 
 On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+* Undertstand Open Source Play Multi-Cloud with OpenShift AI 
+** Undererstand AWS options for OpenShift Container Cluster Depoloyment supporting OpenShift AI
+** Understand Azure options for OpenShift Container Cluster supporting OpenShift AI
+** Understand how OpenShift Cloud services are requested and provisioned.
+
+** Analyze Cloud Providers AI Platform features compared with OpenShift AI
+ * Overview of AWS AI Services that offer partity with OpenShift AI functionality
+  ** - SageMaker / BedRock / AWS Trainium, INferentia, EC2 Ultra Clusters, Amazon Q
+  ** AWS App Studio, PartyTock on Amazon BedRock
+ * Overview of Azure Services and their integration with OpenShift AI. 
+  ** Azure OpenAI Service
+  ** Azure AI Search
+  ** Azure AI Content Safety
+  ** Azure AI Vision
+  ** PHI Small Language Model
+
+
+* 2 possible Labs Environments Azure & AWS *
+
+Azure - Interacting with Azure OpenAI Service using Front End App hosted in OpenShift 
+ *  expose how easy it is to run a model service on cloud provider
+ * expose the cost per hour.
+ * expose the time to value
+
+- Demo Hub on AWS - starting from an OpenShift Cluster 
+** Use GUI to installation OpenShift AI
+** Deploy RAG Environment
+** populate database with documentation exports
+** Deploy AI Model Runtime
+
+-- updates to lab environment for serving an AI model
+-- Utilize portions of podman ai to rhoai and reference
+
+Appendix - reference additional learning Aid 
+
+-  GitOps Deployments of AI Services and integration with OpenShift AI ??
+ -  New Lab Environment created using Code Files - CLI Commands - Showing how automation would work. 
+
+
 
 == Prerequisites
 

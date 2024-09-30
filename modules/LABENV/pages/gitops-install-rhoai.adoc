@@ -1,7 +1,7 @@
 = GitOps RHOAI CLI Setup
 
 [WARNING]
-This page has not been updated, its just clone of GUI installation at the moment
+*This page has not been updated, its just a clone of the  GUI installation at the moment*
 
 
 Instructions for creating a Red Hat OpenShift AI environment that is capable of running multiple LLMs, pipelines, Model Serving and performing just about every task that is possible with OpenShift AI. 
