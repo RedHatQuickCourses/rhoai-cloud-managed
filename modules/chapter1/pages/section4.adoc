@@ -1,0 +1,71 @@
+= OpenShift and OpenShift AI
+
+OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
+
+Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. All these factors increase the pressure on Red Hat to continue differentiating on the value of the  Red Hat subscription. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms. 
+
+FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using *hyperscaler services*, into Pilot and Production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had *highly variable and unpredictable costs*. 
+
+During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services. 
+
+ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift), 
+
+
+== OpenShift AI Operator
+
+Red Hat OpenShift AI is a fully Red Hat managed cloud service that is available as an add-on to Red Hat OpenShift Dedicated and to Red Hat OpenShift Service on Amazon Web Services (ROSA Classic).
+
+The Red Hat OpenShift AI Operator
+A meta-operator that deploys and maintains all components and sub-operators that are part of OpenShift A
+
+
+When you install the Red Hat OpenShift AI Add-on in the Cluster Manager, the following new projects are created:
+
+The redhat-ods-operator project contains the Red Hat OpenShift AI Operator.
+The redhat-ods-applications project installs the dashboard and other required components of OpenShift AI.
+The redhat-ods-monitoring project contains services for monitoring and billing.
+The rhods-notebooks project is where notebook environments are deployed by default.
+
+You or your data scientists must create additional projects for the applications that will use your machine learning models.
+
+
+
+OpenShift AI is provided as a managed cloud service add-on for Red Hat OpenShift or as self-managed software that you can install on-premise or in the public cloud on OpenShift.
+
+
+Installing OpenShift AI as a managed cloud service involves the following high-level tasks:
+
+Confirm that your OpenShift cluster meets all requirements.
+Configure an identity provider for your OpenShift cluster.
+Add administrative users for your OpenShift cluster.
+Subscribe to the Red Hat OpenShift AI Add-on.
+
+For OpenShift Dedicated with a CCS for AWS or GCP, get a subscription through Red Hat.
+
+For ROSA Classic, get a subscription through the AWS Marketplace.
+
+Install the Red Hat OpenShift AI Add-on.
+Access the OpenShift AI dashboard.
+Optionally, enable graphics processing units (GPUs) in OpenShift AI to ensure that your data scientists can use compute-heavy workloads in their models.
+
+An OpenShift Dedicated or ROSA cluster configuration that meets the following requirements:
+At least 2 worker nodes with at least 8 CPUs and 32 GiB RAM available for OpenShift AI to use when you install the Add-on. If this requirement is not met, the installation process fails to start and an error is displayed.
+
+When you create a new cluster, select m6a.2xlarge for the computer node instance type to satisfy the requirements.
+
+For an existing ROSA Classic cluster, you can get the compute node instance type by using this command:
+
+rosa list machinepools --cluster=cluster-name
+
+Access to object storage
+
+Components of OpenShift AI require or can use S3-compatible object storage such as AWS S3, MinIO, Ceph, or IBM Cloud Storage. An object store is a data storage mechanism that enables users to access their data either as an object or as a file. The S3 API is the recognized standard for HTTP-based access to object storage services.
+
+You can subscribe to the Red Hat OpenShift AI managed cloud service in the following ways:
+
+Subscribe through Red Hat if you have a Red Hat OpenShift Dedicated cluster deployed with a Customer Cloud Subscription (CCS) on Amazon Web Services (AWS) or Google Cloud Platform (GCP).
+Subscribe through the AWS Marketplace if you have a Red Hat OpenShift Service on AWS (ROSA Classic) cluster.
+
+[NOTE]
+You can also purchase Red Hat OpenShift AI as self-managed software. To purchase a new subscription, contact your Red Hat account manager. If you do not yet have an account manager, complete the form at https://www.redhat.com/en/contact to request one.
+

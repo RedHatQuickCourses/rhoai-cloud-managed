@@ -18,3 +18,6 @@ https://www.redhat.com/en/products/interactive-walkthrough/install-rosa[Interact
 == Microsoft ARO
 
 https://microsoft.github.io/aroworkshop/[Azure Red Hat OpenShift Workshop]
+
+video::Hc8emNr2igU[youtube, width=400]
+

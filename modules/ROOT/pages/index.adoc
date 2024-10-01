@@ -1,27 +1,86 @@
-= An Example Quick Course
+= AI across HyperScalers with OpenShift AI
 :navtitle: Home
 
-== Introduction
 
-Course Title: Course title FIXME
+image::cloudservices_img.png[width=600]
 
-Description:
-Course description FIXME
+== Course Overview
 
-Duration: FIXME hours
+OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
+
+Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms.
+
+This course focuses on AI solution enablement for Red Hat OpenShift which powers OpenShift AI on Amazon Web Services (AWS) and Microsoft Azure (Azure).
+
+The first two chapters of this course are geared towards all audiences who want to know about OpenShift in Cloud Environments.   We will review the options for OpenShift Container Platform Cluster offerings on Cloud Provider including both managed and self-managed offerings. 
+
+The third and fourth chapters will focus on AI offerings of AWS and Azure and how customers are using these services to solve business challenges. 
+
+The fifth and six chapters are labs which provide hands-on experiences with a Mix of Cloud Provider Solutions and OpenShift / OpenShift AI services to solve task assistance based business use cases.  There is one lab for AWS and another for Azure.
+
+
+== Duration 
+
+Recommended budgeting three hours if you plan to complete both labs.
+
+Overall the experience will take about 1 hour consuming course materials, however there is also ~1 hour provisioning time for each lab environment to become available. 
 
 == Objectives
 
-On completing this course, you should be able to:
+==== On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+  * Understand Open Source Play Multi-Cloud with OpenShift AI 
+ ** Understand AWS options for OpenShift Container Cluster Deployment supporting OpenShift AI
+ ** Understand Azure options for OpenShift Container Cluster supporting OpenShift AI
+ ** Understand how OpenShift Cloud services are requested and provisioned.
+
+
+==== Analyze Cloud Providers AI Platform features compared with OpenShift AI
+
+ * Overview of AWS AI Services that offer parity with OpenShift AI functionality
+  ** - SageMaker
+  ** BedRock 
+  ** AWS Trainium, 
+  ** INferentia, 
+  ** EC2 Ultra Clusters, 
+  ** Amazon Q
+  ** AWS App Studio, 
+  ** PartyTock on Amazon BedRock
+
+ * Overview of Azure Services and their integration with OpenShift AI. 
+  ** Azure OpenAI Service
+  ** Azure AI Search
+  ** Azure AI Content Safety
+  ** Azure AI Vision
+  ** PHI Small Language Model
+
+==== 2 Labs Environments Azure & AWS *
+
+Azure - Interacting with Azure OpenAI Service using Front End App hosted in OpenShift 
+ * expose how easy it is to run a model service on cloud provider
+ * expose the cost per hour.
+ * expose the time to value
+
+AWS - starting from an OpenShift Cluster 
+ ** Use GUI to installation OpenShift AI
+ ** Deploy RAG Environment
+ ** populate database with documentation exports
+ ** Deploy AI Model Runtime
+
+// -- updates to lab environment for serving an AI model
+// -- Utilize portions of podman ai to rhoai and reference
+
+Appendix - reference additional learning Aid 
+
+-  GitOps Deployments of AI Services and integration with OpenShift AI ??
+-  New Lab Environment created using Code Files - CLI Commands - Showing how automation would work. 
+
+
 
 == Prerequisites
 
 This course assumes that you have the following prior experience:
 
-* Course or experience...
-* Course or experience...
-* Course or experience...
+* Experience with Navigating Cloud Provider Dashboards
+* Understanding of Cloud Native Services
+* Knowledge of Kubernetes which is the underlying technology of OpenShift and OpenShift AI

@@ -1,1 +1,4 @@
 * xref:index.adoc[]
+** xref:openshiftai-install.adoc[]
+** xref:minio-install.adoc[]
+** xref:gitops-install-rhoai.adoc[]
