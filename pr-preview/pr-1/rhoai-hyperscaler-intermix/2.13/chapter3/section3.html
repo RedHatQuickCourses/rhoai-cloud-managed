@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Azure AI Services :: Generative AI across HyperScalers with OpenShift AI</title>
+    <link rel="prev" href="section2.html">
+    <link rel="next" href="../appendix/appendix.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Generative AI across HyperScalers with OpenShift AI</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rhoai-hyperscaler-intermix" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Installing OpenShift AI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">Dashboard RHOAI Creation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/gitops-install-rhoai.html">GitOps RHOAI CLI Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">MultiCloud OpenShift</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section1.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section3.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section4.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section5.html">AWS AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section1.html">Section 1</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Microsoft Azure Red Hat OpenShift (ARO)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">Section 2</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section3.html">Azure AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Generative AI across HyperScalers with OpenShift AI</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Generative AI across HyperScalers with OpenShift AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
+    <li><a href="index.html">Microsoft Azure Red Hat OpenShift (ARO)</a></li>
+    <li><a href="section3.html">Azure AI Services</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Azure AI Services</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://azure.microsoft.com/en-us/products/ai-services/">Azure AI Service Homepage</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_azure_open_ai_service"><a class="anchor" href="#_azure_open_ai_service"></a>Azure Open AI Service</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_azure_ai_search"><a class="anchor" href="#_azure_ai_search"></a>Azure AI Search</h3>
+<div class="paragraph">
+<p>Aure AI Content Safety</p>
+</div>
+<div class="paragraph">
+<p>Azure AI Vision</p>
+</div>
+<div class="paragraph">
+<p><a href="https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/" target="blank">PHI Small Language Model</a></p>
+</div>
+<div class="paragraph">
+<p>he blog post introduces Phi-3, a family of open AI models by Microsoft, designed to redefine what is possible with small language models (SLMs). Phi-3 models are the most compatable and cost-effective SLMs, outperforming models of the same size and even larger ones in language, reasoning, coding, and math benchmarks. The Phi-3-mini model, with 3.8 billion parameters, is available on Microsoft Azure AI Studio, Hugging Face, and Ollama, supporting context windows for up to 128K tokens. These models are optimized for various hardware, including NVIDIA NIM microservices. Additional models, Phi-3-small (7B) and Phi-3-medium (14B), will be available soon.</p>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section2.html">Section 2</a></span>
+  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

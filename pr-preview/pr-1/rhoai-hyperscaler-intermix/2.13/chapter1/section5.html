@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AWS AI Services :: Generative AI across HyperScalers with OpenShift AI</title>
+    <link rel="prev" href="section4.html">
+    <link rel="next" href="../chapter2/index.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Generative AI across HyperScalers with OpenShift AI</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rhoai-hyperscaler-intermix" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Installing OpenShift AI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">Dashboard RHOAI Creation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/gitops-install-rhoai.html">GitOps RHOAI CLI Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">MultiCloud OpenShift</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section4.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section5.html">AWS AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section1.html">Section 1</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter3/index.html">Microsoft Azure Red Hat OpenShift (ARO)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section3.html">Azure AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Generative AI across HyperScalers with OpenShift AI</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Generative AI across HyperScalers with OpenShift AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
+    <li><a href="index.html">MultiCloud OpenShift</a></li>
+    <li><a href="section5.html">AWS AI Services</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">AWS AI Services</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://aws.amazon.com/ai/generative-ai/services/" class="bare">https://aws.amazon.com/ai/generative-ai/services/</a> [AWS AI Website, window=blank]</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html">AWS Cloud Adoption FrameWork</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sagemaker"><a class="anchor" href="#_sagemaker"></a>SageMaker</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bedrock"><a class="anchor" href="#_bedrock"></a>Bedrock</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvidia_powered_gpu_ec2_instances"><a class="anchor" href="#_nvidia_powered_gpu_ec2_instances"></a>Nvidia Powered GPU EC2 instances</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_aws_trainium"><a class="anchor" href="#_aws_trainium"></a>AWS Trainium</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_aws_inferentia"><a class="anchor" href="#_aws_inferentia"></a>AWS Inferentia</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_aws_ec2_ultraclusters"><a class="anchor" href="#_aws_ec2_ultraclusters"></a>AWS EC2 UltraClusters</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_amazon_q"><a class="anchor" href="#_amazon_q"></a>Amazon Q</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_aws_app_studio"><a class="anchor" href="#_aws_app_studio"></a>AWS App Studio</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_partyrock_an_amazon_bedrock_playground"><a class="anchor" href="#_partyrock_an_amazon_bedrock_playground"></a>PartyRock an Amazon Bedrock Playground</h3>
+
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section4.html">OpenShift and OpenShift AI</a></span>
+  <span class="next"><a href="../chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

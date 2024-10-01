@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI across HyperScalers with OpenShift AI :: Generative AI across HyperScalers with OpenShift AI</title>
+    <link rel="next" href="LABENV/index.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../..">Generative AI across HyperScalers with OpenShift AI</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rhoai-hyperscaler-intermix" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Generative AI across HyperScalers with OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="LABENV/index.html">Installing OpenShift AI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="LABENV/openshiftai-install.html">Dashboard RHOAI Creation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="LABENV/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="LABENV/gitops-install-rhoai.html">GitOps RHOAI CLI Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="chapter1/index.html">MultiCloud OpenShift</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter1/section1.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter1/section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter1/section3.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter1/section4.html">OpenShift and OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter1/section5.html">AWS AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter2/section1.html">Section 1</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="chapter3/index.html">Microsoft Azure Red Hat OpenShift (ARO)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter3/section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter3/section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter3/section3.html">Azure AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Generative AI across HyperScalers with OpenShift AI</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Generative AI across HyperScalers with OpenShift AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">AI across HyperScalers with OpenShift AI</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/cloudservices_img.png" alt="cloudservices img" width="600">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_course_overview"><a class="anchor" href="#_course_overview"></a>Course Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.</p>
+</div>
+<div class="paragraph">
+<p>Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms.</p>
+</div>
+<div class="paragraph">
+<p>This course focuses on AI solution enablement for Red Hat OpenShift which powers OpenShift AI on Amazon Web Services (AWS) and Microsoft Azure (Azure).</p>
+</div>
+<div class="paragraph">
+<p>The first two chapters of this course are geared towards all audiences who want to know about OpenShift in Cloud Environments.   We will review the options for OpenShift Container Platform Cluster offerings on Cloud Provider including both managed and self-managed offerings.</p>
+</div>
+<div class="paragraph">
+<p>The third and fourth chapters will focus on AI offerings of AWS and Azure and how customers are using these services to solve business challenges.</p>
+</div>
+<div class="paragraph">
+<p>The fifth and six chapters are labs which provide hands-on experiences with a Mix of Cloud Provider Solutions and OpenShift / OpenShift AI services to solve task assistance based business use cases.  There is one lab for AWS and another for Azure.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_duration"><a class="anchor" href="#_duration"></a>Duration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Recommended budgeting three hours if you plan to complete both labs.</p>
+</div>
+<div class="paragraph">
+<p>Overall the experience will take about 1 hour consuming course materials, however there is also ~1 hour provisioning time for each lab environment to become available.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="_on_completing_this_course_you_should_be_able_to"><a class="anchor" href="#_on_completing_this_course_you_should_be_able_to"></a>On completing this course, you should be able to:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand Open Source Play Multi-Cloud with OpenShift AI</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand AWS options for OpenShift Container Cluster Deployment supporting OpenShift AI</p>
+</li>
+<li>
+<p>Understand Azure options for OpenShift Container Cluster supporting OpenShift AI</p>
+</li>
+<li>
+<p>Understand how OpenShift Cloud services are requested and provisioned.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_analyze_cloud_providers_ai_platform_features_compared_with_openshift_ai"><a class="anchor" href="#_analyze_cloud_providers_ai_platform_features_compared_with_openshift_ai"></a>Analyze Cloud Providers AI Platform features compared with OpenShift AI</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Overview of AWS AI Services that offer parity with OpenShift AI functionality</p>
+<div class="ulist">
+<ul>
+<li>
+<p>- SageMaker</p>
+</li>
+<li>
+<p>BedRock</p>
+</li>
+<li>
+<p>AWS Trainium,</p>
+</li>
+<li>
+<p>INferentia,</p>
+</li>
+<li>
+<p>EC2 Ultra Clusters,</p>
+</li>
+<li>
+<p>Amazon Q</p>
+</li>
+<li>
+<p>AWS App Studio,</p>
+</li>
+<li>
+<p>PartyTock on Amazon BedRock</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Overview of Azure Services and their integration with OpenShift AI.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Azure OpenAI Service</p>
+</li>
+<li>
+<p>Azure AI Search</p>
+</li>
+<li>
+<p>Azure AI Content Safety</p>
+</li>
+<li>
+<p>Azure AI Vision</p>
+</li>
+<li>
+<p>PHI Small Language Model</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_labs_environments_azure_aws"><a class="anchor" href="#_2_labs_environments_azure_aws"></a>2 Labs Environments Azure &amp; AWS *</h4>
+<div class="paragraph">
+<p>Azure - Interacting with Azure OpenAI Service using Front End App hosted in OpenShift
+ * expose how easy it is to run a model service on cloud provider
+ * expose the cost per hour.
+ * expose the time to value</p>
+</div>
+<div class="paragraph">
+<p>AWS - starting from an OpenShift Cluster
+ <strong> Use GUI to installation OpenShift AI
+ </strong> Deploy RAG Environment
+ <strong> populate database with documentation exports
+ </strong> Deploy AI Model Runtime</p>
+</div>
+<div class="paragraph">
+<p>Appendix - reference additional learning Aid</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GitOps Deployments of AI Services and integration with OpenShift AI ??</p>
+</li>
+<li>
+<p>New Lab Environment created using Code Files - CLI Commands - Showing how automation would work.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This course assumes that you have the following prior experience:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Experience with Navigating Cloud Provider Dashboards</p>
+</li>
+<li>
+<p>Understanding of Cloud Native Services</p>
+</li>
+<li>
+<p>Knowledge of Kubernetes which is the underlying technology of OpenShift and OpenShift AI</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="next"><a href="LABENV/index.html">Installing OpenShift AI</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
