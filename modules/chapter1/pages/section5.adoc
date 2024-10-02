@@ -6,22 +6,84 @@ https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.htm
 
 == SageMaker
 
+Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows
+
+Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more – all in one integrated development environment (IDE). SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own FMs, large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
+
+Sage Maker Studio
+
+varity of model providers
+
+
 == Bedrock
+
+The easiest way to build and scale generative AI applications with foundation models
+
+Amazon Bedrock is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon through a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI. Using Amazon Bedrock, you can easily experiment with and evaluate top FMs for your use case, privately customize them with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), and build agents that execute tasks using your enterprise systems and data sources. Since Amazon Bedrock is serverless, you don't have to manage any infrastructure, and you can securely integrate and deploy generative AI capabilities into your applications using the AWS services you are already familiar with.
 
 == Nvidia Powered GPU EC2 instances
 
-=== AWS Trainium
+What is AWS Deep Learning AMIs?
+Deep learning AMIs provide customized machine images preconfigured with deep learning frameworks, NVIDIA CUDA, cuDNN, and Jupyter notebook server for distributed training.
+
+Learning about deep learning – DLAMI is a great choice for learning or teaching machine learning and deep learning frameworks. The DLAMIs take away the headache from troubleshooting the installations of each framework and getting them to play along on the same computer. The DLAMIs include a Jupyter notebook and make it easy to run the tutorials that the frameworks provide for people new to machine learning and deep learning.
+
+App development – If you're an app developer who's interested in using deep learning to make your apps utilize the latest advances in AI, then DLAMI is the perfect test bed for you. Each framework comes with tutorials on how to get started with deep learning, and many of them have model zoos that make it easy to try out deep learning without having to create the neural networks yourself or to do any of the model training. Some examples show you how to build an image detection application in just a few minutes, or how to build a speech recognition app for your own chatbot.
+
+Machine learning and data analytics – If you're a data scientist or you're interested in processing your data with deep learning, then you'll find that many of the frameworks have support for R and Spark. You will find tutorials on how to do simple regressions, all the way up to building scalable data processing systems for personalization and predictions systems.
+
+Research – If you're a researcher who wants to try out a new framework, test a new model, or train new models, then DLAMI and AWS capabilities for scale can alleviate the pain of tedious installations and management of multiple training nodes.
+
+=== AWS Trainium (Trn1 - instances)
+
+Amazon Elastic Compute Cloud (EC2) Trn1 instances, powered by AWS Trainium chips, are purpose built for high-performance deep learning (DL) training of generative AI models, including large language models (LLMs) and latent diffusion models. Trn1 instances offer up to 50% cost-to-train savings over other comparable Amazon EC2 instances. You can use Trn1 instances to train 100B+ parameter DL and generative AI models across a broad set of applications, such as text summarization, code generation, question answering, image and video generation, recommendation, and fraud detection.
+
+The AWS Neuron SDK helps developers train models on AWS Trainium (and deploy models on the AWS Inferentia chips). It integrates natively with frameworks such as PyTorch and TensorFlow, so that you can continue using your existing code and workflows to train models on Trn1 instances. To learn about the current Neuron support for machine learning (ML) frameworks and libraries, model architectures, and hardware optimizations, see the Neuron documentation.
 
 === AWS Inferentia
 
+High performance at the lowest cost in Amazon EC2 for generative AI inference
+
+Amazon Elastic Compute Cloud (Amazon EC2) Inf2 instances are purpose built for deep learning (DL) inference. They deliver high performance at the lowest cost in Amazon EC2 for generative artificial intelligence (AI) models, including large language models (LLMs) and vision transformers. You can use Inf2 instances to run your inference applications for text summarization, code generation, video and image generation, speech recognition, personalization, fraud detection, and more.
+
+Inf2 instances are powered by AWS Inferentia2, the second-generation AWS Inferentia chip. Inf2 instances raise the performance of Inf1 by delivering 3x higher compute performance, 4x larger total accelerator memory, up to 4x higher throughput, and up to 10x lower latency. Inf2 instances are the first inference-optimized instances in Amazon EC2 to support scale-out distributed inference with ultra-high-speed connectivity between Inferentia chips. You can now efficiently and cost-effectively deploy models with hundreds of billions of parameters across multiple chips on Inf2 instances.
+
+The AWS Neuron SDK helps developers deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with frameworks, such as PyTorch and TensorFlow, so you can continue using your existing workflows and application code and run on Inf2 instances.
+
 === AWS EC2 UltraClusters
+
+Amazon Elastic Compute Cloud (Amazon EC2) UltraClusters can help you scale to thousands of GPUs or purpose-built ML accelerators, such as AWS Trainium, to get on-demand access to a supercomputer. They democratize access to supercomputing-class performance for machine learning (ML), generative AI, and high performance computing (HPC) developers through a simple pay-as-you-go usage model without any setup or maintenance costs. Amazon EC2 P5 instances, Amazon EC2 P4d instances, and Amazon EC2 Trn1 instances are all deployed in Amazon EC2 UltraClusters.
+
+EC2 UltraClusters consist of thousands of accelerated EC2 instances that are co-located in a given AWS Availability Zone and interconnected using Elastic Fabric Adapter (EFA) networking in a petabit-scale nonblocking network. EC2 UltraClusters also provide access to Amazon FSx for Lustre, a fully managed shared storage built on the most popular high-performance, parallel file system to quickly process massive datasets on demand and at scale with sub-millisecond latencies. EC2 UltraClusters provide scale-out capabilities for distributed ML training and tightly coupled HPC workloads.
+
+Amazon EC2 P5 and Trn1 instances use a second-generation EC2 UltraClusters architecture that provides a network fabric to enable fewer hops across the cluster, lower latency, and greater scale.
 
 === Amazon Q
 
+The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data
+
+Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests. Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics—by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.
+
+Amazon Q Business is a generative AI–powered assistant that can answer questions, provide summaries, generate content, and securely complete tasks based on data and information in your enterprise systems. It empowers employees to be more creative, data-driven, efficient, prepared, and productive.
+
+Amazon Q Developer assists developers and IT professionals with all their tasks—from coding, testing, and upgrading applications, to diagnosing errors, performing security scanning and fixes, and optimizing AWS resources. Amazon Q has advanced, multistep planning and reasoning capabilities that can transform (for example, perform Java version upgrades) and implement new features generated from developer requests.
+
+Amazon Q easily and securely connects to over 40 commonly used business tools, such as wikis, intranets, Atlassian, Gmail, Microsoft Exchange, Salesforce, ServiceNow, Slack, and Amazon Simple Storage Service (Amazon S3). Simply point Amazon Q at your enterprise data and code repositories, and it will search all your data, summarize logically, analyze trends, and engage in dialogue with end users about the data. This helps business users access all their data no matter where it resides in their organization.
+
 ===  AWS App Studio 
+
+The fastest and easiest way to build enterprise-grade applications
+
+AWS App Studio is a generative AI-powered service that uses natural language to build enterprise-grade applications, empowering a new set of builders to create applications in minutes. With App Studio, technical professionals without deep software development skills, such as IT project managers, data engineers, and enterprise architects, can quickly develop business applications tailored to their organization's needs.
+
+Build secure, scalable applications in minutes instead of days—no professional software development skills required
 
 === PartyRock an Amazon Bedrock Playground
 
+PartyRock, an Amazon Bedrock Playground. PartyRock is a fun and intuitive hands-on, generative AI app-building playground. In just a few steps, you can create a variety of apps to experiment with generative AI. For example, you could build an app to generate dad jokes on a chosen topic, create the perfect personalized playlist, recommend what to serve based on ingredients in your pantry, analyze and optimize your party budget, or create an AI storyteller to guide your next fantasy role-playing campaign. By building and playing with PartyRock apps, you’ll learn the techniques and capabilities needed to take full advantage of generative AI, including experimenting with various foundation models, building intuition with text-based prompting, and chaining prompts together. PartyRock is powered by Amazon Bedrock, a fully managed service that makes foundation models (FMs) from Amazon and leading AI companies available through an API.
 
 
+https://partyrock.aws/u/rohithbyreddy/ZfU0euDHp/AI-Career-Compass
+
+https://partyrock.aws/u/partyrock/mIqUM-qla/Parable-Rhythm-The-Interactive-Crime-Thriller
 

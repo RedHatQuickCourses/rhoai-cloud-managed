@@ -1,11 +1,5 @@
 = OpenShift (AI) on AWS
 
-ROSA in this Course focuses on the  *ROSA with HCP* deployment as the option of choice. However, the other options are listed as they might meet the needs of particular customer. 
-
-[NOTE]
-_A somewhat surprising hit at a recent onsite was our discussion of deploying OpenShift using Hosted Control Planes. It turns out that none of the customers in attendance knew about this deployment option. Therefore we spent quite some time explaining how this works and the benefits (densification, cost reduction, deployment speed) of this approach._
-
-
 == Deployment Options
 
 === Amazon Web Services (AWS)

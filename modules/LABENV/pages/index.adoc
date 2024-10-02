@@ -1,8 +1,12 @@
-= Installing OpenShift AI
+= Lab Env RHOAI self-managed
 
 == Prerequisites
 
 This section assumes that you have:
+
+*Recommended* use the https://demo.redhat.com/catalog?item=babylon-catalog-prod%2Fopenshift-cnv.ocpmulti-wksp-cnv.prod[Red Hat OpenShift Container Platform Cluster (AWS), window=blank] catalog item in the Red Hat Demo Platform (RHDP) to run the AWS hands-on exercises in this course.
+
+or
 
 * Existing Openshift Container Platform Cluster 
 **  *>=* version 4.12
