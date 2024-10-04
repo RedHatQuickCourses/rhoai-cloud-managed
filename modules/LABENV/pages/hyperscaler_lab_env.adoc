@@ -1,7 +1,4 @@
-= Section 2
-
-https://cloud.redhat.com/learning/learn:how-run-and-deploy-llms-using-red-hat-openshift-ai-red-hat-openshift-service-aws-cluster/resource/resources:prerequisites-deploying-llms-using-red-hat-openshift-ai-red-hat-openshift-service-aws  
-
+= Cloud Provider Lab Environments
 
 == HyperScaler Lab Environment Options
 
@@ -18,6 +15,7 @@ https://demo.redhat.com/catalog?category=Open_Environments&item=babylon-catalog-
 https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1[Red Hat OpenShift AI Cloud Service Document, window=blank]
 
 ==== Guidance on how to work in OpenShift AI
+
 https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1#Documentation%20for%20ML%20Ops%20Engineers%20and%20Data%20Scientists[Documentation for ML Ops Engineers and Data Scientists, window=blank]
 
 ==== Guidance on installing and maintaining OpenShift AI for IT Operations administrators.

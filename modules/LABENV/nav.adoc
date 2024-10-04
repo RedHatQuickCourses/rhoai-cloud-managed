@@ -2,3 +2,4 @@
 ** xref:openshiftai-install.adoc[]
 ** xref:minio-install.adoc[]
 ** xref:gitops-install-rhoai.adoc[]
+** xref:hyperscaler_lab_env.adoc[]
