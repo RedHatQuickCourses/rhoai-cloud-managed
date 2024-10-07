@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Section 2 :: Generative AI across HyperScalers with OpenShift AI</title>
     <link rel="prev" href="section1.html">
-    <link rel="next" href="../appendix/appendix.html">
+    <link rel="next" href="section3.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -47,24 +47,17 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/index.html">Chapter 1</a>
+    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section1.html">OpenShift AI on AWS</a>
+    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section2.html">Section 2</a>
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">Dashboard RHOAI Creation</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter1/section3.html">MultiCloud OpenShift AI</a>
+    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
 </ul>
   </li>
@@ -74,11 +67,30 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter2/index.html">Chapter 2</a>
+    <a class="nav-link" href="../chapter1/index.html">MultiCloud OpenShift</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section4.html">OpenShift and OpenShift AI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter2/section1.html">Section 1</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section2.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/section3.html">AWS AI Services</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -87,13 +99,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Chapter 3</a>
+    <a class="nav-link" href="index.html">Microsoft Azure Red Hat OpenShift (ARO)</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section1.html">Section 1</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">Azure AI Services</a>
   </li>
 </ul>
   </li>
@@ -141,7 +156,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
-    <li><a href="index.html">Chapter 3</a></li>
+    <li><a href="index.html">Microsoft Azure Red Hat OpenShift (ARO)</a></li>
     <li><a href="section2.html">Section 2</a></li>
   </ul>
 </nav>
@@ -152,6 +167,8 @@
 </aside>
 <article class="doc">
 <h1 class="page">Section 2</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p>Azure Red Hat OpenShift Workshop</p>
 </div>
@@ -161,9 +178,49 @@
 <div class="paragraph">
 <p>Azure Red Hat OpenShift is a fully managed Red Hat OpenShift service in Azure that is jointly engineered and supported by Microsoft and Red Hat. In this lab, you’ll go through a set of tasks that will help you understand some of the concepts of deploying and securing container based applications on top of Azure Red Hat OpenShift.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generative_ai_era_with_microsoft_azure"><a class="anchor" href="#_generative_ai_era_with_microsoft_azure"></a>Generative AI era with Microsoft Azure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Generative AI is helping to reimagine business operations, bringing forth an unprecedented level of creativity and innovation. AI is not just influencing businesses; it’s transforming them. Language models like GPT-3 and GPT-4 on Azure OpenAI Service are capable of automating content generation, enhancing content quality, diversifying content, and enabling personalization. While human intervention is still required for prompt generation and output evaluation, these models are already proving their worth across various domains.</p>
+</div>
+<div class="sect2">
+<h3 id="_azure_openai_case_studies"><a class="anchor" href="#_azure_openai_case_studies"></a>Azure OpenAI Case Studies</h3>
+<div class="paragraph">
+<p>Case study: CarMax
+CarMax, a renowned automotive retailer, saw an opportunity to enhance its customer experience through AI. The company decided to leverage Azure AI including Azure OpenAI Service to generate customer-relevant content for its website, specifically, AI-generated car review summaries.</p>
+</div>
+<div class="paragraph">
+<p>The goal was to create summaries for 5,000 car pages—a task that, if done manually, was estimated to take approximately 11 years. With AI, however, the company achieved this milestone within just a few months. This accelerated production not only improved customer engagement but also significantly boosted the company’s search engine rankings.</p>
+</div>
+<div class="paragraph">
+<p>Read more about CarMax’s innovation.</p>
+</div>
+<div class="paragraph">
+<p>Case study: SymphonyAI
+Another compelling example is SymphonyAI, a leader in business-to-business AI solutions. Recognizing the potential of AI to enhance financial crime investigation, SymphonyAI integrated Azure AI services into its Sensa Copilot solution.</p>
+</div>
+<div class="paragraph">
+<p>With AI automating the collection and summarization of financial information, investigators were empowered to analyze suspicious activities more efficiently. This integration led to a remarkable increase in productivity—around 60 percent in initial tests. SymphonyAI’s approach is a testament to how AI can streamline processes, transform industries, and pave the way to reduce.</p>
+</div>
+<div class="paragraph">
+<p>Read more about SymphonyAI.</p>
+</div>
+<div class="paragraph">
+<p>Case study: The City of Kelowna
+Public services are also benefiting from AI technology. The City of Kelowna, for instance, used Azure OpenAI Service and Azure Cognitive Search to create an intelligent search solution that responds to citizens’ requests using publicly available information, ensuring data privacy.</p>
+</div>
+<div class="paragraph">
+<p>The system, designed to handle tasks such as updating residents on snowplowing schedules, has allowed the city to streamline its services significantly. By dealing with routine queries more efficiently, the city was able to focus its human resources on more complex queries, improving the overall quality of service delivery.</p>
+</div>
+</div>
+</div>
+</div>
 <nav class="pagination">
   <span class="prev"><a href="section1.html">Section 1</a></span>
-  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
+  <span class="next"><a href="section3.html">Azure AI Services</a></span>
 </nav>
 </article>
   </div>
