@@ -2,12 +2,12 @@
 
 These environments are provided via the Red Hat Demo Platform (RHDP) and run on Cloud Providers but are short term environments that you can deploy for general OpenShift AI development or demo environments.  
 
-These are more effective than using the Cloud Provider directly as the lab environments are automatically cost controlled via auto-shutdown and auto-delete policies reducing the chance that a Cloud Provider or random services are left running in an open account generating possibly high cost.
+These are more effective than using the Cloud Provider directly as the lab environments are automatically cost controlled via auto-shutdown and auto-delete policies reducing the chance that random services are left running generating possibly high cost.
 
 
 == Practice Installing OpenShift AI
 
-Hands-on exposure using the OpenShift Dashbaord to deploy OpenShift AI using operators is an essential part of understanding the components that make up OpenShift AI and the "required" operators that enable additional capabilities within OpenShift AI.
+Hands-on exposure using the OpenShift Dashboard to deploy OpenShift AI using operators is an essential part of understanding the components that make up OpenShift AI and the "required" operators that enable additional capabilities within OpenShift AI.
 
 These Operators are the minimum required for the self-managed clusters that enable full features (external access) of single and multi-model serving. 
 

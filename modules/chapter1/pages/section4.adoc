@@ -1,7 +1,7 @@
 = OpenShift and OpenShift AI
 
 [NOTE]
-re-write as how OpenShift is a dependcy for OpenShift AI
+rewrite as how OpenShift is a dependency for OpenShift AI
 Remove specific cloud references and describe more OpenShift here
 
 == OpenShift AI Operator

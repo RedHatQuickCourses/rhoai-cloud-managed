@@ -8,7 +8,7 @@ Multi cloud refers to using services from more than one public cloud provider at
 
 === Why Red Hat OpenShift cloud services?
 
-This section provides curated set of descriptions that describe the benefits of Red Hat's OpenShift managed cloud service.
+This section provides a curated set of descriptions that describe the benefits of Red Hat's OpenShift managed cloud service.
 
 '''
 
