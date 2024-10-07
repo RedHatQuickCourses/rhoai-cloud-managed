@@ -1,5 +1,8 @@
 = AWS AI Services
 
+[NOTE]
+ move to chapter 2 under AWS
+
 https://aws.amazon.com/ai/generative-ai/services/ [AWS AI Website, window=blank]
 
 https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork]

@@ -1,5 +1,9 @@
 = OpenShift and OpenShift AI
 
+[NOTE]
+re-write as how OpenShift is a dependcy for OpenShift AI
+Remove specific cloud references and describe more OpenShift here
+
 == OpenShift AI Operator
 
 Red Hat OpenShift AI is a fully Red Hat managed cloud service that is available as an add-on to Red Hat OpenShift Dedicated and to Red Hat OpenShift Service on Amazon Web Services (ROSA Classic).
