@@ -44,7 +44,7 @@ OpenShift AI is also supported as a managed Cloud Services on IBM Cloud and Goog
   
   **  Geared towards all audiences who want to know about OpenShift AI in Cloud Environments.   We will review the options for OpenShift Container Platform Cluster offerings on Cloud Providers including both managed and a *special case self-managed offerings. 
 
-  ** Focuses on the decisions to instantiate an OpenShift Container Cluster Platform on using fully managed Red Hat's Cloud Service offering. 
+  ** Focuses on the decisions to instantiate an OpenShift Container Cluster Platform using fully managed Red Hat's Cloud Service offering. 
 
  * *Sections 2 and 3:*  Hyperscaler service offersings AWS and Azure
  ** Focus on AWS and Azure AI service offerings and how those might compare to self-managed OpenShift AI. 
