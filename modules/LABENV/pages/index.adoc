@@ -1,25 +1,21 @@
-= Installing OpenShift AI
+= Lab Env RHOAI self-managed
 
-== Prerequisites
+These environments are provided via the Red Hat Demo Platform (RHDP) and run on Cloud Providers but are short term environments that you can deploy for general OpenShift AI development or demo environments.  
 
-This section assumes that you have:
+These are more effective than using the Cloud Provider directly as the lab environments are automatically cost controlled via auto-shutdown and auto-delete policies reducing the chance that a Cloud Provider or random services are left running in an open account generating possibly high cost.
 
-* Existing Openshift Container Platform Cluster 
-**  *>=* version 4.12
-** Open Data Hub is not installed
-** Argo Workflows Operator is not installed
 
-*Recommended* use the https://demo.redhat.com/catalog?item=babylon-catalog-prod%2Fopenshift-cnv.ocpmulti-wksp-cnv.prod[Red Hat OpenShift Container Platform Cluster (AWS), window=blank] catalog item in the Red Hat Demo Platform (RHDP) to run the hands-on exercises in this course.
+== Practice Installing OpenShift AI
 
-== Objectives
+Hands-on exposure using the OpenShift Dashbaord to deploy OpenShift AI using operators is an essential part of understanding the components that make up OpenShift AI and the "required" operators that enable additional capabilities within OpenShift AI.
 
-On completing this lesson, you should be able to:
+These Operators are the minimum required for the self-managed clusters that enable full features (external access) of single and multi-model serving. 
 
-* Use OpenShift Operator Hub to install operators
-** Red Hat OpenShift Serverless Operator
-** Red Hat OpenShift Service Mesh Operator
-** Red Hat Authorino (Techical Preview) Operator
-** Red Hat OpenShift AI Operator
-*** Create OpenShift AI Data Science Cluster
+ * Use OpenShift Operator Hub to install operators
+ ** Red Hat OpenShift Serverless Operator
+ ** Red Hat OpenShift Service Mesh Operator
+ ** Red Hat Authorino (Technical Preview) Operator
+ ** Red Hat OpenShift AI Operator
+ *** Create OpenShift AI Data Science Cluster
 
 

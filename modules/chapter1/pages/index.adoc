@@ -2,14 +2,43 @@
 
 video::-HN9gxjX9LM[youtube]
 
+[NOTE]
+Multi cloud refers to using services from more than one public cloud provider at the same time. A multi cloud environment allows your cloud environments to be private, public, or a combination of both.
+
+
 === Why Red Hat OpenShift cloud services?
 
-Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multicloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.   
+This section provides curated set of descriptions that describe the benefits of Red Hat's OpenShift managed cloud service.
 
-If your organization needs to get started quickly and would like to offload the ongoing management of your application platform, Red Hat OpenShift cloud services provides you an ideal solution.
+'''
 
-Turnkey application platform: A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.
+Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multi cloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.   
 
-Cloud native solutions with leading cloud providers: Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services. 
+*If an organization needs to get started quickly and would like to offload the ongoing management of their application platform, Red Hat OpenShift Cloud Services provides an ideal solution.*
 
-Consistent hybrid cloud experience: Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.
+
+'''
+
+==== Turnkey application platform: 
+
+A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.
+
+'''
+
+==== Cloud native solutions with leading cloud providers:
+
+Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services. 
+
+'''
+
+==== Consistent hybrid cloud experience:
+
+Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.
+
+'''
+
+==== My translation of the wording would be:
+
+When consuming infrastructure services in different clouds, Engineering teams might have to learn a multitude of software (tools) for each cloud provider and on-premises. Using OpenShift in multi cloud environments, allows developers to utilize OpenShift as a single solution (toolset) across clouds. In addition, as a managed service across cloud providers, it's deployed and managed by Red Hat and Partners teams allowing organizations to build apps rather than on infrastructure platforms. 
+
+Let's start with the OpenShift Container Platform cluster as it is the minimum required platform for OpenShift AI.

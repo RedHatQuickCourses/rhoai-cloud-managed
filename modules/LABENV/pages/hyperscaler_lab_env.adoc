@@ -1,0 +1,25 @@
+= Cloud Provider Lab Environments
+
+This section provides links to Demo Platform catalog items for Cloud Provider Open Environments.  *Cost is billed to your business unit.*
+
+This is course on OpenShift (AI) on Cloud Providers and therefore it's important to understand the Cloud Providers basic features such as networking, kubernetes services, accounts, identity management, and insert your reason here. 
+
+This course will maintain a list of best Cloud-Demo environments for all support hyperscalers.  
+Use these to explore Cloud Providers to better understand how they work, to research customer technologies, and explore what possible at the largest web services proivders on the planet.
+
+These are provided as a resource to explore Cloud Providers to practice theories, learn skills, or test out customer solutions with Red Hat products. 
+
+== HyperScaler Lab Environment Options
+
+These are the current open environments avialable on Demo Hub. 
+
+These environments have zero running resources.  They are a blank canvases for your exploration and resource creation.  They serve as great way to get hands-on with a blog article, white paper or a way to connect to Cloud Resources to an external OpenShift (AI) lab to test access to applications. 
+
+ * https://demo.redhat.com/catalog?search=aws&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod[AWS - AWS Blank Open Environment, window=blank]
+
+ * https://demo.redhat.com/catalog?category=Open_Environments&item=babylon-catalog-prod%2Fazure-gpte.open-environment-azure-subscription.prod[Microsoft Azure Subscription Based Blank Open Environment, window=blank]
+
+ * https://demo.redhat.com/catalog?category=Open_Environments&item=babylon-catalog-prod%2Fibm.sandbox-ibm.prod[IBM Public Cloud Blank Open Environment, window=blank]
+
+ * https://demo.redhat.com/catalog?category=Open_Environments&item=babylon-catalog-prod%2Fgcp-gpte.open-environment-gcp.prod[Google Cloud Platform (GCP) Blank Open Environment, window=blank]
+

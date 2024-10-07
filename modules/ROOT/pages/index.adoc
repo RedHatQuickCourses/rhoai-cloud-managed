@@ -1,22 +1,55 @@
-= AI across HyperScalers with OpenShift AI
+= Red Hat OpenShift AI on HyperScalers
 :navtitle: Home
 
 
 image::cloudservices_img.png[width=600]
 
-== Course Overview
+== Introduction
 
-OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
+This course focuses solely on OpenShift AI running on Cloud Providers (Hyperscalers). 
 
-Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms.
+So grab a cushioned seat and let's discover the insider information you need to make informed decisions when considering Red Hat's OpenShift Cloud Service. Waiting for hardware can take weeks or months, which is why obtaining an OpenShift AI Machine Learning Operations Platform (MLOps) in minutes can be a crucial component for unlocking the full potential of *Generative AI* for organizations on the move.
 
-This course focuses on AI solution enablement for Red Hat OpenShift which powers OpenShift AI on Amazon Web Services (AWS) and Microsoft Azure (Azure).
+As a bonus, the scalable OpenShift Container Platform (OCP) clusters support containized workloads, virtual machines, and with OpenShift AI running on OCP, it becomes an MLOps platform for Generative and Predictive AI model development, deployment, and management that can span cloud providers. A true Multi-Cloud solution which includes cloud providers, on-premises, and a mix of the two.
 
-The first two chapters of this course are geared towards all audiences who want to know about OpenShift in Cloud Environments.   We will review the options for OpenShift Container Platform Cluster offerings on Cloud Provider including both managed and self-managed offerings. 
+We'll cover the facts that matter to provide you with an inclusive knowledge building experience that you can use to solve business problems.
 
-The third and fourth chapters will focus on AI offerings of AWS and Azure and how customers are using these services to solve business challenges. 
+So what's included?
 
-The fifth and six chapters are labs which provide hands-on experiences with a Mix of Cloud Provider Solutions and OpenShift / OpenShift AI services to solve task assistance based business use cases.  There is one lab for AWS and another for Azure.
+
+== Why a course on OpenShift AI in the Cloud
+
+OpenShift and OpenShift AI fill the gap between data, compute, AI Model lifecylces and applications across Cloud, On-premise, and Managed environments.
+
+Cloud providers are powering more and more open-source AI solutions and projects as SaaS offerings, some  at zero cost to increase infrastructure usage. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor applications and infrastructure platforms.
+
+This course focuses on the specific actions taken to invent, create, optimize, or deploy AI solutions using Red Hat OpenShift AI on Amazon Web Services (AWS) and Microsoft Azure (Azure).  
+
+[IMPORTANT]
+====
+Based on your feedback, we will consider splitting this course into two distict learning journeyies focused on each cloud indenpently, if learning two cloud providers at once proves too mentally intensive. 
+
+OpenShift AI is also supported as manage Cloud Services on IBM Cloud and Google Cloud Platforms. The consumption of OpenShift on these cloud providers is limited and therefore this course will solely focus on AWS and Azure hyperscalers. 
+====
+
+
+== Looking for a specific knowledge
+
+=== visit these sections for information on:
+
+  * Chapter 1-2: OpenShift AI Cloud Service
+  
+  **  Geared towards all audiences who want to know about OpenShift AI in Cloud Environments.   We will review the options for OpenShift Container Platform Cluster offerings on Cloud Providers including both managed and a *special case self-managed offering. 
+
+  ** Focuses on the decisions to instantiate an OpenShift Container Cluster Platform on using fully managed Red Hat's Cloud Service offering. 
+
+ * Chapters 3-4:  Hyperscale service offersings 
+ ** Focus on AWS and Azure AI service offerings and how those might compare to self-managed OpenShift AI. 
+
+ * Chapters 5-6: Hands-on-Lab AWS and Azure
+
+** are labs which provide hands-on experiences with a mix of Cloud Provider Solutions and OpenShift / OpenShift AI services to solve tasks using AI assitants business use cases.  
+** There is one lab for AWS and another for Azure, choose the best option your needs. 
 
 
 == Duration 
@@ -29,8 +62,8 @@ Overall the experience will take about 1 hour consuming course materials, howeve
 
 ==== On completing this course, you should be able to:
 
-  * Understand Open Source Play Multi-Cloud with OpenShift AI 
- ** Understand AWS options for OpenShift Container Cluster Deployment supporting OpenShift AI
+  * Create an open-source Multi-Cloud playbook for OpenShift AI 
+ ** Understand AWS options for OpenShift Container Platform (ROSA) Cluster Deployment supporting OpenShift AI
  ** Understand Azure options for OpenShift Container Cluster supporting OpenShift AI
  ** Understand how OpenShift Cloud services are requested and provisioned.
 
@@ -75,12 +108,11 @@ Appendix - reference additional learning Aid
 -  GitOps Deployments of AI Services and integration with OpenShift AI ??
 -  New Lab Environment created using Code Files - CLI Commands - Showing how automation would work. 
 
-
-
 == Prerequisites
 
 This course assumes that you have the following prior experience:
 
-* Experience with Navigating Cloud Provider Dashboards
-* Understanding of Cloud Native Services
+* Experience with navigating cloud provider dashboards (consoles) and service offerings
+* Understanding of Cloud Provider Marketplace & Solution purchasing / accounts / billing / subscriptions
 * Knowledge of Kubernetes which is the underlying technology of OpenShift and OpenShift AI
+

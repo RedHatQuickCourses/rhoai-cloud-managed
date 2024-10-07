@@ -1,15 +1,8 @@
 = OpenShift and OpenShift AI
 
-OpenShift and OpenShift AI will bridge the gap between data, compute, and applications across Cloud, On-premise, and Managed environments.
-
-Cloud providers are powering more and more opensource projects as SaaS offerings at zero cost to increase infrastructure usage. All these factors increase the pressure on Red Hat to continue differentiating on the value of the  Red Hat subscription. Red Hat must provide value-added services to help make Red Hat products, subscriptions, and services more compelling and valuable than competitor application and infrastructure platforms. 
-
-FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using *hyperscaler services*, into Pilot and Production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had *highly variable and unpredictable costs*. 
-
-During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services. 
-
-ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift), 
-
+[NOTE]
+re-write as how OpenShift is a dependcy for OpenShift AI
+Remove specific cloud references and describe more OpenShift here
 
 == OpenShift AI Operator
 
