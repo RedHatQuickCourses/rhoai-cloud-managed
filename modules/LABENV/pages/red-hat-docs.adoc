@@ -1,6 +1,6 @@
 = Red Hat Documentation
 
-Learn by browsing various components of documenation to obtain specific knowledge about an action or setting. This section contains a few documentation options for working with *OpenShift AI* from the perspective a few of the common user personas. Below are the personas available:
+Learn by browsing various components of documentation to obtain specific knowledge about an action or setting. This section contains a few documentation options for working with *OpenShift AI* from the perspective of a few of the common user personas. Below are the personas available:
  
  * ML OPs Engineer and Data Scientists
  * IT Operation administrators
@@ -9,7 +9,7 @@ Learn by browsing various components of documenation to obtain specific knowledg
 
 ==== Red Hat OpenShift AI Cloud Service Main Dashboard
 
-* https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1[Red Hat OpenShift AI Cloud Service Documenation, window=blank]
+* https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1[Red Hat OpenShift AI Cloud Service Documentation, window=blank]
 
 ==== Guidance on how to work in OpenShift AI
 

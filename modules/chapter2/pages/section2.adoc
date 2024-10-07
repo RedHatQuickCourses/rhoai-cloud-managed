@@ -3,7 +3,7 @@
 [NOTE]
  move to chapter 2 under AWS
  
-For OpenShift AI Cloud Services the environments are mangaed by Red Hat Specialist who hangle all support and operations for the OpenShift AI platform (backend) components. 
+For OpenShift AI Cloud Services the environments are managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components. 
 
 == Deployment Options
 
@@ -14,12 +14,12 @@ There two types of options available for purchase of Red Hat OpenShift AI (RHOAI
 
 For more information on the RHOAI components their current support phase and their compatibility with the underlying platforms. https://access.redhat.com/articles/rhoai-supported-configs[This link connects to the OpenShift AI Supported Configurations., window=blank]
 
- * This is protected by authenication for Red Hat internals and partners.
+ * This is protected by authentication for Red Hat internals and partners.
 
  
 == Red Hat OpenShift Service on AWS 
 
-There are two available Cloud Service options avialable, with the main difference the AWS account where the services are located. 
+There are two available Cloud Service options available, with the main difference being the AWS account where the services are located. 
 
 === Option 1: 
 
@@ -27,7 +27,7 @@ There are two available Cloud Service options avialable, with the main differenc
 OpenShift Dedicated is a complete OpenShift Container Platform cluster provided as a cloud service, configured for high availability, and *dedicated* to a single customer. OpenShift Dedicated is professionally managed by Red Hat and hosted on Amazon Web Services (AWS). The Customer Cloud Subscription (CCS) model allows Red Hat to deploy and manage clusters into a customer’s AWS account. 
 
 [NOTE]
-While not specifically mentioned in this course, there is also OpenShift dedicated option for Google Cloud Platform (GCP).  This is the only supported GCP offering of managed OpenShift / OpenShift AI.
+While not specifically mentioned in this course, there is also an OpenShift dedicated option for Google Cloud Platform (GCP).  This is the only supported GCP offering of managed OpenShift / OpenShift AI.
 
 === Option 2:
 
@@ -47,7 +47,7 @@ Is it possible to combine both ROSA with HCP managed services with OpenShift AI 
  
 Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry's most comprehensive enterprise Kubernetes platform, and the AWS public cloud. 
 
-Hosting and managing of the control plane is accomplished via using resources (infrastructure) deployed into an Red Hat owned /managed AWS account provides. The customer only hosts worker nodes which allows the environment to scale with exactly what the customer needs providing effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. 
+Hosting and management of the control plane is accomplished using resources (infrastructure) deployed into a Red Hat owned / managed AWS Account. The customer only hosts worker nodes which allows the environment to scale with exactly what the customer needs providing effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. 
 
 [WARNING]
 ====
@@ -60,9 +60,9 @@ For a full overview of the RHOAI Self-Managed life cycle and the currently suppo
 
 == Managed Offering Benefits
 
-The OpenShift AI Cloud Services is a fully managed service, enabling customer to spin up OpenShift AI environments on cloud platforms enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common tool sets across cloud for Generative and Predecitive AI application and solution develop solves the gap of need to be an openshift customer.  Customer can experience OpenShift AI features available rapidly for proof of concepts and development and non-sensitive data lab environments.
+The OpenShift AI Cloud Services is a fully managed service, enabling customers to spin up OpenShift AI environments on cloud platforms enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common tool set across clouds for Generative and Predictive AI application and solution development solves the gap of need to be an openshift customer.  Customers can experience OpenShift AI features available rapidly for proof of concepts and development and non-sensitive data lab environments.
 
-No specific lab exist for this segment, however this environment provides an example of ROSA deployed instance of RHOAI if your interested in understanding ROSA from a customer point of view.
+No specific lab exists for this segment, however this environment provides an example of ROSA deployed instances of RHOAI if your interested in understanding ROSA from a customer point of view.
 
  * https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod[This workshop creates Base RHODS environment on ROSA cluster. You can use this base environment for creating and running RHODS related use cases on ROSA.]
 
