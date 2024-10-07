@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Red Hat OpenShift on AWS  (ROSA) :: Generative AI across HyperScalers with OpenShift AI</title>
+    <link rel="prev" href="../chapter1/section4.html">
+    <link rel="next" href="section1.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Generative AI across HyperScalers with OpenShift AI</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rhoai-hyperscaler-intermix" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">Dashboard RHOAI Creation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">MultiCloud OpenShift</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/section4.html">OpenShift and OpenShift AI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Red Hat OpenShift on AWS  (ROSA)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section2.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="section3.html">AWS AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter3/index.html">Microsoft Azure Red Hat OpenShift (ARO)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section1.html">Section 1</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section2.html">Section 2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/section3.html">Azure AI Services</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Generative AI across HyperScalers with OpenShift AI</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Generative AI across HyperScalers with OpenShift AI</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Generative AI across HyperScalers with OpenShift AI</a></li>
+    <li><a href="index.html">Red Hat OpenShift on AWS  (ROSA)</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Red Hat OpenShift on AWS  (ROSA)</h1>
+<div class="paragraph">
+<p>In this section, we cover  AWS</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Introduction to OpenShift AI on Public Cloud Infrastructure and Hyperscalers</strong> Begin with an overview of OpenShift AI in Public Cloud Infrastructure and Hyperscalers, its benefits, and the importance of using open-source resources to avoid vendor lock-in. Emphasize the concept of using a managed environment like Red Hat OpenShift on AWS for deploying and managing AI solutions.</p>
+</li>
+<li>
+<p><strong>Defining the Business Scenario</strong> Introduce the business scenario where Rosa, an AI solution, needs to be deployed near end-users in a specific region. Explain the objectives of the scenario, such as validating the solution&#8217;s performance, cost-effectiveness, and scalability before implementing it in a production environment.</p>
+</li>
+<li>
+<p><strong>Designing and Procuring the Environment</strong> Describe the process of designing and procuring the environment for deploying Rosa on AWS. This includes selecting the appropriate AWS services, configuring worker pools, and setting up monitoring, logging, and performance management tools.</p>
+</li>
+<li>
+<p><strong>Conclusion and Future Learning</strong> Summarize the key takeaways from the lesson and encourage learners to explore additional resources and technologies related to OpenShift AI on Public Cloud Infrastructure and Hyperscalers. Emphasize the importance of continuous learning and improvement in the ever-evolving field of AI and cloud computing.</p>
+</li>
+<li>
+<p><strong>Evaluating Cost and Scalability</strong>: Discuss the cost implications of deploying Rosa on AWS, including the costs associated with running the environment, implementing load tests, and scaling resources up or down as needed. Explore the trade-offs between using managed services and building custom solutions, and discuss the importance of choosing the right approach for each use case.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>By following this framework, learners will gain a deeper understanding of how to design, implement, and manage AI solutions using OpenShift AI on Public Cloud Infrastructure and Hyperscalers, while also evaluating the trade-offs between using managed services and building custom solutions.</p>
+</div>
+<div class="paragraph">
+<p>AWS MarketPlace - ease of ordering  on the fly</p>
+</div>
+<div class="paragraph">
+<p>Environments Rosa on AWS and then use that environment to deploy an AI solution that was located near end users in a certain region and evaluate the trade-offs of managing these Services in-house versus using a Marketplace style deployment let&#8217;s say they needed to develop a POC a proof of concept that validated the solution worked and solved a specific problem before putting the problem in place so basically building a beta or Alpha environment that would then be used to validate could be spun down and different environments could be spun up as multiple Solutions</p>
+</div>
+<div class="paragraph">
+<p>in addition to this scenario of deploying that the customer could also be evaluating the performance against hosting it and something like sagemaker versus hosting it and a managed environment which technically sagemaker would be similar to but what are the comparisons and difference and features that are truly given to the user and how does the learner evaluate the difference between the two so could we link directly to the documentation pages and let them do their own research but facilitate the research</p>
+</div>
+<div class="paragraph">
+<p>Beyond instantiating the cluster determining the size of the worker pools based on the AI model being deployed memory or with a GPU and then focus on you know establishing monitoring and logging and performance and all the other pieces that go along with it all as small separate components since this is specific to AWS we could use cloudwatch in some of the other monitoring tools specific to the provider versus trying to set up Prometheus which may align better with for some customers and not so much with others and so there could be multiple again Solutions with how the monitoring logging was provided but basically you know during this POC test out all the components that will be used in a production environment or needed in a production environment for full life cycle management</p>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../chapter1/section4.html">OpenShift and OpenShift AI</a></span>
+  <span class="next"><a href="section1.html">Section 1</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
