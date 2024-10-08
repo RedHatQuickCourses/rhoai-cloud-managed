@@ -1,21 +1,25 @@
 = AWS AI Services
 
-[NOTE]
- move to chapter 2 under AWS
+This sections provides an overview of the AI / ML services available natively from AWS.
+The goal of this section is provide or showcase the features and capabilities in order to understand how these features can be recreated within or used adjacently to OpenShift AI for customer support. 
 
-https://aws.amazon.com/ai/generative-ai/services/ [AWS AI Website, window=blank]
+For more details on these services you can use the links below.
 
-https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork]
+ * https://aws.amazon.com/ai/generative-ai/services/[AWS AI Website, window=blank]
+
+ * https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork]
 
 == SageMaker
 
 Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows
 
-Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more – all in one integrated development environment (IDE). SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own FMs, large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
+Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more – all in one integrated development environment (IDE). 
 
-Sage Maker Studio
+SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own FMs, large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. 
 
-varity of model providers
+SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
+
+Sage Maker Studio is the dashboard product used to interact with this Cloud Service and access machine learning mdoels from a varity of model providers.
 
 
 == Bedrock

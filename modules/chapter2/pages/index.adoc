@@ -1,6 +1,13 @@
-= Red Hat OpenShift on AWS  (ROSA)
+= Red Hat OpenShift on AWS 
 
-In this section, we cover  AWS
+== AWS MarketPlace Product Overview - Red Hat OpenShift AI
+
+Red Hat OpenShift AI enables companies to solve critical business challenges by providing a fully managed cloud service environment based-on the Red Hat OpenShift Service on AWS. Red Hat OpenShift AI allows organizations to quickly build and deploy artificial intelligence (AI)/ML models by integrating open-source applications with commercial partner technology.
+
+'''
+
+
+Red Hat OpenShift AI is an easy-to-configure cloud service that provides a powerful platform for building AI/ML models and applications. It combines the self-service data scientists and developers want with the confidence enterprise IT demands into one common platform. Common tooling, such as Jupyter notebooks and associated TensorFlow and Pytorch frameworks, are an add-on to Red Hat OpenShift Service on AWS, an application platform cloud service powered by Kubernetes and co-managed by Red Hat and Amazon.
 
 
 1. **Introduction to OpenShift AI on Public Cloud Infrastructure and Hyperscalers** Begin with an overview of OpenShift AI in Public Cloud Infrastructure and Hyperscalers, its benefits, and the importance of using open-source resources to avoid vendor lock-in. Emphasize the concept of using a managed environment like Red Hat OpenShift on AWS for deploying and managing AI solutions.

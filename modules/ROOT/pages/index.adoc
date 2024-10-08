@@ -111,4 +111,5 @@ This course assumes that you have the following prior experience:
 * Experience with navigating cloud provider dashboards (consoles) and service offerings
 * Understanding of Cloud Provider Marketplace & Solution purchasing / accounts / billing / subscriptions
 * Knowledge of Kubernetes which is the underlying technology of OpenShift and OpenShift AI
+* https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D57857936[The *OpenShift Cloud Services Opportunity* course in the Red Hat LMS]
 
