@@ -1,11 +1,16 @@
 = OpenShift (AI) on AWS
-
-[NOTE]
- move to chapter 2 under AWS
  
 For OpenShift AI Cloud Services the environments are managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components. 
 
-== Deployment Options
+== Managed Offering Benefits
+
+The OpenShift AI Cloud Services is a fully managed service, enabling customers to spin up OpenShift AI environments on cloud platforms enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common tool set across clouds for Generative and Predictive AI application and solution development solves the gap of need to be an openshift customer.  Customers can experience OpenShift AI features available rapidly for proof of concepts and development and non-sensitive data lab environments.
+
+No specific lab exists for this segment, however this environment provides an example of ROSA deployed instances of RHOAI if your interested in understanding ROSA from a customer point of view.
+
+ * https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod[This workshop creates Base RHODS environment on ROSA cluster.] You can use this base environment for creating and running RHODS related use cases on ROSA.
+
+== OpenShift Cloud Service on AWS
 
 There two types of options available for purchase of Red Hat OpenShift AI (RHOAI):
 
@@ -19,7 +24,7 @@ For more information on the RHOAI components their current support phase and the
  
 == Red Hat OpenShift Service on AWS 
 
-There are two available Cloud Service options available, with the main difference being the AWS account where the services are located. 
+There are two available Cloud Service options, with the main difference being the AWS account where the services are located. 
 
 === Option 1: 
 
@@ -39,9 +44,9 @@ For ROSA Classic, get a subscription through the AWS Marketplace.  You subscribe
 
 image::rosa_install.png[width=600]
 
-=== Option 3 - Maybe?: 
+=== Option 3 - Hybrid : 
 
-Is it possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services?
+It maybe possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services.
 
 ==== Red Hat OpenShift Service on AWS (ROSA) with Hosted Control Plane
  
@@ -51,21 +56,9 @@ Hosting and management of the control plane is accomplished using resources (inf
 
 [WARNING]
 ====
-OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers on ROSA with HCP.  Install OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator and then configuring the Operator to manage standalone components of the product.
+OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers on ROSA with HCP.  Purchase the OpenShift AI Add-on and then install OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator.
 
-
-This includes support for RHOAI self-managed on managed OpenShift offerings such as OpenShift Dedicated, Red Hat OpenShift Service on AWS (ROSA), ROSA with hosted control planes, and Microsoft Azure Red Hat OpenShift. Currently, RHOAI Self-Managed is not supported on OpenShift running on other architectures (for example: ARM, IBM Power, IBM Z), and on other platforms such as OpenShift Kubernetes Engine, single node OpenShift, and MicroShift.
-For a full overview of the RHOAI Self-Managed life cycle and the currently supported releases, 
 ====
 
-== Managed Offering Benefits
-
-The OpenShift AI Cloud Services is a fully managed service, enabling customers to spin up OpenShift AI environments on cloud platforms enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common tool set across clouds for Generative and Predictive AI application and solution development solves the gap of need to be an openshift customer.  Customers can experience OpenShift AI features available rapidly for proof of concepts and development and non-sensitive data lab environments.
-
-No specific lab exists for this segment, however this environment provides an example of ROSA deployed instances of RHOAI if your interested in understanding ROSA from a customer point of view.
-
- * https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod[This workshop creates Base RHODS environment on ROSA cluster. You can use this base environment for creating and running RHODS related use cases on ROSA.]
 
 Head to the next section to understand what AI services are accessible by deploying on AWS.
-
-

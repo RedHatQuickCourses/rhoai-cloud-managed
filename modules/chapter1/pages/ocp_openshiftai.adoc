@@ -1,0 +1,60 @@
+= OpenShift and OpenShift AI
+
+Red Hat OpenShift AI is a fully Red Hat managed cloud service that is available as an add-on to:
+
+ * Red Hat OpenShift Dedicated 
+ * Red Hat OpenShift Service on Amazon Web Services (ROSA Classic)
+ * Red Hat OpenShift on Azure (ARO) 
+
+[IMPORTANT]
+Both an OpenShift and OpenShift AI add-on subscriptions are required.
+
+
+=== OpenShift AI Add-on Requirements
+
+
+Installing OpenShift AI as a managed cloud service add-on involves the following high-level tasks:
+
+ * Confirm that your OpenShift cluster meets all requirements.
+ * Configure an identity provider for your OpenShift cluster.
+ * Add administrative users for your OpenShift cluster.
+ * Subscribe to the Red Hat OpenShift AI Add-on.
+
+For OpenShift Dedicated with a CCS for AWS or GCP, get a subscription through Red Hat.
+
+[NOTE]
+Customer Cloud Subscriptions (CCS) on AWS such as OpenShift Dedicated utilizes a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage clusters into a customer’s existing Amazon Web Service (AWS) account.
+
+An OpenShift Dedicated or ROSA cluster configuration that meets the following requirements:
+At least 2 worker nodes with at least 8 CPUs and 32 GiB RAM available for OpenShift AI to use when you install the Add-on. If this requirement is not met, the installation process fails to start and an error is displayed.
+
+When you create a new cluster, select m6a.2xlarge for the computer node instance type to satisfy the requirements.
+
+
+'''
+
+=== OpenShift AI Operator
+
+The Red Hat OpenShift AI Operator is a meta-operator that deploys and maintains all components and sub-operators that are part of OpenShift AI.
+
+When you install the Red Hat OpenShift AI operator add-on into an compatible OpenShift Container Platform (OCP) Cluster , the following new projects (namepsace) are created:
+
+ * The redhat-ods-operator project contains the Red Hat OpenShift AI Operator.
+ * The redhat-ods-applications project installs the dashboard and other required components of OpenShift AI.
+ * The redhat-ods-monitoring project contains services for monitoring and billing.
+ * The rhods-notebooks project is where notebook environments are deployed by default.
+
+Once installed and an OpenShift AI Data Science Cluster (DSC) is created, AI/ML Engineers, Data Scientist, Data Engineers, and IT & Operations can begin to use OpenShift AI as the central platform for AI application and model development. 
+
+AI Engineers and data scientists must create additional projects for the applications that will use your machine learning models.  These are created using OpenShift AI dashboard or OpenShift CLI to create a new data science project, which creates a new project within OpenShift.  
+
+'''
+
+=== Access to object storage
+
+Components of OpenShift AI require or can use S3-compatible object storage such as AWS S3, MinIO, Ceph, or IBM Cloud Storage. An object store is a data storage mechanism that enables users to access their data either as an object or as a file. The S3 API is the recognized standard for HTTP-based access to object storage services.
+
+
+[NOTE]
+You can also purchase Red Hat OpenShift AI as self-managed software. To purchase a new subscription, contact your Red Hat account manager. If you do not yet have an account manager, complete the form at https://www.redhat.com/en/contact to request one.
+
