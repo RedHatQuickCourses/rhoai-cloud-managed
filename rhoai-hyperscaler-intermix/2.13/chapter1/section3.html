@@ -68,7 +68,7 @@
     <a class="nav-link" href="index.html">MultiCloud OpenShift</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section4.html">OpenShift and OpenShift AI</a>
+    <a class="nav-link" href="ocp_openshiftai.html">OpenShift and OpenShift AI</a>
   </li>
 </ul>
   </li>
@@ -78,7 +78,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS  (ROSA)</a>
+    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter2/section1.html">Section 1</a>
@@ -178,6 +178,31 @@ This entire page should be hidden
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_openshift_ai_on_aws"><a class="anchor" href="#_openshift_ai_on_aws"></a>OpenShift AI on AWS</h3>
+<div class="paragraph">
+<p>For ROSA Classic, get a subscription through the AWS Marketplace.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install the Red Hat OpenShift AI Add-on.</p>
+</li>
+<li>
+<p>Access the OpenShift AI dashboard.</p>
+</li>
+<li>
+<p>Optionally, enable graphics processing units (GPUs) in OpenShift AI to ensure that your data scientists can use compute-heavy workloads in their models.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For an existing ROSA Classic cluster, you can get the compute node instance type by using this command:</p>
+</div>
+<div class="paragraph">
+<p>rosa list machinepools --cluster=cluster-name</p>
 </div>
 </div>
 <div class="sect2">
