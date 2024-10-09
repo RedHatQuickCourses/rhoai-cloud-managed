@@ -22,6 +22,9 @@ SageMaker offers access to hundreds of pretrained models, including publicly ava
 Sage Maker Studio is the dashboard product used to interact with this Cloud Service and access machine learning mdoels from a varity of model providers.
 
 
+image::aws_sagemaker_overview.gif[width=600]
+
+
 == Bedrock
 
 The easiest way to build and scale generative AI applications with foundation models

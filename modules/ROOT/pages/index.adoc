@@ -6,18 +6,16 @@ image::cloudservices_img.png[width=600]
 
 == Introduction
 
-This focuses on Red Hat OpenShift AI (RHOAI) running on Cloud Providers (Hyperscalers). 
+This course focuses on Red Hat OpenShift AI (RHOAI) running on Cloud Providers (Hyperscalers). 
 
-So grab a cushioned seat and let's discover the insider information you need to make informed decisions when considering Red Hat's OpenShift Cloud Service. 
+So grab a cushioned seat and let's discover the insider information you need to make informed decisions when considering Red Hat's OpenShift Cloud Service for your AI solutions.
 
 
 Waiting for hardware can take weeks or months, which is why obtaining an OpenShift AI Machine Learning Operations Platform (MLOps) in minutes can be a crucial component for unlocking the full potential of *Generative AI* for organizations on the move.
 
-As a bonus, the scalable OpenShift Container Platform (OCP) clusters support containerized workloads, virtual machines, and with OpenShift AI running on OCP, it becomes an MLOps platform for Generative and Predictive AI model development, deployment, and management that can span cloud providers. A true Multi-Cloud solution which includes cloud providers, on-premises, and a mix of the two.
+The scalable OpenShift Container Platform (OCP) clusters support containerized workloads, virtual machines, and with OpenShift AI running on OCP, it becomes an MLOps platform for Generative and Predictive AI model development, deployment, and management that can span cloud providers. A true Multi-Cloud solution which includes cloud providers, on-premises, and a mix of the two.
 
-We'll cover the facts that matter to provide you with an inclusive knowledge building experience that you can use to solve business problems.
-
-So what's included?
+We'll cover the elements that matter to provide you with an inclusive real world experience that you can use to solve business problems.
 
 
 == Why a course on OpenShift AI in the Cloud
@@ -35,6 +33,7 @@ Based on your feedback, we will consider splitting this course into two distinct
 OpenShift AI is also supported as a managed Cloud Services on IBM Cloud and Google Cloud Platforms. The consumption of OpenShift on these cloud providers is limited and therefore this course will solely focus on AWS and Azure hyperscalers. 
 ====
 
+So what's included?
 
 == Looking for a specific knowledge
 
