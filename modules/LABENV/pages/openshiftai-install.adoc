@@ -1,4 +1,4 @@
-= Dashboard RHOAI Creation
+= UI Deployment of Openshift AI
 
 Instructions for creating a Red Hat OpenShift AI environment using the Demo Hub Platform that is capable of running multiple LLMs, pipelines, Model Serving and performing just about every task that is possible with OpenShift AI without a GPU. 
 

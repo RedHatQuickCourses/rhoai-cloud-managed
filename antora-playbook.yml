@@ -1,6 +1,6 @@
 site:
-  title: Generative AI across HyperScalers with OpenShift AI
-  start_page: rhoai-hyperscaler-intermix::index.adoc
+  title: Red Hat AI on AWS Cloud
+  start_page: redhat-ai-on-aws::index.adoc
 
 content:
   sources:

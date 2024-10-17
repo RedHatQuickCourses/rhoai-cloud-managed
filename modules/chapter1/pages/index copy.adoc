@@ -1,4 +1,9 @@
-= Red Hat AI Platform
+= MultiCloud OpenShift
+
+video::-HN9gxjX9LM[youtube]
+
+[NOTE]
+Multicloud refers to using services from more than one public cloud provider at the same time. A multicloud environment allows your cloud environments to be private, public, or a combination of both.
 
 
 === Why Red Hat OpenShift cloud services?
@@ -39,3 +44,73 @@ When consuming infrastructure services in different clouds, Engineering teams mi
 In addition, as a managed service across cloud providers, it's deployed and managed by Red Hat and Partner teams allowing organizations to build apps rather than on infrastructure platforms. 
 
 Let's start with the OpenShift Container Platform cluster as it is the minimum required platform for OpenShift AI.
+
+
+'''
+
+The following charts show the hardware requirements for running the full InstructLab end-to-end workflow to customize the Granite student model. This includes: synthetic data generation (SDG), training, and evaluating a custom Granite model.
+
+
+*Amazon Web Service Instance Types*
+|===
+| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+ 
+| Nvidia
+| 8xA100
+| 320 GB
+| p4d.24xlarge
+| 3 TB
+ 
+| Nvidia
+| 8xH100
+| 640 GB
+| p4de.24xlarge
+| 3 TB
+
+| Nvidia
+| 8xH100
+| 640 GB
+| p5.48xlarge
+| 3 TB
+
+| Nvidia
+| 8xL40S
+| 384 GB
+| g6e.48xlarge
+| 3 TB
+
+ 
+|===
+
+The following charts display the minimum hardware requirements for inference serving a model on Red Hat Enterprise Linux AI.
+
+*Amazon Web Service Instance Types*
+|===
+| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+ 
+| Nvidia
+| A100
+| 40 GB
+| P4d series
+| 1 TB
+ 
+| Nvidia
+| H100
+| 80 GB
+| P5 series
+| 1 TB
+
+| Nvidia
+| L40S
+| 48 GB
+| G6e series
+| 1 TB
+
+| Nvidia
+| L4
+| 24 GB
+| G6 series
+| 1 TB
+
+ 
+|===

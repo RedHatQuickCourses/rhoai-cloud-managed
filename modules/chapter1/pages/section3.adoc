@@ -47,6 +47,8 @@ easy to build complete systems, make bills easier to undertsand.
 model marketplace - off the shelf models from cloud vendors.
 easier to deploy something that is hard to manage.
 
+                                                                                                                                   
+
 == TDB Above
 
 

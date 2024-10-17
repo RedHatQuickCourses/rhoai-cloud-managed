@@ -1,10 +1,9 @@
-name: rhoai-hyperscaler-intermix
-title: Generative AI across HyperScalers with OpenShift AI
+name: redhat-ai-on-aws
+title: Red Hat AI on AWS Cloud
 version: 2.13
 nav:
 - modules/ROOT/nav.adoc
 - modules/LABENV/nav.adoc
 - modules/chapter1/nav.adoc
 - modules/chapter2/nav.adoc
-- modules/chapter3/nav.adoc
 - modules/appendix/nav.adoc

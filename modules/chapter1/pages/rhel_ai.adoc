@@ -1,0 +1,116 @@
+= Red Hat Enterprise Linux AI 
+
+== Excerpt from RHEL AI Documentation
+
+Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai[For more detailed information, see the "InstructLab and RHEL AI" documentation section.]
+
+Red Hat Enterprise Linux AI allows you to do the following:
+
+ * Host an LLM and interact with the open source Granite family of Large Language Models (LLMs).
+ * Using the LAB method, create and add your own knowledge data in a Git repository and fine-tune a model with that data with minimal machine learning background.
+ * Interact with the model that has been fine-tuned with your data.
+
+Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This allows you to easily and efficiently build AI-based applications, including chatbots.
+
+'''
+
+==  RHEL AI on AWS
+
+Currently there is no managed service offering of RHEL AI on AWS, however it does support deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI was released in standalone course. This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommended RHEL AI to customers.
+
+=== Deploying RHEL AI on AWS
+
+Looking to get hands-on with RHEL AI on AWS, this quick course provides a detailed guide for deploying RHEL AI on AWS.
+
+https://redhatquickcourses.github.io/rhel-ai-aws/rhel-ai-aws/1/index.html[Deploying RHEL AI on AWS, window=blank]
+
+The overall objectives of this course include:
+
+* Create and configure a custom RHEL AI AMI image.
+* Upload the RHEL AI AMI to an AWS S3 bucket for storage and retrieval.
+* Provision AWS resources and deploy a fully functional RHEL AI instance.
+
+[NOTE]
+This above lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
+
+== RHEL AI Deployment Approaches on AWS
+
+
+There are two approaches to RHEL AI, using RHEL AI as solution for model inferencing (serving), which means to make the model available via API for consumption via business applications. 
+
+The second option is use RHEL AI to customize, fine-tune, or align the model to understand specific business knowledge in order to provide more accurate responses to the connecting application.
+
+
+=== RHEL AI Instance Options
+
+The following charts show the recommended hardware requirements for running the full InstructLab end-to-end workflow to customize the Granite student model. This includes: synthetic data generation (SDG), training, and evaluating a custom Granite model.
+
+*Amazon Web Service Instance Types*
+|===
+| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+ 
+| Nvidia
+| 8xA100
+| 320 GB
+| p4d.24xlarge
+| 3 TB
+ 
+| Nvidia
+| 8xH100
+| 640 GB
+| p4de.24xlarge
+| 3 TB
+
+| Nvidia
+| 8xH100
+| 640 GB
+| p5.48xlarge
+| 3 TB
+
+| Nvidia
+| 8xL40S
+| 384 GB
+| g6e.48xlarge
+| 3 TB
+
+ 
+|===
+
+The following charts display the minimum hardware requirements for inference serving a model on Red Hat Enterprise Linux AI.
+
+*Amazon Web Service Instance Types*
+|===
+| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+ 
+| Nvidia
+| A100
+| 40 GB
+| P4d series
+| 1 TB
+ 
+| Nvidia
+| H100
+| 80 GB
+| P5 series
+| 1 TB
+
+| Nvidia
+| L40S
+| 48 GB
+| G6e series
+| 1 TB
+
+| Nvidia
+| L4
+| 24 GB
+| G6 series
+| 1 TB
+
+ 
+|===
+
+
+
+'''
+
+

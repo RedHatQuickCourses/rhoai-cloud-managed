@@ -10,19 +10,19 @@ They are already an AWS customer but are looking for an alterntive way to deploy
 
 == Introduction
 
-This course is intendted Red Hat Technical Sales, Solution Architects, Support and Services team members who are discussing Red Hat AI platform solutions with customers who utilize Cloud Services or have the flexibility to use cloud services to provision such environments.
+This course is intendted Red Hat Technical Sales, Solution Architects, Support and Services team members who are discussing Red Hat AI platform solutions with customers who utilize AWS cloud services or have the flexibility to use AWS cloud services to provision such environments.
 
-Waiting for hardware can take weeks or months, which is why obtaining an Red Hat AI Platforms from Cloud provider, AWS specifically in this course, in minutes can be a crucial component for unlocking the full potential of *Generative AI* or *Predictive AI* for organizations on the move.
+Waiting for hardware can take weeks or months, which is why obtaining an Red Hat AI Platforms from Cloud providers, AWS specifically in this course, in minutes can be a crucial component for unlocking the full potential of *Generative AI* or *Predictive AI* for organizations on the move.
 
-Utilizing on-demand cloud resources to evaluate models can avoid purchasing high-cost GPUs used for model training and inferencing, instead using on what is needed and shutting down reserach and deployment projects.
+Utilizing on-demand cloud resources to evaluate, experiment and fine tuen open-source  AI models can allow organizations to avoid purchasing high-cost GPUs used for model training and inferencing, instead using only what is needed and shutting down reserach and development projects when complete.
 
-This course will focus only on Red Hat AI solutions that can be instantiated on the AWS Cloud Provider.
+This course will focus only on Red Hat AI solutions that can be instantiated on the AWS Cloud Provider while reviewing the AWS AI Services that can be used in combination with Red Hat Services to provide an approach that avoid vendor lock in.
 
 For those not familiar with the Red Hat AI Platform, it  is made up of Red Hat Enterprise Linux AI ( RHEL AI ) and Red Hat OpenShift AI ( RHOAI ).
 
-RHEL AI is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscales and on premises providing a hybrid cloud experience utilzing a single platform for engineers and operations.
+RHEL AI is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilzing a single platform for engineers and operations.
 
-RHOAI - is fully scallable Machine Learning Opeations Platform( MLOps ) plaform that provides the ability to automate Data collection, processing and prepartion. Then automate model experimentation, training, and versioning, and finally serving models securely, and providing the infrastructue to run AI applciations.
+RHOAI - is fully scallable Machine Learning Opeations Platform( MLOps ) plaform that provides the ability to automate data collection, processing and prepartion. Then automate model experimentation, training, and versioning suing pipelines. Finally serving models securely, with OpenShift providing the infrastructue to run AI powered applciations.
 
 
 == Objectives
