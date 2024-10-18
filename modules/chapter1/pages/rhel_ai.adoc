@@ -16,7 +16,7 @@ Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This al
 
 ==  RHEL AI on AWS
 
-Currently there is no managed service offering of RHEL AI on AWS, however it does support deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI was released in standalone course. This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommended RHEL AI to customers.
+Currently there is no managed service offering of RHEL AI on AWS, however it does support deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI was released in a standalone course. This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommended RHEL AI to customers.
 
 === Deploying RHEL AI on AWS
 
@@ -31,12 +31,12 @@ The overall objectives of this course include:
 * Provision AWS resources and deploy a fully functional RHEL AI instance.
 
 [NOTE]
-This above lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
+This lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
 
 == RHEL AI Deployment Approaches on AWS
 
 
-There are two approaches to RHEL AI, using RHEL AI as solution for model inferencing (serving), which means to make the model available via API for consumption via business applications. 
+There are two approaches to RHEL AI, using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications. 
 
 The second option is use RHEL AI to customize, fine-tune, or align the model to understand specific business knowledge in order to provide more accurate responses to the connecting application.
 

@@ -29,20 +29,20 @@ Ability to support customer owned systems across hybrid cloud footprints for con
 
 Cloud Providers incentive is to make it easy to consume more resources
 
-ways they do this...democratize access to mathethematics - why haven't we made this easier to understand.
+ways they do this...democratize access to mathematics - why haven't we made this easier to understand.
 
 clever to make complex problems simple.
 
-collaboration across teams - incitives to unite to provide an unified system that is easy to maintain. 
+collaboration across teams - incentives to unite to provide a unified system that is easy to maintain. 
 
 hardware cost moving back to on-prem.
 
 run a bunch of experiments at the same time.
 - automatic machine learning tooling, test multiple models against your problem statement.
 
-really easy to consume more resources...
+It's really easy to consume more resources...
 
-easy to build complete systems, make bills easier to undertsand.
+easy to build complete systems, make bills easier to understand.
 
 model marketplace - off the shelf models from cloud vendors.
 easier to deploy something that is hard to manage.
