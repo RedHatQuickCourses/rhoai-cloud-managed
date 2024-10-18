@@ -1,6 +1,7 @@
 = Red Hat AI Platform
 
 
+
 === Why Red Hat OpenShift cloud services?
 
 This section provides a curated set of descriptions that describe the benefits of Red Hat's OpenShift managed cloud service.
