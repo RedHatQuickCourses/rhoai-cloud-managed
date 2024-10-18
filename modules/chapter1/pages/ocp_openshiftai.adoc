@@ -1,13 +1,57 @@
-= OpenShift and OpenShift AI
+= Red Hat AI Deployment Options on AWS
 
-Red Hat OpenShift AI is a fully Red Hat managed cloud service that is available as an add-on to:
+== Objectives
 
- * Red Hat OpenShift Dedicated 
- * Red Hat OpenShift Service on Amazon Web Services (ROSA Classic)
- * Red Hat OpenShift on Azure (ARO) 
+ * Identify Red Hat’s AI platforms that comprise Red Hat AI.
+ * Describe how AWS Cloud Deployment can simplify Red Hat AI Adoption
+ * Understand how to Deploy Red Hat AI Solutions on AWS
+ * Explain the customer challenges that RHOAI Cloud Service can address.
+
+
+== Red Hat AI Platform
+
+Red Hat AI Platform includes both RHEL AI and OpenShift AI. While RHEL AI can be installed without any dependencies, RHOAI is an add-on feature set to OpenShift Container Platform clusters. 
+
+RHEL AI is specially designed for open-source Generative AI model fine tuning and inference.
+
+OpenShift AI is a fully functional MLOPs platform which is capable of providing life cycle management for both predictive and generative AI solutions.
+
+Depending on an organization's maturity in AI model powered application development, both solutions provide entry points into AI solutions with RHEL AI focus on those earlier in the journey, and OpenShift AI focused on solving the enterprise multi AI model production applications at scale.
+
+While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud providers and on-premises environments known as a disconnected or air-gapped environment known as Private AI.
+
+As mentioned this course focuses on Red Hat AI on AWS Cloud, so let's learn about the benefits of  OpenShift AI Cloud Service on AWS.
+
+
+== OpenShift AI on AWS as a managed offering
+
+A managed service shifts the burden of managing the infrastructure and platform software to your service, allowing teams to focus on building and supporting the applications that move the needle for the business rather than support the infrastructure.
+
+Think of this as spending time to build the factory or using the factory to produce the goods and services to be sold.  Which provides more value to the business.
+
+Easy to configure via DevOps CI/CD practices or allow teams to self-service RHOAI resources via the included user dashboard. 
+
+==  TBD
+
+Red Hat OpenShift AI is available as a fully Red Hat and AWS co-managed cloud service that is available as an add-on to:
+
+ * Red Hat OpenShift Dedicated on AWS
+ * Red Hat OpenShift Service on AWS (ROSA Classic)
 
 [IMPORTANT]
-Both an OpenShift and OpenShift AI add-on subscriptions are required.
+Both OpenShift and OpenShift AI add-on subscriptions are required.
+
+
+=== Estimated pricing may vary per region and machine type.
+
+OpenShift AI Add-on .022 per hour per 4vCPUs allocated.
++
+OpenShift Container Cluster Platform ; $0.33/hr
+OpenShift Container Cluster Platform Plus;  $0.41/hr
+
+
+
+
 
 
 === OpenShift AI Add-on Requirements
@@ -20,7 +64,7 @@ Installing OpenShift AI as a managed cloud service add-on involves the following
  * Add administrative users for your OpenShift cluster.
  * Subscribe to the Red Hat OpenShift AI Add-on.
 
-For OpenShift Dedicated with a CCS for AWS or GCP, get a subscription through Red Hat.
+For OpenShift Dedicated with a CCS for AWS get a subscription through Red Hat.
 
 [NOTE]
 Customer Cloud Subscriptions (CCS) on AWS such as OpenShift Dedicated utilizes a Customer Cloud Subscription (CCS) model that allows Red Hat to deploy and manage clusters into a customer’s existing Amazon Web Service (AWS) account.
@@ -32,27 +76,6 @@ When you create a new cluster, select m6a.2xlarge for the computer node instance
 
 
 '''
-
-=== OpenShift AI Operator
-
-The Red Hat OpenShift AI Operator is a meta-operator that deploys and maintains all components and sub-operators that are part of OpenShift AI.
-
-When you install the Red Hat OpenShift AI operator add-on into an compatible OpenShift Container Platform (OCP) Cluster , the following new projects (namepsace) are created:
-
- * The redhat-ods-operator project contains the Red Hat OpenShift AI Operator.
- * The redhat-ods-applications project installs the dashboard and other required components of OpenShift AI.
- * The redhat-ods-monitoring project contains services for monitoring and billing.
- * The rhods-notebooks project is where notebook environments are deployed by default.
-
-Once installed and an OpenShift AI Data Science Cluster (DSC) is created, AI/ML Engineers, Data Scientist, Data Engineers, and IT & Operations can begin to use OpenShift AI as the central platform for AI application and model development. 
-
-AI Engineers and data scientists must create additional projects for the applications that will use your machine learning models.  These are created using OpenShift AI dashboard or OpenShift CLI to create a new data science project, which creates a new project within OpenShift.  
-
-'''
-
-=== Access to object storage
-
-Components of OpenShift AI require or can use S3-compatible object storage such as AWS S3, MinIO, Ceph, or IBM Cloud Storage. An object store is a data storage mechanism that enables users to access their data either as an object or as a file. The S3 API is the recognized standard for HTTP-based access to object storage services.
 
 
 [NOTE]

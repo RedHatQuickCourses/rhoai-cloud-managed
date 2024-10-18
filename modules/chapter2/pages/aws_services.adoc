@@ -1,0 +1,20 @@
+= AWS AI Services
+
+== 
+
+Combine AWS Services with Red Hat AI Platforms can provides customers with the rapidly provisioned, infanantly scalable 
+
+
+The AI market, currently dominated by proprietary and cloud providers, presents opportunities over the next several years for open source, AI-enabled platforms and models. 
+
+AWS currently has the biggest market share of all cloud providers.  This pairs well with the fact that Red Hat Products available on AWS before most other cloud providers.
+
+This is because of the popurlarity of AWS and for the large number of services they provide.
+
+Let's take a high level overview of AWS AI Services that directly compare to OpenShift AI , AWS Sagemaker, and Bedrock which aligns with RHEL AI.
+
+Let's also take a quick look at the AI machine resources that can be used to power OpenShift AI and RHEL AI as infrastructure that runs Red Hat Software.
+
+
+
+

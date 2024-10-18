@@ -1,24 +1,16 @@
-= Red Hat Documentation
+= Red Hat Documentation Reference
 
-Learn by browsing various components of documentation to obtain specific knowledge about an action or setting. This section contains a few documentation options for working with *OpenShift AI* from the perspective of a few of the common user personas. Below are the personas available:
- 
- * ML OPs Engineer and Data Scientists
- * IT Operation administrators
- * OpenShift AI administrators
+This section includes links to documentation reference for OpenShift AI and RHEL AI in that order. 
 
+== Red Hat OpenShift AI Cloud Service
 
-==== Red Hat OpenShift AI Cloud Service Main Dashboard
+Red Hat OpenShift AI Cloud Service Main Dashboard
 
 * https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1[Red Hat OpenShift AI Cloud Service Documentation, window=blank]
 
-==== Guidance on how to work in OpenShift AI
+== Red Hat Enterprise Linux AI 1.2 Documentation
 
- * https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1#Documentation%20for%20ML%20Ops%20Engineers%20and%20Data%20Scientists[Documentation for ML Ops Engineers and Data Scientists, window=blank]
+Red Hat Enterprise Linux AI is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. For more detailed information about InstructLab, see the "InstructLab and RHEL AI" section.
 
-==== Guidance on installing and maintaining OpenShift AI for IT Operations administrators.
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2[Red Hat Enterprise Linux AI 1.2, window =blank]
 
- * https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1#Documentation%20for%20IT%20Operations%20administrators[Documentation for IT Operations administrators, window=blank]
-
-==== Guidance for RHOAI administrators on managing OpenShift AI
-
- * https://docs.redhat.com/en/documentation/red_hat_openshift_ai_cloud_service/1#Documentation%20for%20OpenShift%20AI%20administrators[Documentation for OpenShift AI administrators, window=blank]

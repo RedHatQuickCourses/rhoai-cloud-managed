@@ -1,4 +1,4 @@
-= Dashboard RHOAI Creation
+= UI Deployment of Openshift AI
 
 Instructions for creating a Red Hat OpenShift AI environment using the Demo Hub Platform that is capable of running multiple LLMs, pipelines, Model Serving and performing just about every task that is possible with OpenShift AI without a GPU. 
 
@@ -26,7 +26,7 @@ When ordering this catalog item in RHDP:
 
   . Click order
 
-For Red Hat partners who do not have access to RHDP, you need to provision an OpenShift AI cluster on-premises, or in the supported cloud environments by following the product documentation at https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.12/html/installing_and_uninstalling_openshift_ai_self-managed/index[Product Documentation for installing Red Hat OpenShift AI 2.12].
+For Red Hat partners who do not have access to RHDP, you need to provision an OpenShift AI cluster on-premises, or in the supported cloud environments by following the product documentation at https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.13[Product Documentation for installing Red Hat OpenShift AI 2.13, window=blank].
 
 The OCP environment will provide the foundation infrastructure for Red Hat OpenShift AI (RHOAI). Once logged into the OCP dashboard, we need to install the Operators to enable RHOAI components in the OCP platform.
 

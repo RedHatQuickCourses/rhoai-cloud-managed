@@ -13,6 +13,8 @@ image::aws_rhoai_marketplace.gif[width=600]
 
 Red Hat OpenShift AI is an easy-to-configure cloud service that provides a powerful platform for building AI/ML models and applications. It combines the self-service data scientists and developers want with the confidence enterprise IT demands into one common platform. Common tooling, such as Jupyter notebooks and associated TensorFlow and Pytorch frameworks, are an add-on to Red Hat OpenShift Service on AWS, an application platform cloud service powered by Kubernetes and co-managed by Red Hat and Amazon.
 
+image::aws_rhocp_marketplace.gif[width=600]
+
 
 //. **Introduction to OpenShift AI on Public Cloud Infrastructure and Hyperscalers** Begin with an overview of OpenShift AI in Public Cloud Infrastructure and Hyperscalers, its benefits, and the importance of using open-source resources to avoid vendor lock-in. Emphasize the concept of using a managed environment like Red Hat OpenShift on AWS for deploying and managing AI solutions.
 
@@ -29,13 +31,13 @@ Red Hat OpenShift AI is an easy-to-configure cloud service that provides a power
 
 
 
-AWS MarketPlace - ease of ordering  on the fly
+//AWS MarketPlace
 
-Environments Rosa on AWS and then use that environment to deploy an AI solution that was located near end users in a certain region and evaluate the trade-offs of managing these Services in-house versus using a Marketplace style deployment let's say they needed to develop a POC a proof of concept that validated the solution worked and solved a specific problem before putting the problem in place so basically building a beta or Alpha environment that would then be used to validate could be spun down and different environments could be spun up as multiple Solutions
+//Environments Rosa on AWS and then use that environment to deploy an AI solution that was located near end users in a certain region and evaluate the trade-offs of managing these Services in-house versus using a Marketplace style deployment let's say they needed to develop a POC a proof of concept that validated the solution worked and solved a specific problem before putting the problem in place so basically building a beta or Alpha environment that would then be used to validate could be spun down and different environments could be spun up as multiple Solutions
 
-in addition to this scenario of deploying that the customer could also be evaluating the performance against hosting it and something like sagemaker versus hosting it and a managed environment which technically sagemaker would be similar to but what are the comparisons and difference and features that are truly given to the user and how does the learner evaluate the difference between the two so could we link directly to the documentation pages and let them do their own research but facilitate the research
+//n addition to this scenario of deploying that the customer could also be evaluating the performance against hosting it and something like sagemaker versus hosting it and a managed environment which technically sagemaker would be similar to but what are the comparisons and difference and features that are truly given to the user and how does the learner evaluate the difference between the two so could we link directly to the documentation pages and let them do their own research but facilitate the research
 
 
-Beyond instantiating the cluster determining the size of the worker pools based on the AI model being deployed memory or with a GPU and then focus on you know establishing monitoring and logging and performance and all the other pieces that go along with it all as small separate components since this is specific to AWS we could use cloudwatch in some of the other monitoring tools specific to the provider versus trying to set up Prometheus which may align better with for some customers and not so much with others and so there could be multiple again Solutions with how the monitoring logging was provided but basically you know during this POC test out all the components that will be used in a production environment or needed in a production environment for full life cycle management 
+//Beyond instantiating the cluster determining the size of the worker pools based on the AI model being deployed memory or with a GPU and then focus on you know establishing monitoring and logging and performance and all the other pieces that go along with it all as small separate components since this is specific to AWS we could use cloudwatch in some of the other monitoring tools specific to the provider versus trying to set up Prometheus which may align better with for some customers and not so much with others and so there could be multiple again Solutions with how the monitoring logging was provided but basically you know during this POC test out all the components that will be used in a production environment or needed in a production environment for full life cycle management 
 
 
