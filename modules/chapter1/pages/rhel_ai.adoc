@@ -20,7 +20,7 @@ Currently there is no managed service offering of RHEL AI on AWS, however it doe
 
 === Deploying RHEL AI on AWS
 
-Looking to get hands-on with RHEL AI on AWS, this quick course provides a detailed guide for deploying RHEL AI on AWS.
+Get hands-on experience deploying RHEL AI on AWS. This quick course provides a detailed guide for deploying RHEL AI on AWS.
 
 https://redhatquickcourses.github.io/rhel-ai-aws/rhel-ai-aws/1/index.html[Deploying RHEL AI on AWS, window=blank]
 
@@ -39,6 +39,10 @@ This lab is available in the LMS, so if you complete the lab please launch the c
 There are two approaches to RHEL AI, using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications. 
 
 The second option is use RHEL AI to customize, fine-tune, or align the model to understand specific business knowledge in order to provide more accurate responses to the connecting application.
+
+A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application. 
+
+running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significally less than the model training specifications.
 
 
 === RHEL AI Instance Options
@@ -106,9 +110,9 @@ The following charts display the minimum hardware requirements for inference ser
 | G6 series
 | 1 TB
 
- 
 |===
 
+Selecting instance types can be calculated based on the size of the model that is loaded into memory.  A good rule of thumb is 1.2x the model size is the amount of memory to provide. Another possible calcuation is to double the number of parameters.  A 13B parameters model is recommended to have at least 26GB of GPU memory available.
 
 
 '''

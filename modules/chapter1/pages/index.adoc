@@ -4,55 +4,8 @@
 For those not familiar with the Red Hat AI Platform, it is made up of:
 
  * Red Hat Enterprise Linux AI (RHEL AI)
- * Red Hat OpenShift AI (RHOAI).
+ * Red Hat OpenShift AI (RHOAI)
 
-RHEL AI is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilizing a single platform for engineers and operations.
+*RHEL AI* is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilizing a single platform for engineers and operations.
 
-RHOAI - is a fully scalable Machine Learning Operations Platform (MLOps) platform that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally serving models securely, with OpenShift providing the infrastructure to run AI powered applications.
-
-[WARNING]
-REMOVED THE TEXT BELOW THIS AREA
-
-== Why Red Hat OpenShift cloud services?
-
-This section provides a curated set of descriptions that describe the benefits of Red Hat's OpenShift managed cloud service.
-
-'''
-
-Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multicloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.   
-
-*If an organization needs to get started quickly and would like to offload the ongoing management of their application platform, Red Hat OpenShift Cloud Services provides an ideal solution.*
-
-
-'''
-
-==== Turnkey application platform: 
-
-A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.
-
-'''
-
-==== Cloud native solutions with leading cloud providers:
-
-Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services. 
-
-'''
-
-==== Consistent hybrid cloud experience:
-
-Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.
-
-'''
-
-= MultiCloud OpenShift
-
-video::-HN9gxjX9LM[youtube]
-
-[NOTE]
-Multicloud refers to using services from more than one public cloud provider at the same time. A multicloud environment allows your cloud environments to be private, public, or a combination of both.
-
-When consuming infrastructure services in different clouds, Engineering teams might have to learn a multitude of software (tools) for each cloud provider and on-premise environments. Using OpenShift across multiple cloud environments, allows developers to utilize OpenShift as a single solution (toolset) across clouds.
-
-In addition, as a managed service across cloud providers, it's deployed and managed by Red Hat and Partner teams allowing organizations to build apps rather than on infrastructure platforms. 
-
-Let's start with the OpenShift Container Platform cluster as it is the minimum required platform for OpenShift AI.
+*RHOAI* - is a fully scalable Machine Learning Operations Platform (MLOps) platform that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally serving models securely, with OpenShift providing the infrastructure to run AI powered applications.
