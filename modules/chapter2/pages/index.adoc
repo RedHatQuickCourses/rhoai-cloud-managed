@@ -1,4 +1,4 @@
-= Red Hat OpenShift on AWS 
+= AWS AI Services
 
 == AWS MarketPlace Product Overview - Red Hat OpenShift AI
 

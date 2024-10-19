@@ -1,4 +1,4 @@
-= Red Hat AI Deployment Options on AWS
+= Red Hat AI Platform Features
 
 == Objectives
 
@@ -9,7 +9,7 @@
 
 == Red Hat AI Platform
 
-The Red Hat AI platform includes RHEL AI and OpenShift AI which will be delivered as an integrated solution
+The Red Hat AI platform includes RHEL AI and OpenShift AI which will be delivered as an integrated solution.
 
 While RHEL AI can be purchased and installed without any additional subscriptions, RHOAI is an add-on feature set which requires OpenShift Container Platform cluster subscription. 
 
@@ -30,7 +30,7 @@ OpenShift AI is a fully functional MLOPs platform which is capable of providing 
  . Includes Red Hat Enterprise Linux AI, including the Granite family models
 
 
-Depending on an organization's maturity in AI model powered application development, both solutions provide entry points into AI solutions with RHEL AI focusing on those earlier in the journey, and OpenShift AI focused on solving the entire lifecycle of enterprise multi-AI model application development all way though model model montioring and maintenance in production.
+Depending on an organization's maturity in AI model powered application development, both solutions provide entry points into AI solutions with RHEL AI focusing on those earlier in the journey. OpenShift AI focuses on solving the entire lifecycle of enterprise multi-AI model application development all way though model model montioring and maintenance in production.
 
 While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud provider and on-premises environments including _disconnected or air-gapped environment which going forward will be known as  *Private AI*._
 
@@ -62,6 +62,11 @@ Red Hat OpenShift AI is available as a fully Red Hat and AWS co-managed cloud se
 
 [IMPORTANT]
 Both OpenShift and OpenShift AI add-on subscriptions are required.
+
+[NOTE]
+You can also purchase Red Hat OpenShift AI as self-managed software. To purchase a new subscription, contact your Red Hat account manager. If you do not yet have an account manager, complete the form at https://www.redhat.com/en/contact to request one.
+
+
 
 
 === Estimated pricing may vary per region and machine type.
@@ -102,3 +107,13 @@ When you create a new cluster, select m6a.2xlarge for the computer node instance
 [NOTE]
 You can also purchase Red Hat OpenShift AI as self-managed software. To purchase a new subscription, contact your Red Hat account manager. If you do not yet have an account manager, complete the form at https://www.redhat.com/en/contact to request one.
 
+
+== Customer challenges that RHOAI Cloud Service can address.
+
+Cloud Providers incentive is to make it easy to consume more resources.
+
+FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using hyperscaler services, into pilot and production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had highly variable and unpredictable costs.
+
+During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services.
+
+Ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift),

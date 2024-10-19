@@ -1,4 +1,4 @@
-= Red Hat Enterprise Linux AI 
+= RHEL AI on AWS
 
 == Excerpt from RHEL AI Documentation
 
@@ -11,6 +11,12 @@ Red Hat Enterprise Linux AI allows you to do the following:
  * Interact with the model that has been fine-tuned with your data.
 
 Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This allows you to easily and efficiently build AI-based applications, including chatbots.
+
+== Introduction RHEL AI Course
+
+New to RHEL AI, this ~15 minute course provides an detailed overview of the features, terms, and high level concepts of RHEL AI. 
+
+ https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
 
 '''
 
