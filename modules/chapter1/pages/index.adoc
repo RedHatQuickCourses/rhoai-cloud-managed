@@ -1,7 +1,7 @@
 = Red Hat AI Platform
 
 
-For those not familiar with the *Red Hat AI Platform or simply Red Hat AI*  it is made up of:
+For those not familiar with the *Red Hat AI Platform or simply Red Hat AI*,  it's comprised of:
 
  * Red Hat Enterprise Linux AI (RHEL AI)
  * Red Hat OpenShift AI (RHOAI)

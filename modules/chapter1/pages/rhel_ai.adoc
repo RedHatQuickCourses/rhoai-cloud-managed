@@ -14,9 +14,9 @@ Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This al
 
 == Introduction RHEL AI Course
 
-New to RHEL AI, this ~15 minute course provides an detailed overview of the features, terms, and high level concepts of RHEL AI. 
+If you are new to RHEL AI, this ~15 minute intermediate course provides an detailed overview of the features, terms, and high level concepts of RHEL AI. 
 
- https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
+https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
 
 '''
 
@@ -48,7 +48,7 @@ The second option is use RHEL AI to customize, fine-tune, or align the model to 
 
 A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application. 
 
-running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significally less than the model training specifications.
+Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significally less than the model training specifications.
 
 
 === RHEL AI Instance Options
@@ -118,7 +118,7 @@ The following charts display the minimum hardware requirements for inference ser
 
 |===
 
-Selecting instance types can be calculated based on the size of the model that is loaded into memory.  A good rule of thumb is 1.2x the model size is the amount of memory to provide. Another possible calcuation is to double the number of parameters.  A 13B parameters model is recommended to have at least 26GB of GPU memory available.
+Selecting instance types can be calculated based on the size of the model that is loaded into memory.  A good rule of thumb is to double the number of parameters.  A 13B parameters model is recommended to have at least 26GB of GPU memory available.
 
 
 '''
