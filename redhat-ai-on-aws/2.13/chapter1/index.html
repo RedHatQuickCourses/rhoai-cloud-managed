@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Red Hat AI Platform :: Red Hat AI on AWS Cloud</title>
-    <link rel="prev" href="../LABENV/hyperscaler_lab_env.html">
-    <link rel="next" href="ocp_openshiftai.html">
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="redhatai_overview.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -46,6 +46,57 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="redhatai_overview.html">Red Hat AI Platform Features</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
@@ -58,41 +109,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ocp_openshiftai.html">Red Hat AI Deployment Options on AWS</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section3.html">OpenShift and OpenShift AI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="rhel_ai.html">Red Hat Enterprise Linux AI</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section2.html">OpenShift (AI) on AWS</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section3.html">AWS AI Services</a>
   </li>
 </ul>
   </li>
@@ -150,10 +166,8 @@
 </aside>
 <article class="doc">
 <h1 class="page">Red Hat AI Platform</h1>
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph">
-<p>For those not familiar with the Red Hat AI Platform, it is made up of:</p>
+<p>For those not familiar with the <strong>Red Hat AI Platform or simply Red Hat AI</strong>,  it&#8217;s comprised of:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -161,97 +175,19 @@
 <p>Red Hat Enterprise Linux AI (RHEL AI)</p>
 </li>
 <li>
-<p>Red Hat OpenShift AI (RHOAI).</p>
+<p>Red Hat OpenShift AI (RHOAI)</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>RHEL AI is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilizing a single platform for engineers and operations.</p>
+<p><strong>RHEL AI</strong> is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilizing a single platform for engineers and operations.</p>
 </div>
 <div class="paragraph">
-<p>RHOAI - is a fully scalable Machine Learning Operations Platform (MLOps) platform that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally serving models securely, with OpenShift providing the infrastructure to run AI powered applications.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-REMOVED THE TEXT BELOW THIS AREA
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_why_red_hat_openshift_cloud_services"><a class="anchor" href="#_why_red_hat_openshift_cloud_services"></a>Why Red Hat OpenShift cloud services?</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section provides a curated set of descriptions that describe the benefits of Red Hat&#8217;s OpenShift managed cloud service.</p>
-</div>
-<hr>
-<div class="paragraph">
-<p>Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multicloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.</p>
-</div>
-<div class="paragraph">
-<p><strong>If an organization needs to get started quickly and would like to offload the ongoing management of their application platform, Red Hat OpenShift Cloud Services provides an ideal solution.</strong></p>
-</div>
-<hr>
-<div class="sect3">
-<h4 id="_turnkey_application_platform"><a class="anchor" href="#_turnkey_application_platform"></a>Turnkey application platform:</h4>
-<div class="paragraph">
-<p>A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.</p>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="_cloud_native_solutions_with_leading_cloud_providers"><a class="anchor" href="#_cloud_native_solutions_with_leading_cloud_providers"></a>Cloud native solutions with leading cloud providers:</h4>
-<div class="paragraph">
-<p>Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services.</p>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="_consistent_hybrid_cloud_experience"><a class="anchor" href="#_consistent_hybrid_cloud_experience"></a>Consistent hybrid cloud experience:</h4>
-<div class="paragraph">
-<p>Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.</p>
-</div>
-<hr>
-</div>
-</div>
-</div>
-<h1 id="_multicloud_openshift" class="sect0"><a class="anchor" href="#_multicloud_openshift"></a>MultiCloud OpenShift</h1>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/-HN9gxjX9LM?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Multicloud refers to using services from more than one public cloud provider at the same time. A multicloud environment allows your cloud environments to be private, public, or a combination of both.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>When consuming infrastructure services in different clouds, Engineering teams might have to learn a multitude of software (tools) for each cloud provider and on-premise environments. Using OpenShift across multiple cloud environments, allows developers to utilize OpenShift as a single solution (toolset) across clouds.</p>
-</div>
-<div class="paragraph">
-<p>In addition, as a managed service across cloud providers, it&#8217;s deployed and managed by Red Hat and Partner teams allowing organizations to build apps rather than on infrastructure platforms.</p>
-</div>
-<div class="paragraph">
-<p>Let&#8217;s start with the OpenShift Container Platform cluster as it is the minimum required platform for OpenShift AI.</p>
+<p><strong>RHOAI</strong> - is a fully scalable Machine Learning Operations Platform (MLOps) platform that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally serving models securely, with OpenShift providing the infrastructure to run AI powered applications.  A RHEL AI subscription is included with OpenShift AI.</p>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a></span>
-  <span class="next"><a href="ocp_openshiftai.html">Red Hat AI Deployment Options on AWS</a></span>
+  <span class="prev"><a href="../index.html">Home</a></span>
+  <span class="next"><a href="redhatai_overview.html">Red Hat AI Platform Features</a></span>
 </nav>
 </article>
   </div>

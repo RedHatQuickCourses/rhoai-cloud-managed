@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Red Hat Enterprise Linux AI :: Red Hat AI on AWS Cloud</title>
-    <link rel="prev" href="section3.html">
+    <title>RHEL AI on AWS :: Red Hat AI on AWS Cloud</title>
+    <link rel="prev" href="openshiftai_aws.html">
     <link rel="next" href="../chapter2/index.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -48,6 +48,57 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="redhatai_overview.html">Red Hat AI Platform Features</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -58,41 +109,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ocp_openshiftai.html">Red Hat AI Deployment Options on AWS</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section3.html">OpenShift and OpenShift AI</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="rhel_ai.html">Red Hat Enterprise Linux AI</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter2/index.html">Red Hat OpenShift on AWS</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section2.html">OpenShift (AI) on AWS</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/section3.html">AWS AI Services</a>
   </li>
 </ul>
   </li>
@@ -141,7 +157,8 @@
   <ul>
     <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
     <li><a href="index.html">Red Hat AI Platform</a></li>
-    <li><a href="rhel_ai.html">Red Hat Enterprise Linux AI</a></li>
+    <li><a href="redhatai_overview.html">Red Hat AI Platform Features</a></li>
+    <li><a href="rhel_ai.html">RHEL AI on AWS</a></li>
   </ul>
 </nav>
 </div>
@@ -150,7 +167,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Red Hat Enterprise Linux AI</h1>
+<h1 class="page">RHEL AI on AWS</h1>
 <div class="sect1">
 <h2 id="_excerpt_from_rhel_ai_documentation"><a class="anchor" href="#_excerpt_from_rhel_ai_documentation"></a>Excerpt from RHEL AI Documentation</h2>
 <div class="sectionbody">
@@ -176,6 +193,17 @@
 <div class="paragraph">
 <p>Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This allows you to easily and efficiently build AI-based applications, including chatbots.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction_rhel_ai_course"><a class="anchor" href="#_introduction_rhel_ai_course"></a>Introduction RHEL AI Course</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584" target="blank">Introduction to RHEL AI</a>, just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab</p>
+</div>
 <hr>
 </div>
 </div>
@@ -183,12 +211,15 @@
 <h2 id="_rhel_ai_on_aws"><a class="anchor" href="#_rhel_ai_on_aws"></a>RHEL AI on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Currently there is no managed service offering of RHEL AI on AWS, however it does support deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI was released in a standalone course. This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommended RHEL AI to customers.</p>
+<p>This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommending RHEL AI to customers.</p>
+</div>
+<div class="paragraph">
+<p>Currently there is no managed service offering of RHEL AI on AWS, however it does support self-managed deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI on AWS was released in a standalone course.</p>
 </div>
 <div class="sect2">
 <h3 id="_deploying_rhel_ai_on_aws"><a class="anchor" href="#_deploying_rhel_ai_on_aws"></a>Deploying RHEL AI on AWS</h3>
 <div class="paragraph">
-<p>Looking to get hands-on with RHEL AI on AWS, this quick course provides a detailed guide for deploying RHEL AI on AWS.</p>
+<p>Get hands-on experience deploying RHEL AI on AWS. This quick course provides a detailed guide for deploying RHEL AI on AWS.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://redhatquickcourses.github.io/rhel-ai-aws/rhel-ai-aws/1/index.html" target="blank">Deploying RHEL AI on AWS</a></p>
@@ -228,10 +259,26 @@ This lab is available in the LMS, so if you complete the lab please launch the c
 <h2 id="_rhel_ai_deployment_approaches_on_aws"><a class="anchor" href="#_rhel_ai_deployment_approaches_on_aws"></a>RHEL AI Deployment Approaches on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are two approaches to RHEL AI, using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications.</p>
+<p>There are two approaches to utilizing RHEL AI,</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications.</p>
+</li>
+<li>
+<p>The second option is use RHEL AI to customize, fine-tune, or align the model to specific business knowledge in order to provide more accurate responses to the connecting application.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>The second option is use RHEL AI to customize, fine-tune, or align the model to understand specific business knowledge in order to provide more accurate responses to the connecting application.</p>
+<p>A single RHEL AI server can perform both functions but it&#8217;s not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both services both consume Accelerator (GPU) memory resources.</p>
+</div>
+<div class="paragraph">
+<p>Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significantly less than the model training specifications.</p>
+</div>
+<div class="paragraph">
+<p>As you will notice, the requirements for full end-to-end workflow are significantly higher than for model inference.</p>
 </div>
 <div class="sect2">
 <h3 id="_rhel_ai_instance_options"><a class="anchor" href="#_rhel_ai_instance_options"></a>RHEL AI Instance Options</h3>
@@ -343,13 +390,31 @@ This lab is available in the LMS, so if you complete the lab please launch the c
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example, a 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.</p>
+</div>
 <hr>
+<div class="paragraph">
+<p>Summary</p>
+</div>
+<div class="paragraph">
+<p>For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both training jobs, and for inference purposes to power applications.</p>
+</div>
+<div class="paragraph">
+<p>Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model development tasks are needed.</p>
+</div>
+<div class="paragraph">
+<p>Considering the knowledge learned so far, our FictionCorp use case would benefit from starting with a single RHEL AI instance powering the AI solution. This would be the cost effective approach to running the AI model needed to power the chatbot application.</p>
+</div>
+<div class="paragraph">
+<p>While OpenShift AI Cloud Services would provide a full service environment, the overhead platform is more than needed for proof of concept.</p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="section3.html">OpenShift and OpenShift AI</a></span>
-  <span class="next"><a href="../chapter2/index.html">Red Hat OpenShift on AWS</a></span>
+  <span class="prev"><a href="openshiftai_aws.html">OpenShift (AI) on AWS</a></span>
+  <span class="next"><a href="../chapter2/index.html">AWS AI Services</a></span>
 </nav>
 </article>
   </div>
