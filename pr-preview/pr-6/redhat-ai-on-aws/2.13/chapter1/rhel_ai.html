@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RHEL AI on AWS :: Red Hat AI on AWS Cloud</title>
+    <link rel="prev" href="openshiftai_aws.html">
+    <link rel="next" href="../chapter2/index.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Red Hat AI on AWS Cloud</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="redhat-ai-on-aws" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Red Hat AI on AWS Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="redhatai_overview.html">Red Hat AI Platform Features</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Red Hat AI on AWS Cloud</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Red Hat AI on AWS Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
+    <li><a href="index.html">Red Hat AI Platform</a></li>
+    <li><a href="redhatai_overview.html">Red Hat AI Platform Features</a></li>
+    <li><a href="rhel_ai.html">RHEL AI on AWS</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RHEL AI on AWS</h1>
+<div class="sect1">
+<h2 id="_excerpt_from_rhel_ai_documentation"><a class="anchor" href="#_excerpt_from_rhel_ai_documentation"></a>Excerpt from RHEL AI Documentation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai">For more detailed information, see the "InstructLab and RHEL AI" documentation section.</a></p>
+</div>
+<div class="paragraph">
+<p>Red Hat Enterprise Linux AI allows you to do the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Host an LLM and interact with the open source Granite family of Large Language Models (LLMs).</p>
+</li>
+<li>
+<p>Using the LAB method, create and add your own knowledge data in a Git repository and fine-tune a model with that data with minimal machine learning background.</p>
+</li>
+<li>
+<p>Interact with the model that has been fine-tuned with your data.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This allows you to easily and efficiently build AI-based applications, including chatbots.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction_rhel_ai_course"><a class="anchor" href="#_introduction_rhel_ai_course"></a>Introduction RHEL AI Course</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584" target="blank">Introduction to RHEL AI</a>, just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rhel_ai_on_aws"><a class="anchor" href="#_rhel_ai_on_aws"></a>RHEL AI on AWS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommending RHEL AI to customers.</p>
+</div>
+<div class="paragraph">
+<p>Currently there is no managed service offering of RHEL AI on AWS, however it does support self-managed deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI on AWS was released in a standalone course.</p>
+</div>
+<div class="sect2">
+<h3 id="_deploying_rhel_ai_on_aws"><a class="anchor" href="#_deploying_rhel_ai_on_aws"></a>Deploying RHEL AI on AWS</h3>
+<div class="paragraph">
+<p>Get hands-on experience deploying RHEL AI on AWS. This quick course provides a detailed guide for deploying RHEL AI on AWS.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://redhatquickcourses.github.io/rhel-ai-aws/rhel-ai-aws/1/index.html" target="blank">Deploying RHEL AI on AWS</a></p>
+</div>
+<div class="paragraph">
+<p>The overall objectives of this course include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create and configure a custom RHEL AI AMI image.</p>
+</li>
+<li>
+<p>Upload the RHEL AI AMI to an AWS S3 bucket for storage and retrieval.</p>
+</li>
+<li>
+<p>Provision AWS resources and deploy a fully functional RHEL AI instance.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rhel_ai_deployment_approaches_on_aws"><a class="anchor" href="#_rhel_ai_deployment_approaches_on_aws"></a>RHEL AI Deployment Approaches on AWS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two approaches to utilizing RHEL AI,</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications.</p>
+</li>
+<li>
+<p>The second option is use RHEL AI to customize, fine-tune, or align the model to specific business knowledge in order to provide more accurate responses to the connecting application.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>A single RHEL AI server can perform both functions but it&#8217;s not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both services both consume Accelerator (GPU) memory resources.</p>
+</div>
+<div class="paragraph">
+<p>Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significantly less than the model training specifications.</p>
+</div>
+<div class="paragraph">
+<p>As you will notice, the requirements for full end-to-end workflow are significantly higher than for model inference.</p>
+</div>
+<div class="sect2">
+<h3 id="_rhel_ai_instance_options"><a class="anchor" href="#_rhel_ai_instance_options"></a>RHEL AI Instance Options</h3>
+<div class="paragraph">
+<p>The following charts show the recommended hardware requirements for running the full InstructLab end-to-end workflow to customize the Granite student model. This includes: synthetic data generation (SDG), training, and evaluating a custom Granite model.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Web Service Instance Types</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Hardware vendor</th>
+<th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
+<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">AWS Instances</th>
+<th class="tableblock halign-left valign-top">Recommended disk storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xA100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">320 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p4d.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xH100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">640 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p4de.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xH100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">640 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p5.48xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xL40S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">g6e.48xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following charts display the minimum hardware requirements for inference serving a model on Red Hat Enterprise Linux AI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Web Service Instance Types</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Hardware vendor</th>
+<th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
+<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">AWS Instances</th>
+<th class="tableblock halign-left valign-top">Recommended disk storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P4d series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">80 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P5 series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L40S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">G6e series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">G6 series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example, a 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Summary</p>
+</div>
+<div class="paragraph">
+<p>For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both training jobs, and for inference purposes to power applications.</p>
+</div>
+<div class="paragraph">
+<p>Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model development tasks are needed.</p>
+</div>
+<div class="paragraph">
+<p>Considering the knowledge learned so far, our FictionCorp use case would benefit from starting with a single RHEL AI instance powering the AI solution. This would be the cost effective approach to running the AI model needed to power the chatbot application.</p>
+</div>
+<div class="paragraph">
+<p>While OpenShift AI Cloud Services would provide a full service environment, the overhead platform is more than needed for proof of concept.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="openshiftai_aws.html">OpenShift (AI) on AWS</a></span>
+  <span class="next"><a href="../chapter2/index.html">AWS AI Services</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MultiCloud OpenShift :: Red Hat AI on AWS Cloud</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Red Hat AI on AWS Cloud</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="redhat-ai-on-aws" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Red Hat AI on AWS Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Red Hat AI Platform</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="redhatai_overview.html">Red Hat AI Platform Features</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/section1.html">General questions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Red Hat AI on AWS Cloud</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Red Hat AI on AWS Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
+    <li><a href="index%20copy.html">MultiCloud OpenShift</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">MultiCloud OpenShift</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/-HN9gxjX9LM?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Multicloud refers to using services from more than one public cloud provider at the same time. A multicloud environment allows your cloud environments to be private, public, or a combination of both.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_red_hat_openshift_cloud_services"><a class="anchor" href="#_why_red_hat_openshift_cloud_services"></a>Why Red Hat OpenShift cloud services?</h3>
+<div class="paragraph">
+<p>This section provides a curated set of descriptions that describe the benefits of Red Hat&#8217;s OpenShift managed cloud service.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Red Hat OpenShift is an application platform with comprehensive automation capabilities for managing hybrid cloud and multicloud deployments that empowers organizations to modernize their applications and infrastructure, accelerate digital transformation, and enhance business innovation.</p>
+</div>
+<div class="paragraph">
+<p><strong>If an organization needs to get started quickly and would like to offload the ongoing management of their application platform, Red Hat OpenShift Cloud Services provides an ideal solution.</strong></p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="_turnkey_application_platform"><a class="anchor" href="#_turnkey_application_platform"></a>Turnkey application platform:</h4>
+<div class="paragraph">
+<p>A turnkey application platform with fully integrated tools and consistent interfaces and application programming interfaces (APIs) reduces friction between teams during development, deployment, and operations while accelerating the time to value and time to market by helping teams focus on building apps rather than building and maintaining their own application platforms.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_cloud_native_solutions_with_leading_cloud_providers"><a class="anchor" href="#_cloud_native_solutions_with_leading_cloud_providers"></a>Cloud native solutions with leading cloud providers:</h4>
+<div class="paragraph">
+<p>Red Hat has joint, cloud-native offerings on AWS, Microsoft Azure, and IBM Cloud, giving you full integration and access to native cloud tools and programs, streamlined billing, and integrated support. AWS and Azure customers also have access to committed spend and discount programs for Red Hat products and services.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_consistent_hybrid_cloud_experience"><a class="anchor" href="#_consistent_hybrid_cloud_experience"></a>Consistent hybrid cloud experience:</h4>
+<div class="paragraph">
+<p>Red Hat OpenShift provides a managed turnkey application platform on every major public cloud with a consistent user experience no matter where it is deployed. This provides our customers an easy way to use the same platform across environments and the ability to choose the solution that best fits their workloads and requirements.</p>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_my_translation_of_the_wording_would_be"><a class="anchor" href="#_my_translation_of_the_wording_would_be"></a>My translation of the wording would be:</h4>
+<div class="paragraph">
+<p>When consuming infrastructure services in different clouds, Engineering teams might have to learn a multitude of software (tools) for each cloud provider and on-premises. Using OpenShift in multicloud environments, allows developers to utilize OpenShift as a single solution (toolset) across clouds.</p>
+</div>
+<div class="paragraph">
+<p>In addition, as a managed service across cloud providers, it&#8217;s deployed and managed by Red Hat and Partner teams allowing organizations to build apps rather than on infrastructure platforms.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s start with the OpenShift Container Platform cluster as it is the minimum required platform for OpenShift AI.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>The following charts show the hardware requirements for running the full InstructLab end-to-end workflow to customize the Granite student model. This includes: synthetic data generation (SDG), training, and evaluating a custom Granite model.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Web Service Instance Types</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Hardware vendor</th>
+<th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
+<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">AWS Instances</th>
+<th class="tableblock halign-left valign-top">Recommended disk storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xA100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">320 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p4d.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xH100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">640 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p4de.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xH100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">640 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">p5.48xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8xL40S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">g6e.48xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 TB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following charts display the minimum hardware requirements for inference serving a model on Red Hat Enterprise Linux AI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Web Service Instance Types</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Hardware vendor</th>
+<th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
+<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">AWS Instances</th>
+<th class="tableblock halign-left valign-top">Recommended disk storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P4d series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">H100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">80 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">P5 series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L40S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">G6e series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nvidia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24 GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">G6 series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 TB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
