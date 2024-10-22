@@ -1,0 +1,97 @@
+= Red Hat AI Platform Features
+
+== Objectives
+
+ * Identify Red Hat’s AI platforms that comprise Red Hat AI.
+ * Describe how AWS Cloud Deployment can simplify Red Hat AI Adoption.
+// * Understand how to Deploy Red Hat AI Solutions on AWS.
+ * Explain the customer challenges that RHOAI Cloud Service can address.
+
+== Red Hat AI Platform
+
+The Red Hat AI platform includes RHEL AI and OpenShift AI which will be delivered as an integrated solution. RHEL AI is included with an OpenShift AI subscription or available as a standalone product.
+
+While RHEL AI can be purchased and installed without any additional subscriptions, RHOAI is an add-on feature set which requires an OpenShift Container Platform cluster subscription. 
+
+===  RHEL AI
+
+[NOTE]
+While customers can bring their own models, RHEL AI is optimized to work with IBM's Granite family of models. These open source, enterprise-grade models are tailored for business and indemnified against generating copyrighted text.
+
+
+RHEL AI is specially designed for open source generative AI model fine tuning and inference. 
+
+ . Provides a simplified approach to get started with generative AI that includes open source models.
+ . Makes Generative AI accessible to developers and domain experts with little data science expertise.
+ . Provides the ability to do training & inference on discrete server deployments.
+
+=== OpenShift AI
+
+OpenShift AI is a fully functional MLOPs platform which is capable of providing life cycle management for both predictive and generative AI solutions.
+
+ . Provides support for both generative and predictive AI models with a BYOM approach.
+ . Includes distributed compute, collaborative workflows, model serving and monitoring.
+ . Offers enterprise grade machine learning operations platform (MLOps) capabilities and the ability to scale across hybrid-clouds.
+ . Includes Red Hat Enterprise Linux AI, including the Granite family models.
+
+'''
+
+Depending on an organization's maturity in AI model powered application development, Red Hat AI platform provides both an entry Generative AI model operations with RHEL AI which scales to integrate with OpenShift AI to provide the full MLOps platform for multiple model lifecycle management.
+
+==== Summary:
+
+ * RHEL AI focuses on those earlier in the journey, without dedicated data scientists or MLOPs engineers. 
+
+ * OpenShift AI focuses on solving the entire lifecycle of enterprise multi-AI model application development all the way through AI model monitoring and maintenance in production.
+
+While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud providers and on-premises environments including _disconnected or air-gapped environment which going forward will be known as  *Private AI*._
+
+== FictionCorp 
+
+As stated in the introduction, the FictionCorp organization plans to create an AI powered chat application for their call center.  Their existing knowledge base is currently stored in AWS, but requires each representative to search through documentation which adds time to each call or chat.  Based on the associate's tenure these searches can take from 5-20 minutes. 
+
+The phase one goal is to replace the documentation search with an Generative AI Chatbot that can be utilized on the initial call and reduce response times to customers request.
+
+Before we start solutioning their needs, let's take step back to examine the benefits of using Red Hat's managed service offering of *OpenShift AI Cloud Service* as a possible solution.
+
+//[TIP]
+//Always start with OpenShift AI as it offers the most feature rich platform for entire AI model lifecycle management and offers a centralized dashboard for cross-functional teams to collaborate.
+
+
+== Managed Services
+
+We'll review the OpenShift AI Cloud Service more in the next section, but for now remember the following.
+
+A managed service shifts the burden of managing the infrastructure platform and Red Hat software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organization rather than supporting the infrastructure.
+
+As an example, rather than engineers spending time to build the factory, they can use the managed service (factory) to produce the goods and services to be sold.  
+
+In our FictionCorp Scenario, instead of building the platform to run, train or serve AI models, development and IT operations engineers can focus on providing the new chat application.
+
+Organizations can quickly configure the platform via DevOps CI/CD practices or allow teams to self-service RHOAI resources via the included dashboard. 
+
+
+== Customer challenges that RHOAI Cloud Service can address.
+
+{NOTE}
+===
+This section is to be filled in
+===
+
+Companies moving from POC stages to pilots and production environments often struggle with the burdens of operationalizing AI Models lifecycle management actions such as model viability, security, cost, and agility. 
+
+Increase in open source model options provides the opportunity for more control over data and cost.   Ability to deploy models across multiple environments from on-premises to cloud enables a mitigation of concerns about resource utilization and optimization. 
+
+Many customers lack the expertise needed to switch models and optimize for specific use cases with the ever expanding and evolving technology makes model selection and lifecycles difficult to scale and manage.
+
+Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than committing to huge cost investments without validated solutions for meaningful production deployment.
+
+
+
+//Cloud Providers incentive is to make it easy to consume more resources.
+
+//FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using hyperscaler services, into pilot and production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had highly variable and unpredictable costs.
+
+//During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services.
+
+//Ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift),

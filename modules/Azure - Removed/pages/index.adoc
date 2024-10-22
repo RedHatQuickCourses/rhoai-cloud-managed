@@ -1,0 +1,43 @@
+=  Microsoft Azure Red Hat OpenShift (ARO) 
+
+The Microsoft Azure Red Hat OpenShift service enables you to deploy fully managed OpenShift clusters. Azure Red Hat OpenShift extends Kubernetes. Running containers in production with Kubernetes requires additional tools and resources. This often includes needing to juggle image registries, storage management, networking solutions, and logging and monitoring tools - all of which must be versioned and tested together. Building container-based applications requires even more integration work with middleware, frameworks, databases, and CI/CD tools. Azure Red Hat OpenShift combines all this into a single platform, bringing ease of operations to IT teams while giving application teams what they need to execute.
+
+Azure Red Hat OpenShift is jointly engineered, operated, and supported by Red Hat and Microsoft to provide an integrated support experience. There are no virtual machines to operate, and no patching is required. Control plane, infrastructure, and application nodes are patched, updated, and monitored on your behalf by Red Hat and Microsoft. Your Azure Red Hat OpenShift clusters are deployed into your Azure subscription and are included on your Azure bill.
+
+You can choose your own registry, networking, storage, and CI/CD solutions, or use the built-in solutions for automated source code management, container and application builds, deployments, scaling, health management, and more. Azure Red Hat OpenShift provides an integrated sign-on experience through Microsoft Entra ID.
+
+
+Service Level Agreement
+Azure Red Hat OpenShift offers a Service Level Agreement to guarantee that the service will be available 99.95% of the time. For more details on the SLA, see Azure Red Hat OpenShift SLA.
+
+=== Create an Azure Red Hat OpenShift 4 cluster
+
+
+https://azure.microsoft.com/en-us/pricing/details/openshift/[pricing link, window=blank]
+
+]
+== ARO ROADMAP
+
+https://github.com/orgs/Azure/projects/701[roadmap, window=blank]
+
+Azure Red Hat OpenShift is supported by Red Hat and Microsoft. As of February 2021, the documentation will be hosted by Microsoft and Red Hat as outlined below. 
+
+https://learn.microsoft.com/en-us/azure/openshift/[Azure Red Hat OpenShift Documentation, window=blank]
+
+
+=== Cluster Details
+
+Azure Red Hat OpenShift clusters are provisioned with three or more worker nodes.
+
+In regions consisting of multiple availability zones, a worker node machine set is created in each zone. Also, a worker node is provisioned from each machine set.
+
+When an Azure region doesn't support availability zones, the Azure Red Hat OpenShift cluster provisions the worker nodes from a single machine set. Customers have the ability to increase the node count and the permission in each region.
+
+Azure Red Hat OpenShift clusters are provisioned with three control plane nodes. These nodes are responsible for etcd key-value store and API-related workloads. The control plane node can't be used for customer workloads. Control plane node deployment follows the same rules as worker nodes.
+
+In regions that consist of multiple availability zones, a control plane node machine set is created in each zone. A control plane node is provisioned from each machine set.
+Where an Azure region doesn't support availability zones, the Azure Red Hat OpenShift cluster provisions the control plane nodes from a single machine set.
+
+
+
+

@@ -1,0 +1,39 @@
+= Section 2
+
+Azure Red Hat OpenShift Workshop
+
+https://microsoft.github.io/aroworkshop/
+
+Azure Red Hat OpenShift is a fully managed Red Hat OpenShift service in Azure that is jointly engineered and supported by Microsoft and Red Hat. In this lab, you’ll go through a set of tasks that will help you understand some of the concepts of deploying and securing container based applications on top of Azure Red Hat OpenShift.
+
+
+== Generative AI era with Microsoft Azure
+
+Generative AI is helping to reimagine business operations, bringing forth an unprecedented level of creativity and innovation. AI is not just influencing businesses; it’s transforming them. Language models like GPT-3 and GPT-4 on Azure OpenAI Service are capable of automating content generation, enhancing content quality, diversifying content, and enabling personalization. While human intervention is still required for prompt generation and output evaluation, these models are already proving their worth across various domains. 
+
+
+
+=== Azure OpenAI Case Studies
+
+Case study: CarMax
+CarMax, a renowned automotive retailer, saw an opportunity to enhance its customer experience through AI. The company decided to leverage Azure AI including Azure OpenAI Service to generate customer-relevant content for its website, specifically, AI-generated car review summaries. 
+
+The goal was to create summaries for 5,000 car pages—a task that, if done manually, was estimated to take approximately 11 years. With AI, however, the company achieved this milestone within just a few months. This accelerated production not only improved customer engagement but also significantly boosted the company’s search engine rankings. 
+
+Read more about CarMax’s innovation.
+
+Case study: SymphonyAI
+Another compelling example is SymphonyAI, a leader in business-to-business AI solutions. Recognizing the potential of AI to enhance financial crime investigation, SymphonyAI integrated Azure AI services into its Sensa Copilot solution. 
+
+With AI automating the collection and summarization of financial information, investigators were empowered to analyze suspicious activities more efficiently. This integration led to a remarkable increase in productivity—around 60 percent in initial tests. SymphonyAI’s approach is a testament to how AI can streamline processes, transform industries, and pave the way to reduce. 
+
+Read more about SymphonyAI.
+
+Case study: The City of Kelowna
+Public services are also benefiting from AI technology. The City of Kelowna, for instance, used Azure OpenAI Service and Azure Cognitive Search to create an intelligent search solution that responds to citizens’ requests using publicly available information, ensuring data privacy. 
+
+The system, designed to handle tasks such as updating residents on snowplowing schedules, has allowed the city to streamline its services significantly. By dealing with routine queries more efficiently, the city was able to focus its human resources on more complex queries, improving the overall quality of service delivery. 
+
+
+
+

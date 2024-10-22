@@ -1,43 +1,21 @@
-= Red Hat OpenShift on AWS 
+= AWS AI Services
 
-== AWS MarketPlace Product Overview - Red Hat OpenShift AI
+This section provides an overview of the AI / ML services available natively from AWS.
+The goal of this section is to showcase the products and capabilities in order to understand how these features can be recreated within or used adjacently to OpenShift AI for customer use cases.
 
-Red Hat OpenShift AI enables companies to solve critical business challenges by providing a fully managed cloud service environment based-on the Red Hat OpenShift Service on AWS. Red Hat OpenShift AI allows organizations to quickly build and deploy artificial intelligence (AI)/ML models by integrating open-source applications with commercial partner technology.
+For more details on these services you can use the links below.
 
-image::aws_rhoai_marketplace.gif[width=600]
+ * https://aws.amazon.com/ai/generative-ai/services/[AWS AI Website, window=blank]
 
+ * https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork, window=blank]
 
+ [NOTE]
+The name of AWS services follow a pattern, utility services are prefixed with AWS, while standalone services are prefixed by "Amazon".
 
-'''
+Lets take a tour of AWS AI Services in order to understand these services in order to accurately respond to scenarios where customers are utilizing these services in their experimentation.
 
+//To build generative AI applications on AWS, customers are recommended to start with Amazon Q Developer as your developer coding tool, and then use Amazon Bedrock to choose the right Foundation Model (FM) for your use-case. If you prefer, you can also use Amazon SageMaker JumpStart's ML Hub to accelerate model development.
 
-Red Hat OpenShift AI is an easy-to-configure cloud service that provides a powerful platform for building AI/ML models and applications. It combines the self-service data scientists and developers want with the confidence enterprise IT demands into one common platform. Common tooling, such as Jupyter notebooks and associated TensorFlow and Pytorch frameworks, are an add-on to Red Hat OpenShift Service on AWS, an application platform cloud service powered by Kubernetes and co-managed by Red Hat and Amazon.
-
-image::aws_rhocp_marketplace.gif[width=600]
-
-
-//. **Introduction to OpenShift AI on Public Cloud Infrastructure and Hyperscalers** Begin with an overview of OpenShift AI in Public Cloud Infrastructure and Hyperscalers, its benefits, and the importance of using open-source resources to avoid vendor lock-in. Emphasize the concept of using a managed environment like Red Hat OpenShift on AWS for deploying and managing AI solutions.
-
-//2. **Defining the Business Scenario** Introduce the business scenario where Rosa, an AI solution, needs to be deployed near end-users in a specific region. Explain the objectives of the scenario, such as validating the solution's performance, cost-effectiveness, and scalability before implementing it in a production environment.
-
-//3. **Designing and Procuring the Environment** Describe the process of designing and procuring the environment for deploying Rosa on AWS. This includes selecting the appropriate AWS services, configuring worker pools, and setting up monitoring, logging, and performance management tools.
-
-//4. **Conclusion and Future Learning** Summarize the key takeaways from the lesson and encourage learners to explore additional resources and technologies related to OpenShift AI on Public Cloud Infrastructure and Hyperscalers. Emphasize the importance of continuous learning and improvement in the ever-evolving field of AI and cloud computing.
-
-//5. **Evaluating Cost and Scalability**: Discuss the cost implications of deploying Rosa on AWS, including the costs associated with running the environment, implementing load tests, and scaling resources up or down as needed. Explore the trade-offs between using managed services and building custom solutions, and discuss the importance of choosing the right approach for each use case.
-
-
-//By following this framework, learners will gain a deeper understanding of how to design, implement, and manage AI solutions using OpenShift AI on Public Cloud Infrastructure and Hyperscalers, while also evaluating the trade-offs between using managed services and building custom solutions.
-
-
-
-//AWS MarketPlace
-
-//Environments Rosa on AWS and then use that environment to deploy an AI solution that was located near end users in a certain region and evaluate the trade-offs of managing these Services in-house versus using a Marketplace style deployment let's say they needed to develop a POC a proof of concept that validated the solution worked and solved a specific problem before putting the problem in place so basically building a beta or Alpha environment that would then be used to validate could be spun down and different environments could be spun up as multiple Solutions
-
-//n addition to this scenario of deploying that the customer could also be evaluating the performance against hosting it and something like sagemaker versus hosting it and a managed environment which technically sagemaker would be similar to but what are the comparisons and difference and features that are truly given to the user and how does the learner evaluate the difference between the two so could we link directly to the documentation pages and let them do their own research but facilitate the research
-
-
-//Beyond instantiating the cluster determining the size of the worker pools based on the AI model being deployed memory or with a GPU and then focus on you know establishing monitoring and logging and performance and all the other pieces that go along with it all as small separate components since this is specific to AWS we could use cloudwatch in some of the other monitoring tools specific to the provider versus trying to set up Prometheus which may align better with for some customers and not so much with others and so there could be multiple again Solutions with how the monitoring logging was provided but basically you know during this POC test out all the components that will be used in a production environment or needed in a production environment for full life cycle management 
+//AWS boasts the most comprehensive range of services, from plug-and-play AI services, to customizable models via AWS SageMaker. Users can leverage Amazon Bedrock, the easiest way to build and scale generative AI with foundation models in the cloud, to power their applications all without writing any code. Lastly, a vast network of AWS-certified partners are available to help customers drive innovation with AI/ML, offering top-tier services to fit every budget.
 
 

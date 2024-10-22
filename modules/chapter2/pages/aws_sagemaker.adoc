@@ -1,0 +1,37 @@
+= Amazon SageMaker
+
+[NOTE]
+This is a full featured MLOps platform similar to OpenShift AI
+
+== What is Amazon SageMaker? 
+
+A tool for Data Scientists, Developers, and Business Data Analysts regardless of their ML expertise to build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.
+
+Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more – all in one integrated development environment (IDE). 
+
+SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own Foundation Models (FMs), large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. 
+
+SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
+
+Sage Maker Studio is the dashboard product used to interact with this Cloud Service and access machine learning models from a variety of model providers.
+
+image::aws_sagemaker_overview.gif[width=600]
+
+== Lab Exercise:
+
+=== Demo Platform Lab Environment
+
+Launch an AWS Blank Open Environment to follow along with this guided lab.
+
+https://demo.redhat.com/catalog?search=AWS+Blank+Open+Environment&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod[AWS Blank Open Environment, window=blank]
+
+This lab environment can take up to 20 minutes to become available, however it's usually available in a few minutes. 
+
+=== Logon to the AWS Console and open SageMaker
+
+image::aws_sagemaker_open.gif[width=600]
+
+ . Use the Credential provided by the Demo Hub to Logon to the AWS Console
+ . Use the search bar to search for *sagemaker*
+ . Under service click the tile to open Amazon SageMaker.
+

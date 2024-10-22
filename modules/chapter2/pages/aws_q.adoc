@@ -1,0 +1,13 @@
+= Amazon Q
+
+The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data
+
+Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests. Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics—by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.
+
+Amazon Q Business is a generative AI–powered assistant that can answer questions, provide summaries, generate content, and securely complete tasks based on data and information in your enterprise systems. It empowers employees to be more creative, data-driven, efficient, prepared, and productive.
+
+Amazon Q Developer assists developers and IT professionals with all their tasks—from coding, testing, and upgrading applications, to diagnosing errors, performing security scanning and fixes, and optimizing AWS resources. Amazon Q has advanced, multistep planning and reasoning capabilities that can transform (for example, perform Java version upgrades) and implement new features generated from developer requests.
+
+Amazon Q easily and securely connects to over 40 commonly used business tools, such as wikis, intranets, Atlassian, Gmail, Microsoft Exchange, Salesforce, ServiceNow, Slack, and Amazon Simple Storage Service (Amazon S3). Simply point Amazon Q at your enterprise data and code repositories, and it will search all your data, summarize logically, analyze trends, and engage in dialogue with end users about the data. This helps business users access all their data no matter where it resides in their organization.
+
+
