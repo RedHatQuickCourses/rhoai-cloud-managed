@@ -14,7 +14,7 @@ Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This al
 
 == Introduction RHEL AI Course
 
-If you are new to RHEL AI, this ~15 minute intermediate course provides an detailed overview of the features, terms, and high level concepts of RHEL AI. 
+If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI. 
 
 https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
 
@@ -50,11 +50,11 @@ There are two approaches to utilizing RHEL AI,
 
  . The second option is use RHEL AI to customize, fine-tune, or align the model to specific business knowledge in order to provide more accurate responses to the connecting application.
 
-A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both servcies both consume Accelerator (GPU) memory resources.
+A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both services both consume Accelerator (GPU) memory resources.
 
-Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significally less than the model training specifications.
+Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significantly less than the model training specifications.
 
-As your will notice, the requirements for full end-to-end workflow are significally higher than for model inference.  
+As you will notice, the requirements for full end-to-end workflow are significantly higher than for model inference.  
 
 
 === RHEL AI Instance Options
@@ -124,7 +124,7 @@ The following charts display the minimum hardware requirements for inference ser
 
 |===
 
-Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example A 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.
+Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example, a 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.
 
 
 '''
@@ -133,9 +133,9 @@ Summary
 
 For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both training jobs, and for inference purposes to power applications.
 
-Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model devleopment tasks are needed.
+Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model development tasks are needed.
 
-Considering the knowledge learned so far, our FictionCorp use case would benefit from starting with single RHEL AI instance powering the AI solution. This would be the cost effective approach to running the AI model needed to power the chatbot application.
+Considering the knowledge learned so far, our FictionCorp use case would benefit from starting with a single RHEL AI instance powering the AI solution. This would be the cost effective approach to running the AI model needed to power the chatbot application.
 
 While OpenShift AI Cloud Services would provide a full service environment, the overhead platform is more than needed for proof of concept. 
 

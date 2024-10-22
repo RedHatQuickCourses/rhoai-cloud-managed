@@ -42,31 +42,31 @@ Depending on an organization's maturity in AI model powered application developm
 
  * RHEL AI focuses on those earlier in the journey, without dedicated data scientists or MLOPs engineers. 
 
- * OpenShift AI focuses on solving the entire lifecycle of enterprise multi-AI model application development all way through AI model montioring and maintenance in production.
+ * OpenShift AI focuses on solving the entire lifecycle of enterprise multi-AI model application development all the way through AI model monitoring and maintenance in production.
 
 While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud providers and on-premises environments including _disconnected or air-gapped environment which going forward will be known as  *Private AI*._
 
 == FictionCorp 
 
-As stated in the introduction, the FictionCorp organization plans to create a AI powered chat application for their call center.  There existing knowledge base is currently stored in AWS, but requires each representative to search through documentation which adds time to each call or chat.  Based on the associates tenture these searches can take from 5-20 minutes. 
+As stated in the introduction, the FictionCorp organization plans to create an AI powered chat application for their call center.  Their existing knowledge base is currently stored in AWS, but requires each representative to search through documentation which adds time to each call or chat.  Based on the associate's tenure these searches can take from 5-20 minutes. 
 
 The phase one goal is to replace the documentation search with an Generative AI Chatbot that can be utilized on the initial call and reduce response times to customers request.
 
 Before we start solutioning their needs, let's take step back to examine the benefits of using Red Hat's managed service offering of *OpenShift AI Cloud Service* as a possible solution.
 
 //[TIP]
-//Always start with OpenShift AI as it offers the most feature rich platform for entire AI model lifecycle management and offers a centrailized dashboard for cross-functional team to collaborate.
+//Always start with OpenShift AI as it offers the most feature rich platform for entire AI model lifecycle management and offers a centralized dashboard for cross-functional teams to collaborate.
 
 
 == Managed Services
 
 We'll review the OpenShift AI Cloud Service more in the next section, but for now remember the following.
 
-A managed service shifts the burden of managing the infrastructure platform and Red Hat software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organiztion rather than supporting the infrastructure.
+A managed service shifts the burden of managing the infrastructure platform and Red Hat software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organization rather than supporting the infrastructure.
 
-As an example, consider rather than engineers spending time to build the factory, they can use the managed service (factory) to produce the goods and services to be sold.  
+As an example, rather than engineers spending time to build the factory, they can use the managed service (factory) to produce the goods and services to be sold.  
 
-In our FictionCorp Scenario, the instead of building the platform to run, train or serve AI models, development and IT operations engineers can focus on providing the new chat application.
+In our FictionCorp Scenario, instead of building the platform to run, train or serve AI models, development and IT operations engineers can focus on providing the new chat application.
 
 Organizations can quickly configure the platform via DevOps CI/CD practices or allow teams to self-service RHOAI resources via the included dashboard. 
 
@@ -80,11 +80,11 @@ This section is to be filled in
 
 Companies moving from POC stages to pilots and production environments often struggle with the burdens of operationalizing AI Models lifecycle management actions such as model viability, security, cost, and agility. 
 
-Increase in oper source model options provvides the opportunity for more control over data and cost.   Ability to deploy models across multiple environments from on-premises to cloud enables s mitigration of concerns about resource utilization and optimization. 
+Increase in open source model options provides the opportunity for more control over data and cost.   Ability to deploy models across multiple environments from on-premises to cloud enables a mitigation of concerns about resource utilization and optimization. 
 
-Many customers lack of expertise needed to switch models and optimize for specific use cases with the ever expanding and evolving technology makes model selection and lifecycles difficult to scale and manage.
+Many customers lack the expertise needed to switch models and optimize for specific use cases with the ever expanding and evolving technology makes model selection and lifecycles difficult to scale and manage.
 
-Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than commiting to huge cost investments without a validated solutions for meaningful production deployment.
+Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than committing to huge cost investments without validated solutions for meaningful production deployment.
 
 
 

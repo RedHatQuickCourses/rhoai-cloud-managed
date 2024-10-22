@@ -42,7 +42,7 @@ image::rosa_install.png[width=600]
 
 === Option 3 - Combination of Cloud Service with Self-Managed 
 
-This is not an officially offered option, however, it maybe possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services.
+This is not an officially offered option, however, it may be possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services.
 
 ==== Red Hat OpenShift Service on AWS (ROSA) with Hosted Control Plane
  
@@ -52,7 +52,7 @@ Hosting and management of the control plane is accomplished *using resources (in
 
 [WARNING]
 ====
-OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers who subscribe to ROSA with HCP.  With an additional subscription,  the OpenShift AI Add-on and then installing OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator customers can fully flexible OpenShift AI platform.
+OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers who subscribe to ROSA with HCP.  With an additional subscription,  the OpenShift AI Add-on and then installing OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator, customers can fully use the OpenShift AI platform.
 
 ====
 
