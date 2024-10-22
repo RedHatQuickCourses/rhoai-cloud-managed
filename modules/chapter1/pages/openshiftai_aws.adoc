@@ -2,9 +2,7 @@
  
 OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components. 
 
-== Managed Offering Benefits
-
-The OpenShift AI Cloud Services is a fully managed service, enabling customers to spin up OpenShift AI environments on cloud platforms enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common tool set across clouds for generative and predictive AI application and solution development solves the gap of needing to staff OpenShift AI knowledgable engineers.  Customers can experience OpenShift AI features rapidly for proof of concepts, development, data processing, and AI model lab and production environments.
+Red Hat OpenShift AI Cloud Service is a fully managed service enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common platform and tool set across clouds or on-premises for generative and predictive AI application and solution development solves the gap of training or hiring engineers with multiple skill sets.  Customers can experience common OpenShift AI features across locations rapidly for proof of concepts, development, data processing, and AI model lab and production environments.
 
 == OpenShift AI on AWS
 
@@ -38,23 +36,23 @@ ROSA is a fully-managed, turnkey application platform that allows you to focus o
 
 ROSA provides seamless integration with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a wide range of additional AWS services to further accelerate the building and delivering of differentiating experiences to customers.
 
-For ROSA Classic, get a subscription through the AWS Marketplace.  You subscribe to the service directly from your AWS account. After you create clusters, you can operate your clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager.
+For ROSA Classic, customers get a subscription through the AWS Marketplace.  They subscribe to the service directly from their AWS account. After cluster creation, customers can operate their clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager.
 
 image::rosa_install.png[width=600]
 
-=== Option 3 - Hybrid : 
+=== Option 3 - Combination of Cloud Service with Self-Managed 
 
-It maybe possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services.
+This is not an officially offered option, however, it maybe possible to combine both ROSA with HCP managed services with OpenShift AI self-managed services.
 
 ==== Red Hat OpenShift Service on AWS (ROSA) with Hosted Control Plane
  
 Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering that combines the power of Red Hat OpenShift, the industry's most comprehensive enterprise Kubernetes platform, and the AWS public cloud. 
 
-Hosting and management of the control plane is accomplished using resources (infrastructure) deployed into a Red Hat owned / managed AWS Account. The customer only hosts worker nodes which allows the environment to scale with exactly what the customer needs providing effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. 
+Hosting and management of the control plane is accomplished *using resources (infrastructure) deployed into a Red Hat owned / managed AWS Account*. The customer only hosts worker nodes in their AWS Account which allows the environment to scale with exactly what the customer needs providing effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. 
 
 [WARNING]
 ====
-OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers who subscribe to ROSA with HCP.  With an additional subscription to the OpenShift AI Add-on and then installing OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator customers can fully flexible OpenShift AI platform.
+OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service.  However, AI workloads and applications are supported on OpenShift, and OpenShift AI self-managed can be installed by customers who subscribe to ROSA with HCP.  With an additional subscription,  the OpenShift AI Add-on and then installing OpenShift AI Self-Managed by installing the Red Hat OpenShift AI Operator customers can fully flexible OpenShift AI platform.
 
 ====
 
