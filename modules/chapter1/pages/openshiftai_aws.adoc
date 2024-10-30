@@ -1,10 +1,58 @@
 = OpenShift (AI) on AWS
+
+== Objectives
+
+ * Comprehend the benefit of managed services
+ * Explain the customer challenges that RHOAI Cloud Service can address.
+ * Understand the deployment options of Red Hat OApenShift AI cloud service
+ * Explain the value / benefits of RHOAI cloud service
+
+=== Managed Services
+
+Before examining the OpenShift AI Cloud Service, let's define the what is meant by a managed infrastructure services. 
+
+A managed service infrastructure is the transfer of an organization's IT infrastructure management to an external Managed Service Provider (MSP). The MSP provides ongoing support and administration for the organization's network, applications, infrastructure, and security.
+
+The *OpenShift AI Cloud Service* shifts the burden of managing the RHOAI infrastructure platform and software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organization rather than supporting the infrastructure.
+
+As an example, rather than engineers spending time to build the factory, they can use the managed service (factory) to produce the goods and services to be sold.  
+
+In our FictionCorp Scenario, instead of building the platform to run, train or serve AI models, development and IT operations engineers can focus on providing the new chat application.
+
+Organizations can quickly configure the RHOAI platform services via DevOps CI/CD practices or allow teams to self-service RHOAI resources via the included dashboard. 
+
+
+=== Customer challenges that RHOAI Cloud Service can address
+
+==== Data Privacy Concerns 
+
+Increase in open source model options provides the opportunity for more control over data and cost.   Ability to deploy models across multiple environments from on-premises to cloud enables a mitigation of concerns about resource utilization and optimization.  Stay in control of your data by keeping it within your organizations acccounts.
+
+OpenShift AI Cloud Services can run within your AWS accounts, allow your organization to stay in control of the data available to AI models.  
+
+Many customers lack the expertise needed to switch models and optimize for specific use cases with the ever expanding and evolving technology makes model selection and lifecycles difficult to scale and manage.  Companies moving from POC stages to pilots and production environments often struggle with the burdens of operationalizing AI Models lifecycle management actions such as model viability, security, cost, and agility. 
+
+Openshift AI Cloud Services is trusted open source offering that provides a bring your own model machine learning operations platofrm environment.  Organizations can easily version, manage, train, and infere AI models using RHOAI Cloud Service.
+
+There are significant cost to run the Large Language Models that power the services provided by the AI Model SaaS service leaders such as ChatGPT, Gemini, and Claude.  
  
+Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than committing to huge cost investments without validated solutions allowing  meaningful production deployment.
+
+
+//Cloud Providers incentive is to make it easy to consume more resources.
+
+//FY24 saw customers moving gen AI projects out of Proof of Concepts, largely performed using hyperscaler services, into pilot and production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had highly variable and unpredictable costs.
+
+//During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral) greatly increased, leading customers to explore private deployments of gen AI vs using hyperscaler services.
+
+//Ability to support customer owned systems across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform (OpenShift),
+ 
+
+== OpenShift AI on AWS
+
 OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components. 
 
 Red Hat OpenShift AI Cloud Service is a fully managed service enabling access to OpenShift AI features at hourly rates.  The ability to quickly use a common platform and tool set across clouds or on-premises for generative and predictive AI application and solution development solves the gap of training or hiring engineers with multiple skill sets.  Customers can experience common OpenShift AI features across locations rapidly for proof of concepts, development, data processing, and AI model lab and production environments.
-
-== OpenShift AI on AWS
 
 There two subscription options available that provide support for Red Hat OpenShift AI (RHOAI) on AWS:
 

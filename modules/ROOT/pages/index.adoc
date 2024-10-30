@@ -15,9 +15,13 @@ This course will focus only on Red Hat AI solutions that can be instantiated on 
 
 A Red Hat customer reaches out because they are beginning a new generative AI project. They want to know if Red Hat has any reference use cases or frameworks for organizations beginning their AI powered application journey. 
 
-They are an AWS customer but are looking for an alternative way to deploy AI models without needing data scientists or MLOps engineers. Instead a team of developers and IT operations personnel will be leading this project.   The team's goal is to deliver a new chatbot service for their call center that can provide an internal only portal for associates to utilize.
+They are an AWS customer but are looking for an alternative way to deploy AI models without needing data scientists or MLOps engineers. Instead a team of developers and IT operations personnel will be leading this project.   The team's goal is to deliver a new chatbot service for their call center that can provide 
+
+ . an internal only portal for associates to utilize.
++
 
 The solution needs to scale to provide similar service across the organization:
+ 
  . In phase two, become a chat resource to external customers. 
  . In phase three, it should learn from chats and request new information automatically. 
 

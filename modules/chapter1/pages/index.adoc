@@ -6,6 +6,6 @@ For those not familiar with the *Red Hat AI Platform or simply Red Hat AI*,  it'
  * Red Hat Enterprise Linux AI (RHEL AI)
  * Red Hat OpenShift AI (RHOAI)
 
-*RHEL AI* is targeted towards customers who are looking for a Generative AI fine tuning and model inferencing platform that can be run across cloud hyperscalers and on premises providing a hybrid cloud experience utilizing a single platform for engineers and operations.
+*RHEL AI* is targeted towards customers who are looking for a generative AI model fine tuning and model inferencing solution based on industry trusted Red Hat Enterprise Linux (RHEL) that can be run on cloud hyperscalers or on premise hardware providing a hybrid cloud experience for organizations.
 
-*RHOAI* - is a fully scalable Machine Learning Operations Platform (MLOps) platform that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally serving models securely, with OpenShift providing the infrastructure to run AI powered applications.  A RHEL AI subscription is included with OpenShift AI. 
+*RHOAI* - is a fully scalable Machine Learning Operations Platform (MLOps) that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally provide AI model inference securely, with OpenShift Container Platform  (OCP) providing the infrastructure to run AI powered applications.  A RHEL AI subscription is included with OpenShift AI. 

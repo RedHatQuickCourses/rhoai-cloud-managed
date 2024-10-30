@@ -9,7 +9,9 @@ For more details on these services you can use the links below.
 
  * https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork, window=blank]
 
- [NOTE]
+.
+
+[NOTE]
 The name of AWS services follow a pattern, utility services are prefixed with AWS, while standalone services are prefixed by "Amazon".
 
 Lets take a tour of AWS AI Services in order to understand these services in order to accurately respond to scenarios where customers are utilizing these services in their experimentation.
