@@ -2,25 +2,9 @@
 
 == Objectives
 
- * Comprehend the benefit of managed services
  * Explain the customer challenges that RHOAI Cloud Service can address.
  * Understand the deployment options of Red Hat OApenShift AI cloud service
  * Explain the value / benefits of RHOAI cloud service
-
-=== Managed Services
-
-Before examining the OpenShift AI Cloud Service, let's define the what is meant by a managed infrastructure services. 
-
-A managed service infrastructure is the transfer of an organization's IT infrastructure management to an external Managed Service Provider (MSP). The MSP provides ongoing support and administration for the organization's network, applications, infrastructure, and security.
-
-The *OpenShift AI Cloud Service* shifts the burden of managing the RHOAI infrastructure platform and software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organization rather than supporting the infrastructure.
-
-As an example, rather than engineers spending time to build the factory, they can use the managed service (factory) to produce the goods and services to be sold.  
-
-In our FictionCorp Scenario, instead of building the platform to run, train or serve AI models, development and IT operations engineers can focus on providing the new chat application.
-
-Organizations can quickly configure the RHOAI platform services via DevOps CI/CD practices or allow teams to self-service RHOAI resources via the included dashboard. 
-
 
 === Customer challenges that RHOAI Cloud Service can address
 

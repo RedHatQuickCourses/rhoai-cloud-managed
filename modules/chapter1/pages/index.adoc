@@ -1,5 +1,8 @@
-= Red Hat AI Platform
+= Red Hat AI on AWS Cloud
 
+In this chapter we'll anlayze Red Hat AI deployment optoins on Amazon Web Services.  
+
+== Terminology Review
 
 For those not familiar with the *Red Hat AI Platform or simply Red Hat AI*,  it's comprised of:
 
@@ -9,3 +12,12 @@ For those not familiar with the *Red Hat AI Platform or simply Red Hat AI*,  it'
 *RHEL AI* is targeted towards customers who are looking for a generative AI model fine tuning and model inferencing solution based on industry trusted Red Hat Enterprise Linux (RHEL) that can be run on cloud hyperscalers or on premise hardware providing a hybrid cloud experience for organizations.
 
 *RHOAI* - is a fully scalable Machine Learning Operations Platform (MLOps) that provides the ability to automate data collection, processing and preparation. Then automate model experimentation, training, and versioning using pipelines. Finally provide AI model inference securely, with OpenShift Container Platform  (OCP) providing the infrastructure to run AI powered applications.  A RHEL AI subscription is included with OpenShift AI. 
+
+*AWS stands for Amazon Web Services* - which is a comprehensive cloud computing platform provided by Amazon that offers a wide range of services like computing power, storage, databases, analytics, and more, allowing users to access and manage IT resources online without having to own physical hardware; essentially, it's a way to build and run applications on the internet without managing your own servers.
+
+*Managed infrastructure Service* - A managed infrastructure service is the transfer of an organization's IT infrastructure management to an external Managed Service Provider (MSP). The MSP provides ongoing support and administration for the organization's network, applications, infrastructure, and security.
+
+*OpenShift AI Cloud Service* shifts the burden of managing the RHOAI infrastructure platform and software updates to Red Hat and partner providers. This allows teams to focus on building and supporting the applications that move the needle for the organization rather than supporting the infrastructure. 
+
+Now let's explore how our FictionCorp organization can rely on Red Hat AI  to prepare data, train and serve AI models, and provide the self service infrastructure so development and IT operations engineers can focus on providing the new chat application. 
+

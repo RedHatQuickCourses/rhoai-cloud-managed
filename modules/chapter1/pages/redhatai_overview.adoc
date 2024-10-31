@@ -1,4 +1,4 @@
-= Red Hat AI Platform Features
+= Red Hat AI Overview
 
 == Objectives
 

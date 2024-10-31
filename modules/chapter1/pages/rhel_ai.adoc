@@ -145,7 +145,7 @@ Selecting instance types can be calculated based on the size of the model that w
 
 Summary
 
-For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both training jobs, and for inference purposes to power applications.
+For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both or individual functions of  training AI models, and for inference purposes to power applications.
 
 Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model development tasks are needed.
 
