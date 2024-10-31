@@ -1,7 +1,15 @@
 = Amazon SageMaker
 
+== Objectives
+
+ * Understanding Amazon SageMaker
+ * Optional - Get Hands on with Amazon SageMaker domain
+
+
 [NOTE]
-This is a full featured MLOps platform similar to OpenShift AI
+This is a full featured MLOps platform most similar to OpenShift AI.  The primary workflow is the same, data preparation, model training, model deployment for AI powered applications.
+
+image::ml-concepts-10.png[width=600]
 
 == What is Amazon SageMaker? 
 
@@ -11,7 +19,7 @@ Amazon SageMaker is a fully managed service that brings together a broad set of 
 
 SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own Foundation Models (FMs), large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. 
 
-SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
+//SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
 
 Sage Maker Studio is the dashboard product used to interact with this Cloud Service and access machine learning models from a variety of model providers.
 
@@ -74,6 +82,10 @@ A list of authorized users
 
 A variety of security, application, policy, and Amazon Virtual Private Cloud (Amazon VPC) configurations
 
+
+Summary:
+
+Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.
 
 
 

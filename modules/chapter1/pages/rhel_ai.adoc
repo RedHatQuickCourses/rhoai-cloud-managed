@@ -25,6 +25,7 @@ Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This al
 
 If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI. We will not review the basics in this course.
 
+
 https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
 
 '''
@@ -51,6 +52,8 @@ To reduce cost this lab exercise includes a basic GPU to run RHEL AI, however pe
 
 [NOTE]
 This lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
+
+Alternatively, you may visit the RHEL AI documentation for instructions on installing RHEL AI on AWS https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.1/html/installing/installing_on_aws[Installing RHEL AI on AWS, window=blank]
 
 == RHEL AI Deployment Approaches on AWS
 

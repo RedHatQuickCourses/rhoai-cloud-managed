@@ -1,5 +1,18 @@
 = Amazon EC2
 
+== Objectives
+
+ * Understand the AWS recommended instances AI Model training & inference
+ * Understand about the cost of these instances per month
+
+
+ *Instance* is defined as a server running an application is called an instance. Think of one server as one instance. An instance is a virtual machine that runs a workloads in the cloud. Often the terms VM (Virtual Machine) & instance are used interchangeably.
+
+*Amazon instances type* is a virtual machine (VM) that's optimized for a specific use case and includes a combination of CPU, memory, storage, and networking capacity
+
+the primary services that provides instances in AWS is called Elastic Cloud Compute (EC2)
+
+
 == EC2 - Cloud Compute Capacity
 
 Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.
@@ -54,8 +67,6 @@ Amazon EC2 P5 and Trn1 instances use a second-generation EC2 UltraClusters archi
 
 Combining AWS AI specific instances with the Red Hat AI Platform can provide customers with the rapidly provisioned, instantly scalable infrastructure to support the most demanding workloads.
 
-
-
-https://aws.amazon.com/ec2/instance-explorer/?ec2-instances-cards.sort-by=item.additionalFields.category-order&ec2-instances-cards.sort-order=desc&awsf.ec2-instances-filter-category=*all&awsf.ec2-instances-filter-processors=*all&awsf.ec2-instances-filter-accelerators=accelerators%23nvidia&awsf.ec2-instances-filter-additional-capabilities=*all&awsf.ec2-instances-filter-workload-tags=*all[Instance Types sorted by GPU only, window=blank]
-
 https://aws.amazon.com/ec2/instance-types/[Sort by instance type, includes one or more instance sizes allowing you to scale your resources to the requirements of your target workload., window=blank]
+
+

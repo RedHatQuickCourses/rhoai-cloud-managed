@@ -1,5 +1,11 @@
 = Amazon Bedrock
 
+== Objectives
+
+ * Explain how Bedrock is unique in the AWS AI model space
+ * Understand when Openshift AI and RHEL AI products solutions are applicable.
+
+
 [NOTE]
 This is a model serving platform similar to RHEL AI, rather than using open source models Amazon Bedrock allows customers to access instances of foundation models from leading third party providers such as Anthropic, AI21 Labs, Stability AI, and Amazon via a single API.
 

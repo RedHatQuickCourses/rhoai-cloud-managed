@@ -1,5 +1,11 @@
 = Amazon Q
 
+== Objectives
+
+ * Understand why Amazon Q exist
+ * Understand how to utilize Amazon for AI enabled applications
+
+
 The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data
 
 Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests. Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics—by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.
