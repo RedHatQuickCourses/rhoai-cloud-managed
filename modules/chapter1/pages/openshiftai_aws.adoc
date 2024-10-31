@@ -86,7 +86,7 @@ ROSA provides seamless integration with Amazon CloudWatch, AWS Identity and Acce
 
 For ROSA Classic, customers get a subscription through the AWS Marketplace.  They subscribe to the service directly from their AWS account. After cluster creation, customers can operate their clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager.
 
-image::rosa_install.png[width=600]
+image::rosa_setup.gif[width=600]
 
 === Option 3 - Combination of Cloud Service with Self-Managed 
 
