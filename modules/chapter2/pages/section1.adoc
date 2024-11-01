@@ -70,3 +70,8 @@ Tip You can get the correct commands with the ID filled in from the output of th
 
  rosa delete operator-roles -c <id> --yes --mode auto
  rosa delete oidc-provider -c <id>  --yes --mode auto
+
+
+ https://console.redhat.com/openshift/overview/rosa/hands-on?source=rhhe7&intcmp=7015Y000003sdOhQAI
+
+ https://www.redhat.com/en/products/interactive-walkthrough/install-rosa

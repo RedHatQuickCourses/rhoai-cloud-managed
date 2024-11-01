@@ -46,11 +46,3 @@ Depending on an organization's maturity in AI model powered application developm
  * OpenShift AI focuses on  Empower businesses to manage their AI model lifecycle effectively, transitioning from experimentation to production. From data ingestion and prepartion for AI model training and inference through operationalizing the entire lifecycle of enterprise multi-AI model application development all the way through AI model monitoring and maintenance in production.
 
 While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud providers and on-premises environments including _disconnected or air-gapped environment which going forward will be known as *Private AI*._
-
-== FictionCorp 
-
-As stated in the introduction, the FictionCorp organization plans to create an AI powered chat application for their call center.  Their existing knowledge base is currently stored in AWS, but requires each representative to search through documentation which adds time to each call or chat.  Based on the associate's tenure these searches can take from 5-20 minutes. 
-
-The phase one goal is to replace the documentation search with an Generative AI Chatbot that can be utilized on the initial call and reduce response times to customers request.
-
-While RHEL AI appears to be an excellent solution for this use cases. Before we start solutioning their needs, let's head to the next segment to examine the benefits of using Red Hat's managed service offering of *OpenShift AI Cloud Service* as a possible solution.

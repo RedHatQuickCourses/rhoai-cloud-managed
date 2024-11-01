@@ -1,6 +1,8 @@
 = Red Hat OpenShift AI on Hyperscalers
 :navtitle: Home
 
+//Waiting for on-premises hardware can take weeks or months, obtaining a Red Hat AI Platform from Cloud providers, AWS specifically in this course, in minutes can be a crucial component for unlocking the full potential of *generative AI* and *predictive AI* for organizations on the move.
+
 
 image::cloudservices_img.png[width=600]
 

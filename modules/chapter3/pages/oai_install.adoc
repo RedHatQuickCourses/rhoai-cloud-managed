@@ -1,4 +1,4 @@
-== OpenShift AI Install
+= OpenShift AI Install
 
 == Operators and Red Hat OpenShift Container Platform
 

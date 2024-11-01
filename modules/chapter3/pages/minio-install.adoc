@@ -26,8 +26,14 @@ image::minio_install.gif[width=600]
  . Click on the Project Selection list dropdown and select the *"ai-model-development"* project or the data science project you created in the previous step. 
 
 
+=== Minio Deployment Code
+ 
+// The title attribute is used as
+// clickable text to open the example block.
+.Click to see code
+[%collapsible]
+====
 ```yaml
----
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -228,4 +234,4 @@ Once logged into the MinIO Console:
    ..  *models* (optional) 
 
 
-This completes the pre-work to configure the data scicence pipeline lab environment. With our S3 Compatible storage ready to go, let's head to next section of the course and learn more about DSP concepts.
+This completes the pre-work, with our S3 Compatible storage ready to go, let's head to next section of the course and learn more about Red Hat OpenShift AI Model serving  with Rag.
