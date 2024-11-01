@@ -75,3 +75,8 @@ Tip You can get the correct commands with the ID filled in from the output of th
  https://console.redhat.com/openshift/overview/rosa/hands-on?source=rhhe7&intcmp=7015Y000003sdOhQAI
 
  https://www.redhat.com/en/products/interactive-walkthrough/install-rosa
+
+
+OpenShift AI is available as an add-on cloud service to Red Hat OpenShift Service on AWS or Red Hat OpenShift Dedicated or as a self-managed software product. It provides an AI platform with popular open source tooling. Familiar tools and libraries like Jupyter, TensorFlow, and PyTorch along with MLOps components for model serving and data science pipelines are integrated into a flexible UI.
+
+
