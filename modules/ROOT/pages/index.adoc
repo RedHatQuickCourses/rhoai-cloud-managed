@@ -5,25 +5,25 @@
 
 This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform managed solutions with customers who utilize AWS cloud services.
 
-Utilizing reserved or on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on AWS at an hourly basis or yearly agreements allows flexibility of adjusting resource allocations for research and development projects when complete.
+In this course, we will focus on Red Hat AI solutions that can be instantiated on AWS Cloud while providing a brief overview of AWS AI Services that can be replaced with these Red Hat AI services.
 
-This course will focus only on Red Hat AI solutions that can be instantiated on AWS Cloud while also providing a brief overview of  AWS AI Services that can be used in combination with the Red Hat AI platform solutions.
+//Utilizing reserved or on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on AWS at an hourly basis or yearly agreements allows flexibility of adjusting resource allocations for research and development projects when complete.
 
 
 == Objectives
 
 ==== On completing this course, you should be able to:
 
+  * Identify Red Hat’s AI platform products
   * Describe how AWS cloud deployments can simplify *Red Hat AI* adoption
-  * Identify Red Hat’s AI platform products that can run on AWS
   * Understand dependencies to deploy Red Hat AI solutions on AWS
-  * Identify the difference between Red Hat AI platform and AWS SaaS offerings
+  * Identify use case between Red Hat AI platform and AWS SaaS offerings
   ** Hands on Activity - Getting hands on with AWS AI Services
-  * Know the recommended instances for RHEL AI on AWS. 
-  ** Hands on Activity - External Lab - Deploy Red Hat AI on AWS
+  * Know the recommended instance types for RHEL AI on AWS. 
+  ** Hands on Activity - External Lab - Deploy RHEL AI on AWS
   * Explain the customer challenges that RHOAI Cloud Service can address.
   * Explain the value / benefits of RHOAI cloud service
-  * Interactive Demostrations of instantiating OpenShift ROSA
+  ** Interactive Demonstrations of instantiating OpenShift ROSA
  
 
 
@@ -32,12 +32,14 @@ The PTL team acknowledges the valuable contributions of the following Red Hat as
 
 Karlos Knox
 
-Yogita Sona - Deployment of RHEL AI on AWS Lab
+Yogita Sona - Deploy RHEL AI on AWS Lab
+
 
 
 
 == Classroom Environment
 
 Launch an https://demo.redhat.com/catalog?search=AWS+Blank+Open+Environment&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod[AWS Blank Open Environment, window=blank] to follow along with this guided lab.
+
 
 

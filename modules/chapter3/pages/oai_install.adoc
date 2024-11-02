@@ -104,7 +104,7 @@ image::authorino_install.gif[width=600]
 
 == Installation of Red Hat OpenShift AI Operator
 
-image::openshiftai_install.gif[width=600]
+image::openshiftai_install_214.gif[width=600]
 
 * Navigate to **Operators** -> **OperatorHub** and search for *OpenShift AI*.
 
@@ -123,7 +123,7 @@ The next step is to create an OpenShift AI *Data Science Cluster (DSC)*.
 
 _A DataScienceCluster is the plan in the form of an YAML outline for Data Science Cluster API deployment. Manually editing the YAML configuration can adjust the settings of the OpenShift AI DSC._
 
-image::dsc_install.gif[width=600]
+image::dsc_install_214.gif[width=600]
 
 Return to the OpenShift Navigation Menu, Select Installed Operators, and click on the OpenShift AI Operator name to open the operator.
 
@@ -157,7 +157,7 @@ Navigate to & select the Data Science Projects section.
 
  . Select the Create Data Science Project button.
 
- . Enter a name for your project, such as *rag-project*.
+ . Enter a name for your project, such as *fraud-detection*.
 
  . The resource name should be populated automatically.
 
@@ -166,6 +166,6 @@ Navigate to & select the Data Science Projects section.
  . Select Create.
 
 
-Once complete, you should be on the landing page of the "rag-project" Data Science Project section of the OpenShift AI Console / Dashboard. 
+Once complete, you should be on the landing page of the "fraud_detection" Data Science Project section of the OpenShift AI Console / Dashboard. 
 
 

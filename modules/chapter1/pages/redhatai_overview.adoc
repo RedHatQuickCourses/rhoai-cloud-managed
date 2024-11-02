@@ -8,41 +8,49 @@
 
 == Red Hat AI Platform
 
-==== Subscription details
+==== Subscription Specifics
 
-The Red Hat AI platform includes RHEL AI and OpenShift AI which will be delivered as an integrated solution. RHEL AI is included with an OpenShift AI subscription or available as a standalone product.
+The Red Hat AI platform includes RHEL AI and Red Hat OpenShift AI which are in phase of an integration process so both products are delivered as a harmonized solution. RHEL AI entitlements are included with an RHOAI subscription or available as a standalone product.
 
 While RHEL AI can be purchased and installed without any additional subscriptions, RHOAI is an add-on feature set which also requires an OpenShift Container Platform cluster subscription. 
+
+'''
 
 ===  RHEL AI
 
 [WARNING]
-While customers can bring their own large language models (LLMs), RHEL AI is optimized to work with IBM's Granite family of AI models. These open source, enterprise-grade models are tailored for business and *indemnified* against generating copyrighted text. As of 11/1/2024 only the Granite starter model is indemnified; only if not modified and downloaded from the Red Hat Registry.
+While customers can bring their own large language models (LLMs), RHEL AI is optimized to work with IBM's Granite family of AI models. These open source, enterprise-grade models are tailored for business and *indemnified* against generating copyrighted text. Currently, as of Q4/24, only the Granite starter model is indemnified if not modified and downloaded from the Red Hat Registry.
 
 
 RHEL AI is specially designed for open source generative AI model fine tuning and inference. 
 
- . Provides a simplified approach to get started with generative AI that includes open source models.
+ . Provides a simplified approach to get started with *generative AI* using open source AI large language models.
  . Makes Generative AI accessible to developers and domain experts with little data science expertise.
  . Provides the ability to do training & inference on discrete server deployments.
 
-=== OpenShift AI
+More details are available in the RHEL AI on AWS section.
 
-OpenShift AI is a fully functional MLOPs platform which is capable of providing life cycle management for both predictive and generative AI solutions.
-
- . Provides support for both generative and predictive AI models with a BYOM approach.
- . Includes distributed compute, collaborative workflows, model serving and monitoring.
- . Offers enterprise grade machine learning operations platform (MLOps) capabilities and the ability to scale across hybrid-clouds.
- . Includes Red Hat Enterprise Linux AI, including the Granite family models.
 
 '''
 
-Depending on an organization's maturity in AI model powered application development. Red Hat AI provides both an out the box Generative AI model product with RHEL AI which scales to integrate with OpenShift AI to provide the full MLOps platform for multiple model lifecycle management.
+=== Red Hat OpenShift AI
+
+RHOAI is a fully functional MLOPs platform which is capable of providing life cycle management for both *predictive AI* and *generative AI* solutions.
+
+ . Provides support for both generative and predictive AI models with a BYOM approach.
+ . Includes framework to manage distributed compute, collaborative workflows, model serving and monitoring.
+ . Offers enterprise grade machine learning operations platform (MLOps) capabilities while providing a consistent engineering experience across hybrid-clouds.
+ . Includes Red Hat Enterprise Linux AI entitlements.
+
+
+'''
+
+Depending on an organization's maturity in AI model powered application development. Red Hat AI provides both an out the box Generative AI model product with RHEL AI which scales to integrate with OpenShift AI to provide the full MLOps platform for multi-model AI lifecycle management.
 
 ==== Summary:
 
- * RHEL AI focuses on organizations seeking to advance in their AI adoption journey by customizing models through fine-tuning using internal data without dedicated data scientists or MLOPs engineers.
+ * *RHEL AI* excels as a getting started solution for low AI maturity organizations seeking to advance in their AI adoption journey by customizing models through fine-tuning using internal data, or who wish to keep internal data private without dedicated data scientists or MLOPs engineers.
 
- * OpenShift AI focuses on  Empower businesses to manage their AI model lifecycle effectively, transitioning from experimentation to production. From data ingestion and prepartion for AI model training and inference through operationalizing the entire lifecycle of enterprise multi-AI model application development all the way through AI model monitoring and maintenance in production.
+ * *OpenShift AI* focuses on Empowering businesses to manage their AI model lifecycle effectively, transitioning from experimentation to production. From data ingestion and preparation for AI model training and inference through operationalizing the entire lifecycle of enterprise multi-AI model application development all the way through AI model monitoring and maintenance in production.
 
-While this course focuses on AWS deployments, either of these solutions can be deployed across multiple cloud providers and on-premises environments including _disconnected or air-gapped environment which going forward will be known as *Private AI*._
+While this course focuses on AWS deployments, both of these Red Hat AI services can be deployed across multiple hyperscalers or on-premises environments, including _disconnected or air-gapped environment which going forward will be known as *Private AI*._
