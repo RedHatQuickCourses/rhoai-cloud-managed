@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amazon SageMaker :: Red Hat AI on AWS Cloud</title>
+    <link rel="prev" href="index.html">
+    <link rel="next" href="aws_bedrock.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Red Hat AI on AWS Cloud</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="redhat-ai-on-aws" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Red Hat AI on AWS Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aws_q.html">Amazon Q</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aws_ai_instances.html">Amazon EC2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Red Hat AI on AWS Cloud</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Red Hat AI on AWS Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
+    <li><a href="index.html">AWS AI Services</a></li>
+    <li><a href="aws_sagemaker.html">Amazon SageMaker</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Amazon SageMaker</h1>
+<div class="sect1">
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Understanding Amazon SageMaker</p>
+</li>
+<li>
+<p>Get Hands-on with Amazon SageMaker QuickStart</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_amazon_sagemaker"><a class="anchor" href="#_what_is_amazon_sagemaker"></a>What is Amazon SageMaker?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more all in one integrated development environment (IDE).</p>
+</div>
+<div class="paragraph">
+<p>SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own Foundation Models (FMs), large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs.</p>
+</div>
+<div class="paragraph">
+<p>Amazon SageMaker empowers Data Scientists, Developers, and Business Data Analysts regardless of their ML expertise to build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.</p>
+</div>
+<hr>
+<div class="ulist">
+<ul>
+<li>
+<p>Building models – You can create ML models seamlessly and prepare them for training. SageMaker has tools that allow you to connect to your training data and select and optimize the appropriate algorithms for the application. You don’t have to struggle to choose your preferred algorithm because the service has a list of some of the most popular and commonly used ML algorithms.</p>
+</li>
+<li>
+<p>Training models – With SageMaker, you can train your models easily and quickly. The service has the necessary infrastructure to train and to scale.</p>
+</li>
+<li>
+<p>Deploying models – After building and training your models, it is time to deploy them. SageMaker helps you implement ML models swiftly and with ease. You can start generating predictions on fresh data and those predictions are available to any production platform via an accessible API.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ml-concepts-10.png" alt="ml concepts 10" width="480">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sagemaker_studio"><a class="anchor" href="#_sagemaker_studio"></a>SageMaker Studio</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/aws_sagemaker_open.gif" alt="aws sagemaker open" width="600">
+</div>
+</div>
+<div class="paragraph">
+<p>SageMaker Studio is the dashboard product used to interact with this cloud service and access machine learning models from a variety of model providers. It provides a unified, web-based interface to manage your data, code and models in a single place. SageMaker Studio also provides easy scalability and reliable security.</p>
+</div>
+<div class="sect3">
+<h4 id="_sagemaker_features"><a class="anchor" href="#_sagemaker_features"></a>SageMaker Features</h4>
+<div class="paragraph">
+<p>In SageMaker, a notebook is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized.</p>
+</div>
+<div class="paragraph">
+<p>SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch.</p>
+</div>
+<div class="paragraph">
+<p>Keep track of models over time with SageMaker’s Model Monitor feature. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.</p>
+</div>
+<div class="paragraph">
+<p>The platform integrates with popular DevOps tools, like AWS CodePipe and Jenkins, through the SageMaker console, APIs or other methods. This allows businesses to create continuous integration and continuous deployment (CI/CD) pipelines for continuous delivery of ML models.</p>
+</div>
+<div class="paragraph">
+<p>SageMaker Studio has several automation tools to accelerate the ML process and provide greater visibility and control over the various steps required to build production-ready models. These are just some of the available tools:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AWS Autopilot automatically builds and trains ML models while providing you with complete visibility into model creation.</p>
+</li>
+<li>
+<p>Data Wrangler is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.</p>
+</li>
+<li>
+<p>Debugger monitors your models for bottlenecks.</p>
+</li>
+<li>
+<p>Edge Manager extends ML monitoring to edge devices.</p>
+</li>
+<li>
+<p>Ground Truth accelerates data labeling and lets you create high-quality training samples.</p>
+</li>
+<li>
+<p>Model Monitor monitors ML models and notifies you when it detects deviations.</p>
+</li>
+<li>
+<p>Pipelines automate ML workflows, enabling you to scale ML across your organization.</p>
+</li>
+<li>
+<p>SageMaker Project is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/aws_sagemaker_overview.gif" alt="aws sagemaker overview" width="600">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_much_does_sagemaker_cost"><a class="anchor" href="#_how_much_does_sagemaker_cost"></a>How much does SageMaker cost ?</h3>
+<div class="paragraph">
+<p>Like many AWS products, SageMaker charges you for what you use, without minimum and upfront commitments. You incur costs for building, training, and deploying ML models by the second. You pay for the ML compute, storage, instances, and data processing resources you utilize.</p>
+</div>
+<div class="paragraph">
+<p>For specific pricing information depending on instance size and tasks, visit the <a href="https://aws.amazon.com/sagemaker/pricing/" target="blank">Amazon SageMaker pricing dashboard</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.</p>
+</div>
+<div class="paragraph">
+<p>It reduces the complexity of model development by providing a web-based interface for creating ML pipelines and pre-built algorithms. These integrations provide a streamlined, standard process for packaging and deploying ML models, helping MLOps teams produce models faster and with fewer errors.</p>
+</div>
+<div class="paragraph">
+<p>Amazon SageMaker uses domains to organize user profiles, applications, and their associated resources.</p>
+</div>
+<div class="paragraph">
+<p>SageMaker includes all of the tools you need to take your models from data preparation to experimentation to production with increased productivity. In a single visual interface, you can do the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Write and run code in Jupyter notebooks</p>
+</li>
+<li>
+<p>Prepare data for machine learning</p>
+</li>
+<li>
+<p>Build and train ML models</p>
+</li>
+<li>
+<p>Deploy the models and monitor the performance of their predictions</p>
+</li>
+<li>
+<p>Track and debug ML experiments</p>
+</li>
+<li>
+<p>Collaborate with other users in real time</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lab_exercise"><a class="anchor" href="#_lab_exercise"></a>Lab Exercise:</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_demo_platform_lab_environment"><a class="anchor" href="#_demo_platform_lab_environment"></a>Demo Platform Lab Environment</h3>
+<div class="paragraph">
+<p>Launch an AWS Blank Open Environment to follow along with this guided lab.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://demo.redhat.com/catalog?search=AWS+Blank+Open+Environment&amp;item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod" target="blank">AWS Blank Open Environment</a></p>
+</div>
+<div class="paragraph">
+<p>This lab environment can take up to 20 minutes to become available, however it&#8217;s usually available in a few minutes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logon_to_the_aws_console_and_open_sagemaker"><a class="anchor" href="#_logon_to_the_aws_console_and_open_sagemaker"></a>Logon to the AWS Console and open SageMaker</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/aws_sagemaker_open.gif" alt="aws sagemaker open" width="600">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use the link and credentials provided by Demo Hub to Logon to the AWS Console.</p>
+</li>
+<li>
+<p>Use the search bar to search for <strong>sagemaker</strong>.</p>
+</li>
+<li>
+<p>Under service click the <strong>Amazon SageMaker</strong> tile to open Amazon SageMaker.</p>
+</li>
+<li>
+<p>Explore the SageMaker home page.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>CLick on Setup Domain</p>
+</div>
+<div class="paragraph">
+<p>-error message</p>
+</div>
+<div class="paragraph">
+<p>Create VPC
+Create Subnet</p>
+</div>
+<div class="paragraph">
+<p>Click on Setup Domain
+ . In SageMaker, a domain is an environment for your team to access SageMaker resources. A domain consists of a list of authorized users and users within a domain can share notebook files and other artifacts with each other. One account can have either one or multiple domains.</p>
+</div>
+<div class="paragraph">
+<p>&#8201;&#8212;&#8201;similar to an OpenShift AI Data Science Project..</p>
+</div>
+<div class="paragraph">
+<p>Wait until the pending status shows ready.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="index.html">AWS AI Services</a></span>
+  <span class="next"><a href="aws_bedrock.html">Amazon Bedrock</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
