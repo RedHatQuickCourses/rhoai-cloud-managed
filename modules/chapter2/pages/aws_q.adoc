@@ -2,9 +2,45 @@
 
 == Objectives
 
- * Understand why Amazon Q exist
- * Understand how to utilize Amazon for AI enabled applications
+ * Analyze the features Amazon Q 
+ * Descrive Amazon Q use cases
 
+
+== What is Amazon Q
+
+Amazon Q is Amazon's version of ChatGPT. Amazon Q can be used as an intelligent virtual assistant across all business functions and by employees of all levels and capabilities. By simply chatting with Amazon Q in natural language, users can get help with their digital tasks.
+
+Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics—by connecting to enterprise data repositories and summarizing the data logically. It is built with security and privacy in mind from the start, making it easier for organizations to use generative AI to increase productivity and speed up innovation.
+
+There are two services offered as Amazon Q:
+
+ * Amazon Q Business - Business users can have tailored conversations, solve problems, generate content, take actions, streamline tasks, and more.
+ * Amazon Q Developer - Developers can use it for all their tasks like coding, testing, upgrading, troubleshooting, and security scanning.
+
+Amazon Q Business
+
+Amazon Q Business is a generative AI assistant that helps your team work smarter. It can answer questions, provide summaries, generate content, and securely complete tasks based on the information in your enterprise systems. Users can request information about company policies, product information, business results, and more across data repositories. Anyone can automate generative AI tasks—from content creation to email writing and raising tickets. Amazon Q Business empowers your team to be more data-driven, creative, and productive.
+
+=== What model is Amazon Q built on ?
+
+Amazon Q is built on Amazon Bedrock, a fully managed service for building generative AI applications that offers a choice of high-performing foundation models (FMs) from Amazon and leading AI companies. Amazon Q uses multiple Foundational Models to complete its tasks and uses logic to route tasks to the Foundational Model that is the best fit for the job.
+
+
+
+Amazon Q Developer
+
+Amazon Q Developer can assist your developers and IT professionals with many different tasks—from coding, testing, and upgrading applications to diagnosing errors, performing security scanning and fixes, and optimizing AWS resources. Amazon Q Developer Agents have advanced multistep planning and reasoning capabilities to implement new software features from developer requests and boost development speed and quality.
+
+=== Using Amazon Q
+
+Amazon Q easily and securely connects to over 40 commonly used business tools, such as wikis, intranets, Atlassian, Gmail, Microsoft Exchange, Salesforce, ServiceNow, Slack, and Amazon Simple Storage Service (Amazon S3). Simply point your Amazon Q generative AI assistant at any enterprise data or code repository. It will search all your data, summarize logically, analyze trends, and engage in dialogue with end users about the data. With customized access, your business users can find the data they need, no matter where it is stored in your organization.
+
+
+
+
+'''
+'''
+'''
 
 The most capable generative AI–powered assistant for accelerating software development and leveraging companies' internal data
 
@@ -17,3 +53,25 @@ Amazon Q Developer assists developers and IT professionals with all their tasks�
 Amazon Q easily and securely connects to over 40 commonly used business tools, such as wikis, intranets, Atlassian, Gmail, Microsoft Exchange, Salesforce, ServiceNow, Slack, and Amazon Simple Storage Service (Amazon S3). Simply point Amazon Q at your enterprise data and code repositories, and it will search all your data, summarize logically, analyze trends, and engage in dialogue with end users about the data. This helps business users access all their data no matter where it resides in their organization.
 
 
+== Amazon Q Pricing
+
+==== Amazon Q Business pricing:
+
+ * Amazon Q Business Lite - $3 per user/mo.
+
+ ** The Amazon Q Business Lite subscription provides users access to basic functionality such as asking questions and receiving permission-aware responses.
+ * Amazon Q Business Pro - $20 per user/mo.
+ ** The Amazon Q Business Pro subscription provides users access to the full suite of Amazon Q Business capabilities, including access to Amazon Q Apps, and Amazon Q in QuickSight (Reader Pro).
+
+==== Amazon Q Developer pricing:
+
+ * Amazon Q Developer Free Tier: 
+ ** Chat, debug code, add tests, and more in your integrated developer environment (IDE) (limit 50 interactions per month)
+ ** Amazon Q Developer Agent for code transformation (limit 1,000 lines of submitted code per month)
+* Amazon Q Developer Pro Tier - $19/mo.
+** IP indemnity
+** Enterprise administration (SSO)
+** Analytics dashboard
+
+
+For detialed information https://aws.amazon.com/q/pricing/[visit the Amazon Q pricing plans guide, window=blank]

@@ -3,29 +3,87 @@
 == Objectives
 
  * Understanding Amazon SageMaker
- * Optional - Get Hands on with Amazon SageMaker domain
-
-
-[NOTE]
-This is a full featured MLOps platform most similar to OpenShift AI.  The primary workflow is the same, data preparation, model training, model deployment for AI powered applications.
-
-image::ml-concepts-10.png[width=600]
+ * Get Hands-on with Amazon SageMaker QuickStart
 
 == What is Amazon SageMaker? 
 
-A tool for Data Scientists, Developers, and Business Data Analysts regardless of their ML expertise to build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.
-
-Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more – all in one integrated development environment (IDE). 
+Amazon SageMaker is a fully managed service that brings together a broad set of tools to enable high-performance, low-cost machine learning (ML) for any use case. With SageMaker, you can build, train and deploy ML models at scale using tools like notebooks, debuggers, profilers, pipelines, MLOps, and more all in one integrated development environment (IDE). 
 
 SageMaker supports governance requirements with simplified access control and transparency over your ML projects. In addition, you can build your own Foundation Models (FMs), large models that were trained on massive datasets, with purpose-built tools to fine-tune, experiment, retrain, and deploy FMs. 
 
+Amazon SageMaker empowers Data Scientists, Developers, and Business Data Analysts regardless of their ML expertise to build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.
+
+'''
+
+ * Building models – You can create ML models seamlessly and prepare them for training. SageMaker has tools that allow you to connect to your training data and select and optimize the appropriate algorithms for the application. You don’t have to struggle to choose your preferred algorithm because the service has a list of some of the most popular and commonly used ML algorithms.
+ * Training models – With SageMaker, you can train your models easily and quickly. The service has the necessary infrastructure to train and to scale.
+ * Deploying models – After building and training your models, it is time to deploy them. SageMaker helps you implement ML models swiftly and with ease. You can start generating predictions on fresh data and those predictions are available to any production platform via an accessible API.
+
+
+image::ml-concepts-10.png[width=480]
+
+
+
 //SageMaker offers access to hundreds of pretrained models, including publicly available FMs, that you can deploy with just a few clicks.
 
-Sage Maker Studio is the dashboard product used to interact with this Cloud Service and access machine learning models from a variety of model providers.
+=== SageMaker Studio 
+
+image::aws_sagemaker_open.gif[width=600]
+
+SageMaker Studio is the dashboard product used to interact with this cloud service and access machine learning models from a variety of model providers. It provides a unified, web-based interface to manage your data, code and models in a single place. SageMaker Studio also provides easy scalability and reliable security. 
+
+==== SageMaker Features
+
+In SageMaker, a notebook is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized. 
+
+SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch. 
+
+Keep track of models over time with SageMaker’s Model Monitor feature. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.
+
+The platform integrates with popular DevOps tools, like AWS CodePipe and Jenkins, through the SageMaker console, APIs or other methods. This allows businesses to create continuous integration and continuous deployment (CI/CD) pipelines for continuous delivery of ML models. 
+
+SageMaker Studio has several automation tools to accelerate the ML process and provide greater visibility and control over the various steps required to build production-ready models. These are just some of the available tools:
+
+ * AWS Autopilot automatically builds and trains ML models while providing you with complete visibility into model creation.
+ * Data Wrangler is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.
+ * Debugger monitors your models for bottlenecks.
+ * Edge Manager extends ML monitoring to edge devices.
+ * Ground Truth accelerates data labeling and lets you create high-quality training samples.
+ * Model Monitor monitors ML models and notifies you when it detects deviations.
+ * Pipelines automate ML workflows, enabling you to scale ML across your organization.
+ * SageMaker Project is an AWS Service Catalog–provisioned product used to create an end-to-end ML solutions.
 
 image::aws_sagemaker_overview.gif[width=600]
 
+=== How much does SageMaker cost ?
+
+Like many AWS products, SageMaker charges you for what you use, without minimum and upfront commitments. You incur costs for building, training, and deploying ML models by the second. You pay for the ML compute, storage, instances, and data processing resources you utilize.
+
+For specific pricing information depending on instance size and tasks vist the https://aws.amazon.com/sagemaker/pricing/[Amazon SageMaker pricing dashboard, window=blank]
+
+== Summary:
+
+Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.
+
+It reduces the complexity of model development by providing a web-based interface for creating ML pipelines and pre-built algorithms. These integrations provide a streamlined, standard process for packaging and deploying ML models, helping MLOps teams produce models faster and with fewer errors. 
+
+Amazon SageMaker uses domains to organize user profiles, applications, and their associated resources.
+ 
+SageMaker includes all of the tools you need to take your models from data preparation to experimentation to production with increased productivity. In a single visual interface, you can do the following tasks:
+
+ * Write and run code in Jupyter notebooks
+ * Prepare data for machine learning
+ * Build and train ML models
+ * Deploy the models and monitor the performance of their predictions
+ * Track and debug ML experiments
+ * Collaborate with other users in real time
+
+With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.
+
+
 == Lab Exercise:
+
+
 
 === Demo Platform Lab Environment
 
@@ -59,33 +117,6 @@ Click on Setup Domain
 
 Wait until the pending status shows ready.
 
-
-Amazon SageMaker Studio Classic is a web-based integrated development environment (IDE) for machine learning (ML). Studio Classic lets you build, train, debug, deploy, and monitor your ML models. Studio Classic includes all of the tools you need to take your models from data preparation to experimentation to production with increased productivity. In a single visual interface, you can do the following tasks:
-
-Write and run code in Jupyter notebooks
-
-Prepare data for machine learning
-
-Build and train ML models
-
-Deploy the models and monitor the performance of their predictions
-
-Track and debug ML experiments
-
-Collaborate with other users in real time
-
-Amazon SageMaker uses domains to organize user profiles, applications, and their associated resources. An Amazon SageMaker domain consists of the following:
-
-An associated Amazon Elastic File System (Amazon EFS) volume
-
-A list of authorized users
-
-A variety of security, application, policy, and Amazon Virtual Private Cloud (Amazon VPC) configurations
-
-
-Summary:
-
-Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.
 
 
 

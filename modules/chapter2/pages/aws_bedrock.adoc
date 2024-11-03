@@ -2,20 +2,86 @@
 
 == Objectives
 
- * Explain how Bedrock is unique in the AWS AI model space
- * Understand when Openshift AI and RHEL AI products solutions are applicable.
-
-
-[NOTE]
-This is a model serving platform similar to RHEL AI, rather than using open source models Amazon Bedrock allows customers to access instances of foundation models from leading third party providers such as Anthropic, AI21 Labs, Stability AI, and Amazon via a single API.
+ * Understand the services provided by Amazon Bedrock
+ * Describe the differences between Bedrock and SageMaker
+ 
 
 == What is Amazon Bedrock?
 
-Amazon Bedrock is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon through a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI. 
+Amazon Bedrock is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon *through a single API*, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI. 
 
-Using Amazon Bedrock, you can easily experiment with and evaluate top FMs for your use case, privately customize them with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), and build agents that execute tasks using your enterprise systems and data sources. 
+Using Amazon Bedrock, you can easily experiment with and evaluate top foundation models for your use cases, privately customize them with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), and build agents that execute tasks using your enterprise systems and data sources.
 
 Since Amazon Bedrock is serverless, you don't have to manage any infrastructure, and you can securely integrate and deploy generative AI capabilities into your applications using the AWS services you are already familiar with.
 
 image::aws_bedrock_overview.gif[width=600]
 
+
+== When to use Bedrock?
+
+Choose Amazon Bedrock if you primarily need to use pre-trained foundation models for inference, and want to select the foundation model that best fits your use case. Amazon Bedrock is a fully managed service for building generative AI applications with support for popular foundation models, including Anthropic Claude, Cohere Command & Embed, AI21 Labs Jurassic, Meta Llama, Mistral AI, Stable Diffusion XL and Amazon Titan. _Supported FMs are updated on a regular basis._
+
+Use Amazon Bedrock to build generative AI applications with security, privacy, and responsible AI regardless of the foundation model you choose. Amazon Bedrock offers model-independent, single API access, so you can use different foundation models, and upgrade to the latest model versions, with minimal code changes. Amazon Bedrock also supports model fine-tuning and the import of custom models.
+
+
+== Bedrock Features
+
+*Amazon Bedrock Agents* offer you the ability to build and configure autonomous agents within your application. These agents securely connect to your company's data sources and augment user requests with the right information to generate accurate responses. You can create an agent in Amazon Bedrock with just a few quick steps, accelerating the time it takes to build generative AI applications. 
+
+*Amazon Bedrock Guardrails* helps you to implement customized safeguards and responsible AI policies for your generative AI applications. It provides additional customizable safety protections on top of the native protections offered by FMs. It is the only responsible AI capability that helps enable customers to build and customize safety, privacy, and truthfulness protections for their generative AI applications in a single solution, and it works with all FMs in Amazon Bedrock, as well as fine-tuned models.
+
+*Amazon Bedrock Knowledge Bases* provides a fully managed end-to-end retrieval-augmented generation (RAG) workflow, enabling FMs and agents to access contextual information from your company's private data sources. This allows them to deliver more relevant, accurate, and customized responses. You can securely connect FMs and agents to multiple data sources such as Amazon S3, Confluence, Salesforce, and SharePoint. If you don't have an existing vector database, Amazon Bedrock creates an Amazon OpenSearch Serverless vector store for you.
+
+
+== Compare Bedrock and SageMaker
+
+While both Amazon Bedrock and Amazon SageMaker enable the development of ML and generative AI applications, they serve different purposes.
+
+*Difference between Bedrock and SageMaker*
+|===
+| Catagory | Amazon Bedrock | Amazon SageMaker 
+ 
+| *Use Cases*
+| Ideal for integration of AI capabilities into applications without investing heavily in custom model development
+| Optimized for unique or specialized AI/ML needs that may require custom models
+ 
+| *Target Users*
+| Optimized for developers and businesses without deep machine learning expertise
+| Optimized for data scientists, machine learning engineers, and developers
+
+| *Customization*
+| You'll primarily use pre-trained models, but can fine-tune as needed
+| You have full control, and can customize or create models according to your needs
+
+| *Pricing*
+| Pay-as-you-go pricing based on the number of API calls made to the service
+| Charges based on the usage of compute resources, storage, and other services
+
+| *Integration*
+| Integrate pre-trained models into applications through API calls
+| Integrate custom models into applications, with more customization options
+
+| *Expertise Required*
+| Basic level of machine learning expertise needed to use pre-trained models
+| Working knowledge of data science and machine learning skills are helpful for building and optimizing models
+
+|===
+
+
+
+=== Bedrock Pricing
+
+Amazon Bedrock employs a simple pricing model based on the number of API calls made to the service. You pay a fixed price per API call, which includes the cost of running the pre-trained models and any associated data processing. This straightforward pricing structure makes it more efficient for you to estimate and control your costs, as you pay only for the actual usage of the service. Amazon Bedrock's pricing model is particularly well-suited for applications with predictable workloads, or for cases where you want more transparency in your AI-related expenses.
+
+For text-generation models, you are charged for every input token processed and every output token generated. For embeddings models, you are charged for every input token processed. A token comprises a few characters and refers to the basic unit of text that a model learns to understand the user input and prompt. For image-generation models, you are charged for every image generated.
+
+For specifics visit the https://aws.amazon.com/bedrock/pricing/[Amazon Bedrock Pricing guide, window=blank].
+
+
+== Summary
+
+Amazon Bedrock is designed for use cases where you want to efficiently incorporate AI capabilities into your applications without investing heavily in custom model development.
+
+Amazon Bedrock is particularly useful if you have limited machine learning expertise or resources, as it helps you to benefit from AI without the need for extensive in-house development.
+
+Amazon Bedrock provides pre-trained AI models that you can integrate into applications, with limited customization.You have access to a set of API calls that you use to enter data and receive predictions from these pre-trained models. While this approach drastically simplifies the process of incorporating AI capabilities into applications, it also means that you have less control over the underlying models
