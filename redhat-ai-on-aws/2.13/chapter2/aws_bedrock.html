@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Amazon Bedrock :: Red Hat AI on AWS Cloud</title>
     <link rel="prev" href="aws_sagemaker.html">
-    <link rel="next" href="aws_ai_instances.html">
+    <link rel="next" href="aws_q.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -48,19 +48,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/index.html">Red Hat AI Platform</a>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Platform Features</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -79,10 +76,10 @@
     <a class="nav-link" href="aws_bedrock.html">Amazon Bedrock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="aws_ai_instances.html">Amazon EC2</a>
+    <a class="nav-link" href="aws_q.html">Amazon Q</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="aws_q.html">Amazon Q</a>
+    <a class="nav-link" href="aws_ai_instances.html">Amazon EC2</a>
   </li>
 </ul>
   </li>
@@ -91,7 +88,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -105,9 +111,6 @@
     <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
 </ul>
@@ -117,13 +120,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../appendix/section1.html">General questions</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -167,19 +164,18 @@
 </aside>
 <article class="doc">
 <h1 class="page">Amazon Bedrock</h1>
-<div id="preamble">
+<div class="sect1">
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This is a model serving platform similar to RHEL AI, rather than using open source models Amazon Bedrock allows customers to access instances of foundation models from leading third party providers such as Anthropic, AI21 Labs, Stability AI, and Amazon via a single API.
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand the services provided by Amazon Bedrock</p>
+</li>
+<li>
+<p>Describe the differences between Bedrock and SageMaker</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -187,10 +183,10 @@ This is a model serving platform similar to RHEL AI, rather than using open sour
 <h2 id="_what_is_amazon_bedrock"><a class="anchor" href="#_what_is_amazon_bedrock"></a>What is Amazon Bedrock?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Amazon Bedrock is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon through a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI.</p>
+<p>Amazon Bedrock is a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon <strong>through a single API</strong>, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI.</p>
 </div>
 <div class="paragraph">
-<p>Using Amazon Bedrock, you can easily experiment with and evaluate top FMs for your use case, privately customize them with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), and build agents that execute tasks using your enterprise systems and data sources.</p>
+<p>Using Amazon Bedrock, you can easily experiment with and evaluate top foundation models for your use cases, privately customize them with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), and build agents that execute tasks using your enterprise systems and data sources.</p>
 </div>
 <div class="paragraph">
 <p>Since Amazon Bedrock is serverless, you don&#8217;t have to manage any infrastructure, and you can securely integrate and deploy generative AI capabilities into your applications using the AWS services you are already familiar with.</p>
@@ -202,9 +198,117 @@ This is a model serving platform similar to RHEL AI, rather than using open sour
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_when_to_use_bedrock"><a class="anchor" href="#_when_to_use_bedrock"></a>When to use Bedrock?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Choose Amazon Bedrock if you primarily need to use pre-trained foundation models for inference, and want to select the foundation model that best fits your use case. Amazon Bedrock is a fully managed service for building generative AI applications with support for popular foundation models, including Anthropic Claude, Cohere Command &amp; Embed, AI21 Labs Jurassic, Meta Llama, Mistral AI, Stable Diffusion XL and Amazon Titan. <em>Supported FMs are updated on a regular basis.</em></p>
+</div>
+<div class="paragraph">
+<p>Use Amazon Bedrock to build generative AI applications with security, privacy, and responsible AI regardless of the foundation model you choose. Amazon Bedrock offers model-independent, single API access, so you can use different foundation models, and upgrade to the latest model versions, with minimal code changes. Amazon Bedrock also supports model fine-tuning and the import of custom models.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bedrock_features"><a class="anchor" href="#_bedrock_features"></a>Bedrock Features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Amazon Bedrock Agents</strong> offer you the ability to build and configure autonomous agents within your application. These agents securely connect to your company&#8217;s data sources and augment user requests with the right information to generate accurate responses. You can create an agent in Amazon Bedrock with just a few quick steps, accelerating the time it takes to build generative AI applications.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Bedrock Guardrails</strong> helps you to implement customized safeguards and responsible AI policies for your generative AI applications. It provides additional customizable safety protections on top of the native protections offered by FMs. It is the only responsible AI capability that helps enable customers to build and customize safety, privacy, and truthfulness protections for their generative AI applications in a single solution, and it works with all FMs in Amazon Bedrock, as well as fine-tuned models.</p>
+</div>
+<div class="paragraph">
+<p><strong>Amazon Bedrock Knowledge Bases</strong> provides a fully managed end-to-end retrieval-augmented generation (RAG) workflow, enabling FMs and agents to access contextual information from your company&#8217;s private data sources. This allows them to deliver more relevant, accurate, and customized responses. You can securely connect FMs and agents to multiple data sources such as Amazon S3, Confluence, Salesforce, and SharePoint. If you don&#8217;t have an existing vector database, Amazon Bedrock creates an Amazon OpenSearch Serverless vector store for you.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compare_bedrock_and_sagemaker"><a class="anchor" href="#_compare_bedrock_and_sagemaker"></a>Compare Bedrock and SageMaker</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While both Amazon Bedrock and Amazon SageMaker enable the development of ML and generative AI applications, they serve different purposes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Difference between Bedrock and SageMaker</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Amazon Bedrock</th>
+<th class="tableblock halign-left valign-top">Amazon SageMaker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use Cases</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ideal for integration of AI capabilities into applications without investing heavily in custom model development</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optimized for unique or specialized AI/ML needs that may require custom models</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Target Users</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optimized for developers and businesses without deep machine learning expertise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optimized for data scientists, machine learning engineers, and developers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Customization</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You&#8217;ll primarily use pre-trained models, but can fine-tune as needed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">You have full control, and can customize or create models according to your needs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Pricing</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pay-as-you-go pricing based on the number of API calls made to the service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charges based on the usage of compute resources, storage, and other services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Integration</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integrate pre-trained models into applications through API calls</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integrate custom models into applications, with more customization options</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Expertise Required</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basic level of machine learning expertise needed to use pre-trained models</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Working knowledge of data science and machine learning skills are helpful for building and optimizing models</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_bedrock_pricing"><a class="anchor" href="#_bedrock_pricing"></a>Bedrock Pricing</h3>
+<div class="paragraph">
+<p>Amazon Bedrock employs a simple pricing model based on the number of API calls made to the service. You pay a fixed price per API call, which includes the cost of running the pre-trained models and any associated data processing. This straightforward pricing structure makes it more efficient for you to estimate and control your costs, as you pay only for the actual usage of the service. Amazon Bedrock&#8217;s pricing model is particularly well-suited for applications with predictable workloads, or for cases where you want more transparency in your AI-related expenses.</p>
+</div>
+<div class="paragraph">
+<p>For text-generation models, you are charged for every input token processed and every output token generated. For embedding models, you are charged for every input token processed. A token comprises a few characters and refers to the basic unit of text that a model learns to understand the user input and prompt. For image-generation models, you are charged for every image generated.</p>
+</div>
+<div class="paragraph">
+<p>For specifics visit the <a href="https://aws.amazon.com/bedrock/pricing/" target="blank">Amazon Bedrock Pricing guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon Bedrock is designed for use cases where you want to efficiently incorporate AI capabilities into your applications without investing heavily in custom model development.</p>
+</div>
+<div class="paragraph">
+<p>Amazon Bedrock is particularly useful if you have limited machine learning expertise or resources, as it helps you to benefit from AI without the need for extensive in-house development.</p>
+</div>
+<div class="paragraph">
+<p>Amazon Bedrock provides pre-trained AI models that you can integrate into applications, with limited customization.You have access to a set of API calls that you use to enter data and receive predictions from these pre-trained models. While this approach drastically simplifies the process of incorporating AI capabilities into applications, it also means that you have less control over the underlying models</p>
+</div>
+</div>
+</div>
 <nav class="pagination">
   <span class="prev"><a href="aws_sagemaker.html">Amazon SageMaker</a></span>
-  <span class="next"><a href="aws_ai_instances.html">Amazon EC2</a></span>
+  <span class="next"><a href="aws_q.html">Amazon Q</a></span>
 </nav>
 </article>
   </div>

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Amazon EC2 :: Red Hat AI on AWS Cloud</title>
-    <link rel="prev" href="aws_bedrock.html">
-    <link rel="next" href="aws_q.html">
+    <link rel="prev" href="aws_q.html">
+    <link rel="next" href="../chapter3/index.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -48,19 +48,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/index.html">Red Hat AI Platform</a>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Platform Features</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -78,11 +75,11 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="aws_bedrock.html">Amazon Bedrock</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="aws_ai_instances.html">Amazon EC2</a>
-  </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="aws_q.html">Amazon Q</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="aws_ai_instances.html">Amazon EC2</a>
   </li>
 </ul>
   </li>
@@ -91,7 +88,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -105,9 +111,6 @@
     <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
 </ul>
@@ -117,13 +120,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../appendix/section1.html">General questions</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -168,96 +165,171 @@
 <article class="doc">
 <h1 class="page">Amazon EC2</h1>
 <div class="sect1">
-<h2 id="_ec2_cloud_compute_capacity"><a class="anchor" href="#_ec2_cloud_compute_capacity"></a>EC2 - Cloud Compute Capacity</h2>
+<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Understand the AWS recommended instances AI Model training &amp; inference</p>
+</li>
+<li>
+<p>Understand about the cost of these instances per month</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>In this section we&#8217;ll investigate a few of the instance types (virtual machines) available on Amazon EC2 that are optimized for AI workloads.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_amazon_ec2"><a class="anchor" href="#_what_is_amazon_ec2"></a>What is Amazon EC2 ?</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>At the end of the segment, there are links provided to explore instance types available that contain Accelerators (GPUs).  Search through the list and identify the instance types that are recommended to support RHEL AI on AWS.   Look through the hourly pricing to determine what a 30 day POC cost for various sizes of Granite models that could be Inference using RHEL AI.</p>
+<p>The primary service that provides instances in AWS is called Elastic Cloud Compute (EC2).</p>
+</div>
+<div class="paragraph">
+<p>Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.</p>
+</div>
+<div class="sect3">
+<h4 id="_reference_terms"><a class="anchor" href="#_reference_terms"></a>Reference terms:</h4>
+<div class="paragraph">
+<p><strong>Instance</strong> is defined as a server running an application, think of one server as one instance. An instance is a virtual machine that runs workloads in the cloud. Often the terms VM (Virtual Machine) and instance are used interchangeably.</p>
+</div>
+<div class="paragraph">
+<p>An <strong>Amazon instances type</strong> is a virtual machine (VM) that&#8217;s optimized for a specific use case and includes a combination of CPU, memory, storage, and networking capacity.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_nvidia_powered_gpu_ec2_instances"><a class="anchor" href="#_nvidia_powered_gpu_ec2_instances"></a>Nvidia Powered GPU EC2 instances</h2>
+<h2 id="_ec2_instance_types"><a class="anchor" href="#_ec2_instance_types"></a>EC2 - Instance Types</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>What are AWS Deep Learning AMIs? (DLAMI)</p>
+<p>Amazon EC2 provides the broadest and deepest instance choice to match your workload’s needs. General purpose, compute optimized, memory optimized, storage optimized, and accelerated computing instance types are available that provide the optimal compute, memory, storage, and networking balance for your workloads.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Processors from Intel, AMD, NVIDIA and AWS power these instance types and provide additional performance and cost optimizations.</p>
+</li>
+<li>
+<p>Local storage and enhanced networking options available with instance types further help optimize performance for workloads that are disk or network I/O bound.</p>
+</li>
+<li>
+<p>Many instance types also offer bare metal instances that provide your applications with direct access to the processor and memory of the underlying server for running in non-virtualized environments or for applications where you want to use your own hypervisor.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Deep learning AMIs provide customized machine images preconfigured with deep learning frameworks, NVIDIA CUDA, cuDNN, and Jupyter notebook server for distributed training.</p>
+<p><strong>AWS EC2 UltraClusters</strong></p>
 </div>
 <div class="paragraph">
-<p>Learning about deep learning – DLAMI is a great choice for learning or teaching machine learning and deep learning frameworks. The DLAMIs take away the headache from troubleshooting the installations of each framework and getting them to play along on the same computer. The DLAMIs include a Jupyter notebook and make it easy to run the tutorials that the frameworks provide for people new to machine learning and deep learning.</p>
-</div>
-<div class="paragraph">
-<p>App development – If you&#8217;re an app developer who&#8217;s interested in using deep learning to make your apps utilize the latest advances in AI, then DLAMI is the perfect test bed for you. Each framework comes with tutorials on how to get started with deep learning, and many of them have model zoos that make it easy to try out deep learning without having to create the neural networks yourself or to do any of the model training. Some examples show you how to build an image detection application in just a few minutes, or how to build a speech recognition app for your own chatbot.</p>
-</div>
-<div class="paragraph">
-<p>Machine learning and data analytics – If you&#8217;re a data scientist or you&#8217;re interested in processing your data with deep learning, then you&#8217;ll find that many of the frameworks have support for R and Spark. You will find tutorials on how to do simple regressions, all the way up to building scalable data processing systems for personalization and predictions systems.</p>
-</div>
-<div class="paragraph">
-<p>Research – If you&#8217;re a researcher who wants to try out a new framework, test a new model, or train new models, then DLAMI and AWS capabilities for scale can alleviate the pain of tedious installations and management of multiple training nodes.</p>
-</div>
-<div class="sect2">
-<h3 id="_aws_trainium_trn1_model_training_instances"><a class="anchor" href="#_aws_trainium_trn1_model_training_instances"></a>AWS Trainium (Trn1 - model training instances)</h3>
-<div class="paragraph">
-<p>These <strong>*TRN1</strong> instances are optimized for LLM deep learning training.</p>
-</div>
-<div class="paragraph">
-<p>Amazon Elastic Compute Cloud (EC2) Trn1 instances, powered by AWS Trainium chips, are purpose built for high-performance deep learning (DL) training of generative AI models, including large language models (LLMs) and latent diffusion models. Trn1 instances offer up to 50% cost-to-train savings over other comparable Amazon EC2 instances. You can use Trn1 instances to train 100B+ parameter DL and generative AI models across a broad set of applications, such as text summarization, code generation, question answering, image and video generation, recommendation, and fraud detection.</p>
-</div>
-<div class="paragraph">
-<p>The AWS Neuron SDK helps developers train models on AWS Trainium (and deploy models on the AWS Inferentia chips). It integrates natively with frameworks such as PyTorch and TensorFlow, so that you can continue using your existing code and workflows to train models on Trn1 instances. To learn about the current Neuron support for machine learning (ML) frameworks and libraries, model architectures, and hardware optimizations, see the Neuron documentation.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_aws_inferentia_inf2_model_inference_instances"><a class="anchor" href="#_aws_inferentia_inf2_model_inference_instances"></a>AWS Inferentia (Inf2 - model inference instances)</h3>
-<div class="paragraph">
-<p>High performance at the lowest cost in Amazon EC2 for generative AI inference</p>
-</div>
-<div class="paragraph">
-<p>Amazon Elastic Compute Cloud (Amazon EC2) Inf2 instances are purpose built for deep learning (DL) inference. They deliver high performance at the lowest cost in Amazon EC2 for generative artificial intelligence (AI) models, including large language models (LLMs) and vision transformers. You can use Inf2 instances to run your inference applications for text summarization, code generation, video and image generation, speech recognition, personalization, fraud detection, and more.</p>
-</div>
-<div class="paragraph">
-<p>Inf2 instances are powered by AWS Inferentia2, the second-generation AWS Inferentia chip.</p>
-</div>
-<div class="paragraph">
-<p>Inf2 instances are the first inference-optimized instances in Amazon EC2 to support scale-out distributed inference with ultra-high-speed connectivity between Inferentia chips. You can now efficiently and cost-effectively deploy models with hundreds of billions of parameters across multiple chips on Inf2 instances.</p>
-</div>
-<div class="paragraph">
-<p>The AWS Neuron SDK helps developers deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with frameworks, such as PyTorch and TensorFlow, so you can continue using your existing workflows and application code and run on Inf2 instances.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_aws_ec2_ultraclusters"><a class="anchor" href="#_aws_ec2_ultraclusters"></a>AWS EC2 UltraClusters</h3>
-<div class="paragraph">
-<p>Amazon Elastic Compute Cloud (Amazon EC2) UltraClusters can help you scale to thousands of GPUs or purpose-built ML accelerators, such as AWS Trainium, to get on-demand access to a supercomputer. They democratize access to supercomputing-class performance for machine learning (ML), generative AI, and high performance computing (HPC) developers through a simple pay-as-you-go usage model without any setup or maintenance costs. Amazon EC2 P5 instances, Amazon EC2 P4d instances, and Amazon EC2 Trn1 instances are all deployed in Amazon EC2 UltraClusters.</p>
+<p>Amazon Elastic Compute Cloud (Amazon EC2) UltraClusters can help you scale to thousands of GPUs or purpose-built ML accelerators to get on-demand access to a supercomputer. Amazon EC2 P5 instances, Amazon EC2 P4d instances, and Amazon EC2 Trn1 instances are all deployed in Amazon EC2 UltraClusters.</p>
 </div>
 <div class="paragraph">
 <p>EC2 UltraClusters consist of thousands of accelerated EC2 instances that are co-located in a given AWS Availability Zone and interconnected using Elastic Fabric Adapter (EFA) networking in a petabit-scale nonblocking network. EC2 UltraClusters also provide access to Amazon FSx for Lustre, a fully managed shared storage built on the most popular high-performance, parallel file system to quickly process massive datasets on demand and at scale with sub-millisecond latencies. EC2 UltraClusters provide scale-out capabilities for distributed ML training and tightly coupled HPC workloads.</p>
 </div>
+<div class="sect2">
+<h3 id="_regions_and_availability_zones"><a class="anchor" href="#_regions_and_availability_zones"></a>Regions and Availability Zones</h3>
 <div class="paragraph">
-<p>Amazon EC2 P5 and Trn1 instances use a second-generation EC2 UltraClusters architecture that provides a network fabric to enable fewer hops across the cluster, lower latency, and greater scale.</p>
+<p>Amazon EC2 provides the ability to place instances in multiple locations. Amazon EC2 locations are composed of Regions and Availability Zones.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Availability Zones</strong> are distinct locations that are engineered to be insulated from failures in other Availability Zones and provide inexpensive, low latency network connectivity to other Availability Zones in the same Region. By launching instances in separate Availability Zones, you can protect your applications from failure of a single location. Regions consist of one or more Availability Zones and are geographically dispersed. The Amazon EC2 Service Level Agreement commitment is 99.99% availability for each Amazon EC2 Region.</p>
+</li>
+<li>
+<p>A <strong>Region</strong>, which is a physical location around the world where AWS clusters data centers. AWS calls each group of logical data centers an Availability Zone. Each AWS Region consists of a minimum of three, isolated, and physically separate AZs within a geographic area.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For detailed information on specific instances types visit the dashboard at <a href="https://aws.amazon.com/ec2/instance-types/" target="blank">Amazon EC2 Instances Types.</a></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Explore the dashboard to search through the list and identify the instance types that are recommended to support RHEL AI on AWS.   Look through the hourly pricing to determine what a 30 day POC cost for various sizes of Granite models that could be Inference using RHEL AI.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_amazon_amis"><a class="anchor" href="#_amazon_amis"></a>Amazon AMIs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon Machine Images (AMIs) are preconfigured with an ever-growing list of operating systems, including Microsoft Windows and Linux distributions such as Amazon Linux 2, Ubuntu, Red Hat Enterprise Linux, CentOS, SUSE and Debian. We work with our partners and community to provide you with the most choice possible. The AWS Marketplace features a wide selection of commercial and free software from well-known vendors, designed to run on your EC2 instances.</p>
+</div>
+<div class="sect3">
+<h4 id="_deep_learning_amis_dlami"><a class="anchor" href="#_deep_learning_amis_dlami"></a>Deep Learning AMI&#8217;s (DLAMI)</h4>
+<div class="paragraph">
+<p>Deep learning AMIs provide customized machine images preconfigured with deep learning frameworks, NVIDIA CUDA, cuDNN, and Jupyter notebook server for distributed training.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re a researcher who wants to try out a new framework, test a new model, or train new models, then DLAMI and AWS capabilities for scale can alleviate the pain of tedious installations and management of multiple training nodes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aws_ec2_pricing"><a class="anchor" href="#_aws_ec2_pricing"></a>AWS EC2 Pricing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Savings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.</p>
+</li>
+<li>
+<p>Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.</p>
+</li>
+<li>
+<p>Amazon EC2 Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_for_ai_ml_workloads"><a class="anchor" href="#_for_ai_ml_workloads"></a>For AI / ML workloads</h4>
+<div class="paragraph">
+<p>With Amazon EC2 Capacity Blocks for ML, you can easily reserve GPU instances for a future date to run your machine learning (ML) workloads. You pay only for the amount of compute time that you need, with no long-term commitment.</p>
+</div>
+<div class="paragraph">
+<p>For more details visit <a href="https://aws.amazon.com/ec2/pricing/" target="blank">Amazon EC2 pricing</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.</p>
+</div>
+<div class="paragraph">
+<p>Amazon EC2 provides secure, resizable compute in the cloud, offering a broad choice of processor, storage, networking, OS, and purchase models.</p>
+</div>
+<div class="paragraph">
+<p>EC2 per-second billing removes the cost of unused minutes and seconds from your bill. Focus on improving your applications instead of maximizing hourly usage, especially for instances running over irregular time periods such as dev/testing, data processing, analytics, batch processing, and gaming applications.</p>
 </div>
 <div class="paragraph">
 <p>Combining AWS AI specific instances with the Red Hat AI Platform can provide customers with the rapidly provisioned, instantly scalable infrastructure to support the most demanding workloads.</p>
 </div>
-<div class="paragraph">
-<p><a href="https://aws.amazon.com/ec2/instance-explorer/?ec2-instances-cards.sort-by=item.additionalFields.category-order&amp;ec2-instances-cards.sort-order=desc&amp;awsf.ec2-instances-filter-category=*all&amp;awsf.ec2-instances-filter-processors=*all&amp;awsf.ec2-instances-filter-accelerators=accelerators%23nvidia&amp;awsf.ec2-instances-filter-additional-capabilities=*all&amp;awsf.ec2-instances-filter-workload-tags=*all" target="blank">Instance Types sorted by GPU only</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://aws.amazon.com/ec2/instance-types/" target="blank">Sort by instance type</a></p>
-</div>
-</div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="aws_bedrock.html">Amazon Bedrock</a></span>
-  <span class="next"><a href="aws_q.html">Amazon Q</a></span>
+  <span class="prev"><a href="aws_q.html">Amazon Q</a></span>
+  <span class="next"><a href="../chapter3/index.html">OpenShift AI Lab</a></span>
 </nav>
 </article>
   </div>

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>OpenShift AI Lab :: Red Hat AI on AWS Cloud</title>
-    <link rel="prev" href="../chapter2/aws_q.html">
-    <link rel="next" href="../LABENV/index.html">
+    <link rel="prev" href="../chapter2/aws_ai_instances.html">
+    <link rel="next" href="oai_install.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -48,19 +48,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/index.html">Red Hat AI Platform</a>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Platform Features</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -79,10 +76,10 @@
     <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
   </li>
 </ul>
   </li>
@@ -91,7 +88,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -105,9 +111,6 @@
     <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
 </ul>
@@ -117,13 +120,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../appendix/section1.html">General questions</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -166,12 +163,63 @@
 </aside>
 <article class="doc">
 <h1 class="page">OpenShift AI Lab</h1>
+<div class="sect1">
+<h2 id="_openshift_container_cluster_platform_ocp_environment"><a class="anchor" href="#_openshift_container_cluster_platform_ocp_environment"></a>OpenShift Container Cluster Platform (OCP) Environment</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>To be updated:</p>
+<p>Use the <a href="https://demo.redhat.com/catalog?item=babylon-catalog-prod%2Fopenshift-cnv.ocpmulti-wksp-cnv.prod" target="_blank" rel="noopener"><strong>Red Hat OpenShift Container Platform Cluster (AWS)</strong></a> catalog item in the Red Hat Demo Platform (RHDP) to run the hands-on exercises in this course.
+The reason to utlize this lab over other selections are large worker node machine instance types m5.4xlarge (16vCPU x 64GB memory) which provides resources to explore while following along with the lab without hitting allocation limits.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/demo_platform_catalog.gif" alt="demo platform catalog" width="600">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The lab environment on average takes ~40-60 minutes to enter the ready state.  While your lab environment is provisioning, I recommend that you read through the course once, then return and complete the lab portions once your <strong>OpenShift Container Cluster Platform</strong> environment is ready to go.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When ordering this catalog item in RHDP:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select Practice/Enablement for the Activity field</p>
+</li>
+<li>
+<p>Select Learning about the Product for the Purpose field</p>
+</li>
+<li>
+<p>Leave the Salesforce ID field blank</p>
+</li>
+<li>
+<p>Scroll to the bottom, read the usage cost section, then check the box to confirm acceptance of terms and conditions</p>
+</li>
+<li>
+<p>Click 'order'</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For Red Hat partners who do not have access to RHDP, you need to provision an OpenShift AI cluster on-premises, or in the supported cloud environments by following the product documentation at <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.12/html/installing_and_uninstalling_openshift_ai_self-managed/index" target="_blank" rel="noopener">Product Documentation for installing Red Hat OpenShift AI 2.14</a>.</p>
+</div>
+<div class="paragraph">
+<p>The OCP environment will provide the foundation infrastructure for Red Hat OpenShift AI (RHOAI). Once logged into the OCP dashboard, we need to install the Operators to enable RHOAI components in the OCP platform.</p>
+</div>
+</div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../chapter2/aws_q.html">Amazon Q</a></span>
-  <span class="next"><a href="../LABENV/index.html">Lab Env RHOAI self-managed</a></span>
+  <span class="prev"><a href="../chapter2/aws_ai_instances.html">Amazon EC2</a></span>
+  <span class="next"><a href="oai_install.html">OpenShift AI Install</a></span>
 </nav>
 </article>
   </div>

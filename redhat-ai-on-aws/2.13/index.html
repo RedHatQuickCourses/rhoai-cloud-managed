@@ -47,19 +47,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="chapter1/index.html">Red Hat AI Platform</a>
+    <a class="nav-link" href="chapter1/index.html">Red Hat AI on AWS Cloud</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="chapter1/redhatai_overview.html">Red Hat AI Platform Features</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="chapter1/rhel_ai.html">RHEL AI on AWS</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -78,10 +75,10 @@
     <a class="nav-link" href="chapter2/aws_bedrock.html">Amazon Bedrock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="chapter2/aws_ai_instances.html">Amazon EC2</a>
+    <a class="nav-link" href="chapter2/aws_q.html">Amazon Q</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="chapter2/aws_q.html">Amazon Q</a>
+    <a class="nav-link" href="chapter2/aws_ai_instances.html">Amazon EC2</a>
   </li>
 </ul>
   </li>
@@ -90,7 +87,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="chapter3/index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter3/oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -104,9 +110,6 @@
     <a class="nav-link" href="LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="LABENV/openshiftai-install.html">UI Deployment of Openshift AI</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
 </ul>
@@ -116,13 +119,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="appendix/appendix.html">Appendix</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="appendix/section1.html">General questions</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -169,32 +166,10 @@
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform solutions with customers who utilize AWS cloud services or have the flexibility to use AWS cloud services to provision such environments.</p>
+<p>This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform managed solutions with customers who utilize AWS cloud services.</p>
 </div>
 <div class="paragraph">
-<p>Waiting for on-premises hardware can take weeks or months, obtaining a Red Hat AI Platform from Cloud providers, AWS specifically in this course, in minutes can be a crucial component for unlocking the full potential of <strong>generative AI</strong> and <strong>predictive AI</strong> for organizations on the move.</p>
-</div>
-<div class="paragraph">
-<p>Utilizing on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on an hourly basis and shutting down research and development projects when complete.</p>
-</div>
-<div class="paragraph">
-<p>This course will focus only on Red Hat AI solutions that can be instantiated on AWS Cloud  while exploring the AWS AI Services that can be used in combination with the Red Hat AI platform solutions to provide an approach that avoids vendor lock-in.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_fictional_use_case"><a class="anchor" href="#_fictional_use_case"></a>Fictional Use Case</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A Red Hat customer reaches out because they are beginning a new generative AI project. They want to know if Red Hat has any reference use cases or frameworks for organizations beginning their AI powered application journey.</p>
-</div>
-<div class="paragraph">
-<p>They are an AWS customer but are looking for an alternative way to deploy AI models without needing data scientists or MLOps engineers. Instead a team of developers and IT operations personnel will be leading this project.   The team&#8217;s goal is to deliver a new chatbot service for their call center that can provide an internal only portal for associates to utilize.</p>
-</div>
-<div class="paragraph">
-<p>The solution needs to scale to provide similar service across the organization:
- . In phase two, become a chat resource to external customers.
- . In phase three, it should learn from chats and request new information automatically.</p>
+<p>In this course, we will focus on Red Hat AI solutions that can be instantiated on AWS Cloud while providing a brief overview of AWS AI Services that can be replaced with these Red Hat AI services.</p>
 </div>
 </div>
 </div>
@@ -206,16 +181,16 @@
 <div class="ulist">
 <ul>
 <li>
+<p>Identify Red Hat’s AI platform products</p>
+</li>
+<li>
 <p>Describe how AWS cloud deployments can simplify <strong>Red Hat AI</strong> adoption</p>
 </li>
 <li>
-<p>Identify Red Hat’s AI products that can run on AWS</p>
+<p>Understand dependencies to deploy Red Hat AI solutions on AWS</p>
 </li>
 <li>
-<p>Understand how to deploy Red Hat AI solutions on AWS</p>
-</li>
-<li>
-<p>Identify the difference between Red Hat AI platform and AWS SaaS offerings</p>
+<p>Identify use case between Red Hat AI platform and AWS SaaS offerings</p>
 <div class="ulist">
 <ul>
 <li>
@@ -225,11 +200,11 @@
 </div>
 </li>
 <li>
-<p>Explain how to deploy RHEL AI on AWS.</p>
+<p>Know the recommended instance types for RHEL AI on AWS.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Hands on Activity - External Lab - Deploy Red Hat AI on AWS</p>
+<p>Hands on Activity - External Lab - Deploy RHEL AI on AWS</p>
 </li>
 </ul>
 </div>
@@ -242,7 +217,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Hands on Activity - Construct a ChatBot Application on ROSA with RHOAI</p>
+<p>Interactive Demonstrations of instantiating OpenShift ROSA</p>
 </li>
 </ul>
 </div>
@@ -258,6 +233,9 @@
 <div class="paragraph">
 <p>Karlos Knox</p>
 </div>
+<div class="paragraph">
+<p>Yogita Sona - Deploy RHEL AI on AWS Lab</p>
+</div>
 </div>
 </div>
 </div>
@@ -270,7 +248,7 @@
 </div>
 </div>
 <nav class="pagination">
-  <span class="next"><a href="chapter1/index.html">Red Hat AI Platform</a></span>
+  <span class="next"><a href="chapter1/index.html">Red Hat AI on AWS Cloud</a></span>
 </nav>
 </article>
   </div>

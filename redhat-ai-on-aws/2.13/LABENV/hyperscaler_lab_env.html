@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cloud Provider Lab Environments :: Red Hat AI on AWS Cloud</title>
-    <link rel="prev" href="openshiftai-install.html">
+    <link rel="prev" href="red-hat-docs.html">
     <link rel="next" href="../appendix/appendix.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -48,19 +48,16 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/index.html">Red Hat AI Platform</a>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Platform Features</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -79,10 +76,10 @@
     <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
   </li>
 </ul>
   </li>
@@ -91,7 +88,16 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -104,9 +110,6 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="red-hat-docs.html">Red Hat Documentation Reference</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="openshiftai-install.html">UI Deployment of Openshift AI</a>
-  </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
   </li>
@@ -117,13 +120,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../appendix/section1.html">General questions</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -173,14 +170,14 @@
 <p>This section provides links to Demo Platform catalog items for Cloud Provider Open Environments.  <strong>Cost is billed to your business unit.</strong></p>
 </div>
 <div class="paragraph">
-<p>This is a course on OpenShift (AI) on Cloud Providers and therefore it&#8217;s important to understand the Cloud Providers basic features such as networking, kubernetes services, accounts, identity management, and insert your reason here.</p>
+<p>This is a course on Red Hat AI on AWS, however Red Hat AI services are avialable on multiple Cloud Providers and therefore it&#8217;s important to understand each Cloud Provider basic features such as networking, kubernetes services, accounts, identity management, and insert your reason here.</p>
 </div>
 <div class="paragraph">
-<p>This course will maintain a list of best Cloud-Demo environments for all supported hyperscalers.
-Use these to explore Cloud Provider resources to better understand how they work, to research customer technologies, and explore what possible at the largest web services providers on the planet.</p>
+<p>This course will maintain a list of best <strong>cloud-demo</strong> environments for all supported hyperscalers.
+Use these to explore Cloud provider resources to better understand how they work, to research customer technologies, and explore what possible at the largest web services providers on the planet.</p>
 </div>
 <div class="paragraph">
-<p>These are provided as a resource to explore Cloud Providers to practice theories, learn skills, or test out customer solutions with Red Hat products.</p>
+<p>These are provided as a resource to explore hyperscaler environments to practice theories, learn skills, or test out customer solutions with Red Hat products.</p>
 </div>
 </div>
 </div>
@@ -191,8 +188,10 @@ Use these to explore Cloud Provider resources to better understand how they work
 <p>These are the current open environments available on Demo Hub.</p>
 </div>
 <div class="paragraph">
-<p>These environments have zero running resources.  They are blank canvases for your exploration and resource creation.  They serve as a great way to get hands-on with a blog article, white paper or a way to connect Cloud Resources to an external OpenShift (AI) lab to test access to applications.</p>
+<p>These environments have zero running resources.  They are blank canvases for your exploration and resource creation.  They serve as a great way to get hands-on with a blog article, white paper or a way to connect cloud resources to an Red Hat AI lab to test access and capability across applications.</p>
 </div>
+<div class="sect2">
+<h3 id="_demo_hub_lab_links"><a class="anchor" href="#_demo_hub_lab_links"></a>Demo Hub Lab Links</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -211,8 +210,9 @@ Use these to explore Cloud Provider resources to better understand how they work
 </div>
 </div>
 </div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="openshiftai-install.html">UI Deployment of Openshift AI</a></span>
+  <span class="prev"><a href="red-hat-docs.html">Red Hat Documentation Reference</a></span>
   <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
 </nav>
 </article>
