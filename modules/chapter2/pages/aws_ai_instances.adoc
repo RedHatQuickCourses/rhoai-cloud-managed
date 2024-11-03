@@ -9,7 +9,7 @@ In this section we'll investigate a few of the instance types (virtual machines)
 
 == What is Amazon EC2 ?
 
-The primary services that provides instances in AWS is called Elastic Cloud Compute (EC2). 
+The primary service that provides instances in AWS is called Elastic Cloud Compute (EC2). 
 
 // The standard Service Level Agreement(SLA) commitment from AWS is: access reliable, scalable infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
 
@@ -17,7 +17,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute pla
 
 ==== Reference terms:
 
-*Instance* is defined as a server running an application, think of one server as one instance. An instance is a virtual machine that runs a workloads in the cloud. Often the terms VM (Virtual Machine) and instance are used interchangeably.
+*Instance* is defined as a server running an application, think of one server as one instance. An instance is a virtual machine that runs workloads in the cloud. Often the terms VM (Virtual Machine) and instance are used interchangeably.
 
 An *Amazon instances type* is a virtual machine (VM) that's optimized for a specific use case and includes a combination of CPU, memory, storage, and networking capacity.
 
@@ -48,7 +48,7 @@ Amazon EC2 provides the ability to place instances in multiple locations. Amazon
  * A *Region*, which is a physical location around the world where AWS clusters data centers. AWS calls each group of logical data centers an Availability Zone. Each AWS Region consists of a minimum of three, isolated, and physically separate AZs within a geographic area.
 
 
-For detailed information on specific instances types vist the dashboard at https://aws.amazon.com/ec2/instance-types/[Amazon EC2 Instances Types., window=blank]
+For detailed information on specific instances types visit the dashboard at https://aws.amazon.com/ec2/instance-types/[Amazon EC2 Instances Types., window=blank]
 
 [TIP]
 Explore the dashboard to search through the list and identify the instance types that are recommended to support RHEL AI on AWS.   Look through the hourly pricing to determine what a 30 day POC cost for various sizes of Granite models that could be Inference using RHEL AI.

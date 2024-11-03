@@ -39,7 +39,7 @@ While both Amazon Bedrock and Amazon SageMaker enable the development of ML and 
 
 *Difference between Bedrock and SageMaker*
 |===
-| Catagory | Amazon Bedrock | Amazon SageMaker 
+| Category | Amazon Bedrock | Amazon SageMaker 
  
 | *Use Cases*
 | Ideal for integration of AI capabilities into applications without investing heavily in custom model development
@@ -73,7 +73,7 @@ While both Amazon Bedrock and Amazon SageMaker enable the development of ML and 
 
 Amazon Bedrock employs a simple pricing model based on the number of API calls made to the service. You pay a fixed price per API call, which includes the cost of running the pre-trained models and any associated data processing. This straightforward pricing structure makes it more efficient for you to estimate and control your costs, as you pay only for the actual usage of the service. Amazon Bedrock's pricing model is particularly well-suited for applications with predictable workloads, or for cases where you want more transparency in your AI-related expenses.
 
-For text-generation models, you are charged for every input token processed and every output token generated. For embeddings models, you are charged for every input token processed. A token comprises a few characters and refers to the basic unit of text that a model learns to understand the user input and prompt. For image-generation models, you are charged for every image generated.
+For text-generation models, you are charged for every input token processed and every output token generated. For embedding models, you are charged for every input token processed. A token comprises a few characters and refers to the basic unit of text that a model learns to understand the user input and prompt. For image-generation models, you are charged for every image generated.
 
 For specifics visit the https://aws.amazon.com/bedrock/pricing/[Amazon Bedrock Pricing guide, window=blank].
 

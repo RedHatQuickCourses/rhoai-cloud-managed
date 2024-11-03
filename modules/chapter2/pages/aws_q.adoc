@@ -3,7 +3,7 @@
 == Objectives
 
  * Analyze the features Amazon Q 
- * Descrive Amazon Q use cases
+ * Describe Amazon Q use cases
 
 
 == What is Amazon Q

@@ -51,7 +51,7 @@ SageMaker Studio has several automation tools to accelerate the ML process and p
  * Ground Truth accelerates data labeling and lets you create high-quality training samples.
  * Model Monitor monitors ML models and notifies you when it detects deviations.
  * Pipelines automate ML workflows, enabling you to scale ML across your organization.
- * SageMaker Project is an AWS Service Catalog–provisioned product used to create an end-to-end ML solutions.
+ * SageMaker Project is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.
 
 image::aws_sagemaker_overview.gif[width=600]
 
@@ -59,7 +59,7 @@ image::aws_sagemaker_overview.gif[width=600]
 
 Like many AWS products, SageMaker charges you for what you use, without minimum and upfront commitments. You incur costs for building, training, and deploying ML models by the second. You pay for the ML compute, storage, instances, and data processing resources you utilize.
 
-For specific pricing information depending on instance size and tasks vist the https://aws.amazon.com/sagemaker/pricing/[Amazon SageMaker pricing dashboard, window=blank]
+For specific pricing information depending on instance size and tasks, visit the https://aws.amazon.com/sagemaker/pricing/[Amazon SageMaker pricing dashboard, window=blank]
 
 == Summary:
 
