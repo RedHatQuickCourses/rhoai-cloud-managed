@@ -1,7 +1,5 @@
 * xref:index.adoc[]
-//** xref:section1.adoc[]
-//** xref:section2.adoc[]
 ** xref:aws_sagemaker.adoc[]
 ** xref:aws_bedrock.adoc[]
-** xref:aws_ai_instances.adoc[]
 ** xref:aws_q.adoc[]
+** xref:aws_ai_instances.adoc[]

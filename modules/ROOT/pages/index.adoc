@@ -3,39 +3,28 @@
 
 == Introduction
 
-This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform solutions with customers who utilize AWS cloud services or have the flexibility to use AWS cloud services to provision such environments.
+This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform managed solutions with customers who utilize AWS cloud services.
 
-Waiting for on-premises hardware can take weeks or months, obtaining a Red Hat AI Platform from Cloud providers, AWS specifically in this course, in minutes can be a crucial component for unlocking the full potential of *generative AI* and *predictive AI* for organizations on the move.
+In this course, we will focus on Red Hat AI solutions that can be instantiated on AWS Cloud while providing a brief overview of AWS AI Services that can be replaced with these Red Hat AI services.
 
-Utilizing on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on an hourly basis and shutting down research and development projects when complete.
-
-This course will focus only on Red Hat AI solutions that can be instantiated on AWS Cloud  while exploring the AWS AI Services that can be used in combination with the Red Hat AI platform solutions to provide an approach that avoids vendor lock-in.
-
-== Fictional Use Case
-
-A Red Hat customer reaches out because they are beginning a new generative AI project. They want to know if Red Hat has any reference use cases or frameworks for organizations beginning their AI powered application journey. 
-
-They are an AWS customer but are looking for an alternative way to deploy AI models without needing data scientists or MLOps engineers. Instead a team of developers and IT operations personnel will be leading this project.   The team's goal is to deliver a new chatbot service for their call center that can provide an internal only portal for associates to utilize.
-
-The solution needs to scale to provide similar service across the organization:
- . In phase two, become a chat resource to external customers. 
- . In phase three, it should learn from chats and request new information automatically. 
+//Utilizing reserved or on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on AWS at an hourly basis or yearly agreements allows flexibility of adjusting resource allocations for research and development projects when complete.
 
 
 == Objectives
 
 ==== On completing this course, you should be able to:
 
+  * Identify Red Hat’s AI platform products
   * Describe how AWS cloud deployments can simplify *Red Hat AI* adoption
-  * Identify Red Hat’s AI products that can run on AWS
-  * Understand how to deploy Red Hat AI solutions on AWS
-  * Identify the difference between Red Hat AI platform and AWS SaaS offerings
+  * Understand dependencies to deploy Red Hat AI solutions on AWS
+  * Identify use case between Red Hat AI platform and AWS SaaS offerings
   ** Hands on Activity - Getting hands on with AWS AI Services
-  * Explain how to deploy RHEL AI on AWS. 
-  ** Hands on Activity - External Lab - Deploy Red Hat AI on AWS
+  * Know the recommended instance types for RHEL AI on AWS. 
+  ** Hands on Activity - External Lab - Deploy RHEL AI on AWS
   * Explain the customer challenges that RHOAI Cloud Service can address.
   * Explain the value / benefits of RHOAI cloud service
-  ** Hands on Activity - Construct a ChatBot Application on ROSA with RHOAI
+  ** Interactive Demonstrations of instantiating OpenShift ROSA
+ 
 
 
 === Contributors
@@ -43,8 +32,14 @@ The PTL team acknowledges the valuable contributions of the following Red Hat as
 
 Karlos Knox
 
+Yogita Sona - Deploy RHEL AI on AWS Lab
+
+
+
+
 == Classroom Environment
 
 Launch an https://demo.redhat.com/catalog?search=AWS+Blank+Open+Environment&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod[AWS Blank Open Environment, window=blank] to follow along with this guided lab.
+
 
 

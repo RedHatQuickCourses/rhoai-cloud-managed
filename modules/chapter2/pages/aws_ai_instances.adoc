@@ -1,61 +1,93 @@
 = Amazon EC2
 
-== EC2 - Cloud Compute Capacity
+== Objectives
 
-Amazon EC2 provides secure, resizable compute in the cloud, offering the broadest choice of processor, storage, networking, OS, and purchase model.
+ * Understand the AWS recommended instances AI Model training & inference
+ * Understand about the cost of these instances per month
 
 In this section we'll investigate a few of the instance types (virtual machines) available on Amazon EC2 that are optimized for AI workloads. 
 
-At the end of the segment, there are links provided to explore instance types available that contain Accelerators (GPUs).  Search through the list and identify the instance types that are recommended to support RHEL AI on AWS.   Look through the hourly pricing to determine what a 30 day POC cost for various sizes of Granite models that could be Inference using RHEL AI.
+== What is Amazon EC2 ?
+
+The primary service that provides instances in AWS is called Elastic Cloud Compute (EC2). 
+
+// The standard Service Level Agreement(SLA) commitment from AWS is: access reliable, scalable infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
+
+Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.
+
+==== Reference terms:
+
+*Instance* is defined as a server running an application, think of one server as one instance. An instance is a virtual machine that runs workloads in the cloud. Often the terms VM (Virtual Machine) and instance are used interchangeably.
+
+An *Amazon instances type* is a virtual machine (VM) that's optimized for a specific use case and includes a combination of CPU, memory, storage, and networking capacity.
 
 
+== EC2 - Instance Types
 
-== Nvidia Powered GPU EC2 instances
+Amazon EC2 provides the broadest and deepest instance choice to match your workload’s needs. General purpose, compute optimized, memory optimized, storage optimized, and accelerated computing instance types are available that provide the optimal compute, memory, storage, and networking balance for your workloads. 
 
-What are AWS Deep Learning AMIs? (DLAMI)
 
-Deep learning AMIs provide customized machine images preconfigured with deep learning frameworks, NVIDIA CUDA, cuDNN, and Jupyter notebook server for distributed training.
+ * Processors from Intel, AMD, NVIDIA and AWS power these instance types and provide additional performance and cost optimizations.    
+ * Local storage and enhanced networking options available with instance types further help optimize performance for workloads that are disk or network I/O bound. 
+ * Many instance types also offer bare metal instances that provide your applications with direct access to the processor and memory of the underlying server for running in non-virtualized environments or for applications where you want to use your own hypervisor.
 
-Learning about deep learning – DLAMI is a great choice for learning or teaching machine learning and deep learning frameworks. The DLAMIs take away the headache from troubleshooting the installations of each framework and getting them to play along on the same computer. The DLAMIs include a Jupyter notebook and make it easy to run the tutorials that the frameworks provide for people new to machine learning and deep learning.
+*AWS EC2 UltraClusters*
 
-App development – If you're an app developer who's interested in using deep learning to make your apps utilize the latest advances in AI, then DLAMI is the perfect test bed for you. Each framework comes with tutorials on how to get started with deep learning, and many of them have model zoos that make it easy to try out deep learning without having to create the neural networks yourself or to do any of the model training. Some examples show you how to build an image detection application in just a few minutes, or how to build a speech recognition app for your own chatbot.
-
-Machine learning and data analytics – If you're a data scientist or you're interested in processing your data with deep learning, then you'll find that many of the frameworks have support for R and Spark. You will find tutorials on how to do simple regressions, all the way up to building scalable data processing systems for personalization and predictions systems.
-
-Research – If you're a researcher who wants to try out a new framework, test a new model, or train new models, then DLAMI and AWS capabilities for scale can alleviate the pain of tedious installations and management of multiple training nodes.
-
-=== AWS Trainium (Trn1 - model training instances)
-
-These **TRN1* instances are optimized for LLM deep learning training.
-
-Amazon Elastic Compute Cloud (EC2) Trn1 instances, powered by AWS Trainium chips, are purpose built for high-performance deep learning (DL) training of generative AI models, including large language models (LLMs) and latent diffusion models. Trn1 instances offer up to 50% cost-to-train savings over other comparable Amazon EC2 instances. You can use Trn1 instances to train 100B+ parameter DL and generative AI models across a broad set of applications, such as text summarization, code generation, question answering, image and video generation, recommendation, and fraud detection.
-
-The AWS Neuron SDK helps developers train models on AWS Trainium (and deploy models on the AWS Inferentia chips). It integrates natively with frameworks such as PyTorch and TensorFlow, so that you can continue using your existing code and workflows to train models on Trn1 instances. To learn about the current Neuron support for machine learning (ML) frameworks and libraries, model architectures, and hardware optimizations, see the Neuron documentation.
-
-=== AWS Inferentia (Inf2 - model inference instances)
-
-High performance at the lowest cost in Amazon EC2 for generative AI inference
-
-Amazon Elastic Compute Cloud (Amazon EC2) Inf2 instances are purpose built for deep learning (DL) inference. They deliver high performance at the lowest cost in Amazon EC2 for generative artificial intelligence (AI) models, including large language models (LLMs) and vision transformers. You can use Inf2 instances to run your inference applications for text summarization, code generation, video and image generation, speech recognition, personalization, fraud detection, and more.
-
-Inf2 instances are powered by AWS Inferentia2, the second-generation AWS Inferentia chip. 
-
-Inf2 instances are the first inference-optimized instances in Amazon EC2 to support scale-out distributed inference with ultra-high-speed connectivity between Inferentia chips. You can now efficiently and cost-effectively deploy models with hundreds of billions of parameters across multiple chips on Inf2 instances.
-
-The AWS Neuron SDK helps developers deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with frameworks, such as PyTorch and TensorFlow, so you can continue using your existing workflows and application code and run on Inf2 instances.
-
-=== AWS EC2 UltraClusters
-
-Amazon Elastic Compute Cloud (Amazon EC2) UltraClusters can help you scale to thousands of GPUs or purpose-built ML accelerators, such as AWS Trainium, to get on-demand access to a supercomputer. They democratize access to supercomputing-class performance for machine learning (ML), generative AI, and high performance computing (HPC) developers through a simple pay-as-you-go usage model without any setup or maintenance costs. Amazon EC2 P5 instances, Amazon EC2 P4d instances, and Amazon EC2 Trn1 instances are all deployed in Amazon EC2 UltraClusters.
+Amazon Elastic Compute Cloud (Amazon EC2) UltraClusters can help you scale to thousands of GPUs or purpose-built ML accelerators to get on-demand access to a supercomputer. Amazon EC2 P5 instances, Amazon EC2 P4d instances, and Amazon EC2 Trn1 instances are all deployed in Amazon EC2 UltraClusters.
 
 EC2 UltraClusters consist of thousands of accelerated EC2 instances that are co-located in a given AWS Availability Zone and interconnected using Elastic Fabric Adapter (EFA) networking in a petabit-scale nonblocking network. EC2 UltraClusters also provide access to Amazon FSx for Lustre, a fully managed shared storage built on the most popular high-performance, parallel file system to quickly process massive datasets on demand and at scale with sub-millisecond latencies. EC2 UltraClusters provide scale-out capabilities for distributed ML training and tightly coupled HPC workloads.
 
-Amazon EC2 P5 and Trn1 instances use a second-generation EC2 UltraClusters architecture that provides a network fabric to enable fewer hops across the cluster, lower latency, and greater scale.
+
+=== Regions and Availability Zones
+
+Amazon EC2 provides the ability to place instances in multiple locations. Amazon EC2 locations are composed of Regions and Availability Zones. 
+
+
+ * *Availability Zones* are distinct locations that are engineered to be insulated from failures in other Availability Zones and provide inexpensive, low latency network connectivity to other Availability Zones in the same Region. By launching instances in separate Availability Zones, you can protect your applications from failure of a single location. Regions consist of one or more Availability Zones and are geographically dispersed. The Amazon EC2 Service Level Agreement commitment is 99.99% availability for each Amazon EC2 Region.
+
+ * A *Region*, which is a physical location around the world where AWS clusters data centers. AWS calls each group of logical data centers an Availability Zone. Each AWS Region consists of a minimum of three, isolated, and physically separate AZs within a geographic area.
+
+
+For detailed information on specific instances types visit the dashboard at https://aws.amazon.com/ec2/instance-types/[Amazon EC2 Instances Types., window=blank]
+
+[TIP]
+Explore the dashboard to search through the list and identify the instance types that are recommended to support RHEL AI on AWS.   Look through the hourly pricing to determine what a 30 day POC cost for various sizes of Granite models that could be Inference using RHEL AI.
+
+== Amazon AMIs
+
+Amazon Machine Images (AMIs) are preconfigured with an ever-growing list of operating systems, including Microsoft Windows and Linux distributions such as Amazon Linux 2, Ubuntu, Red Hat Enterprise Linux, CentOS, SUSE and Debian. We work with our partners and community to provide you with the most choice possible. The AWS Marketplace features a wide selection of commercial and free software from well-known vendors, designed to run on your EC2 instances.
+
+==== Deep Learning AMI's (DLAMI)
+
+Deep learning AMIs provide customized machine images preconfigured with deep learning frameworks, NVIDIA CUDA, cuDNN, and Jupyter notebook server for distributed training.
+
+If you're a researcher who wants to try out a new framework, test a new model, or train new models, then DLAMI and AWS capabilities for scale can alleviate the pain of tedious installations and management of multiple training nodes.
+
+== AWS EC2 Pricing
+
+On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
+
+ * Savings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.
+
+ * Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.
+
+ * Amazon EC2 Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.
+
+
+==== For AI / ML workloads
+
+With Amazon EC2 Capacity Blocks for ML, you can easily reserve GPU instances for a future date to run your machine learning (ML) workloads. You pay only for the amount of compute time that you need, with no long-term commitment. 
+
+For more details visit https://aws.amazon.com/ec2/pricing/[Amazon EC2 pricing, window=blank]
+
+
+
+== Summary
+
+Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more instance sizes, allowing you to scale your resources to the requirements of your target workload.
+
+Amazon EC2 provides secure, resizable compute in the cloud, offering a broad choice of processor, storage, networking, OS, and purchase models.
+
+EC2 per-second billing removes the cost of unused minutes and seconds from your bill. Focus on improving your applications instead of maximizing hourly usage, especially for instances running over irregular time periods such as dev/testing, data processing, analytics, batch processing, and gaming applications.
 
 Combining AWS AI specific instances with the Red Hat AI Platform can provide customers with the rapidly provisioned, instantly scalable infrastructure to support the most demanding workloads.
-
-
-
-https://aws.amazon.com/ec2/instance-explorer/?ec2-instances-cards.sort-by=item.additionalFields.category-order&ec2-instances-cards.sort-order=desc&awsf.ec2-instances-filter-category=*all&awsf.ec2-instances-filter-processors=*all&awsf.ec2-instances-filter-accelerators=accelerators%23nvidia&awsf.ec2-instances-filter-additional-capabilities=*all&awsf.ec2-instances-filter-workload-tags=*all[Instance Types sorted by GPU only, window=blank]
-
-https://aws.amazon.com/ec2/instance-types/[Sort by instance type, includes one or more instance sizes allowing you to scale your resources to the requirements of your target workload., window=blank]

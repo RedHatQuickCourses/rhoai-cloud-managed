@@ -1,56 +1,68 @@
 = RHEL AI on AWS
 
-== Excerpt from RHEL AI Documentation
+== Objectives
 
-Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai[For more detailed information, see the "InstructLab and RHEL AI" documentation section.]
+ * Explain how to deploy RHEL AI on AWS.
+ * Optional: Hands-on Activity: Deploy Red Hat AI on AWS
+ * Analyze the RHEL AI server requirements for *training* versus *inference*
+
+== From RHEL AI Documentation
+
+Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai[For more detailed information: see the "InstructLab and RHEL AI" documentation section., window=blank]
 
 Red Hat Enterprise Linux AI allows you to do the following:
 
- * Host an LLM and interact with the open source Granite family of Large Language Models (LLMs).
- * Using the LAB method, create and add your own knowledge data in a Git repository and fine-tune a model with that data with minimal machine learning background.
- * Interact with the model that has been fine-tuned with your data.
+ * Serve an LLM and interact with the open source Granite family of Large Language Models (LLMs) locally or via an exposed endpoint.
+ * Fine-tune a model with that data with minimal machine learning background.
+ * Interact via chat with the model that has been fine tuned with your data.
+ * Store data within a taxonomy format to organize knowledge and skills
+ * Generate synthetic data to utilize in AI model alignment / fine tuning the model with new knowledge or skills.
+
 
 Red Hat Enterprise Linux AI empowers you to contribute directly to LLMs. This allows you to easily and efficiently build AI-based applications, including chatbots.
 
 == Introduction RHEL AI Course
 
-If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI. 
+If you are new to RHEL AI, this ~15 minute intermediate course provides a detailed overview of the features, terms, and high level concepts of RHEL AI. We will not review these basics in this course.
 
-https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab
+
+https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D66356584[Introduction to RHEL AI, window=blank], just launched for technical sellers to get a high-level technical look at RHEL AI and InstructLab.
 
 '''
 
 ==  RHEL AI on AWS
 
-This course will focus on the knowledge around the benefits of RHEL AI, and the necessary information for making informed decisions on recommending RHEL AI to customers.
+This course will examine the knowledge and necessary information around making informed decisions for running RHEL AI on AWS.
 
-Currently there is no managed service offering of RHEL AI on AWS, however it does support self-managed deployment on AWS.  While this course mentions RHEL AI, actual deployment of RHEL AI on AWS was released in a standalone course. 
+Currently there is no managed service offering of RHEL AI on AWS, however RHEL AI does support self-managed deployment on AWS.  This course will explain suggestions for AWS instance selection for efficient resource usage when deploying RHEL AI.  
 
 === Deploying RHEL AI on AWS
 
-Get hands-on experience deploying RHEL AI on AWS. This quick course provides a detailed guide for deploying RHEL AI on AWS.
+Interested in hands-on experience deploying RHEL AI on AWS, this lab walks through the process of RHEL AI AWS AMI creation and deployment.
 
-https://redhatquickcourses.github.io/rhel-ai-aws/rhel-ai-aws/1/index.html[Deploying RHEL AI on AWS, window=blank]
+https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D65442902[Deploying RHEL AI on AWS, window=blank]
 
-The overall objectives of this course include:
+The overall objectives of the Deploying RHEL AI on AWS includes:
 
 * Create and configure a custom RHEL AI AMI image.
 * Upload the RHEL AI AMI to an AWS S3 bucket for storage and retrieval.
-* Provision AWS resources and deploy a fully functional RHEL AI instance.
+* Provision a _limited resource_ fully functional RHEL AI server on AWS.
 
-[NOTE]
-This lab is available in the LMS, so if you complete the lab please launch the course in the LMS as well earn the achievement for completing the course and provide support for the content creator.
+To reduce cost this lab exercise includes a basic GPU to run RHEL AI, enought to install RHEL AI, however performance is limited in this configuration.
 
-== RHEL AI Deployment Approaches on AWS
+'''
 
+Visit the RHEL AI documentation for instructions on installing RHEL AI on AWS https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.1/html/installing/installing_on_aws[Installing RHEL AI on AWS, window=blank]
 
-There are two approaches to utilizing RHEL AI, 
+== RHEL AI Deployment on AWS
 
- . Using RHEL AI as a solution for model inferencing (serving), which means to make the model available via API for consumption via business applications. 
+There are two approaches to utilizing RHEL AI in AWS, 
+
+ . Using RHEL AI as a solution for AI model inferencing (serving), which means to make the model available via an endpoint for consumption via business applications. 
 
  . The second option is use RHEL AI to customize, fine-tune, or align the model to specific business knowledge in order to provide more accurate responses to the connecting application.
 
-A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both services both consume Accelerator (GPU) memory resources.
+A single RHEL AI server can perform both functions but it's not recommended to augment (train) a model while also providing inferencing for an application on a single RHEL AI server as performing both services may exhaust accelerator (GPU) memory resources.
 
 Running multiple instances of RHEL AI, one for training and another inferencing can be the most cost effective option as the inferencing requirements are significantly less than the model training specifications.
 
@@ -131,11 +143,7 @@ Selecting instance types can be calculated based on the size of the model that w
 
 Summary
 
-For this course, the topics covered are specifically to understand that you can deploy multiple RHEL AI servers on AWS for both training jobs, and for inference purposes to power applications.
+For this course, the topics covered are specific to understanding that we can deploy multiple configurations of RHEL AI servers on AWS for functions of training AI models or for inference purposes to power applications.
 
-Training instances can be paused or terminated once the model is aligned to specific business cases, saving resources cost for only when model updates, or new model development tasks are needed.
-
-Considering the knowledge learned so far, our FictionCorp use case would benefit from starting with a single RHEL AI instance powering the AI solution. This would be the cost effective approach to running the AI model needed to power the chatbot application.
-
-While OpenShift AI Cloud Services would provide a full service environment, the overhead platform is more than needed for proof of concept. 
+Training instances can be paused or terminated once the model is aligned to specific business cases, saving resource cost for only when model updates, or new model development tasks are needed.
 
