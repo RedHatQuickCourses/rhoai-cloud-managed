@@ -15,6 +15,8 @@ Amazon SageMaker empowers Data Scientists, Developers, and Business Data Analyst
 
 '''
 
+=== Training Models with SageMaker:
+
  * Building models – You can create ML models seamlessly and prepare them for training. SageMaker has tools that allow you to connect to your training data and select and optimize the appropriate algorithms for the application. You don’t have to struggle to choose your preferred algorithm because the service has a list of some of the most popular and commonly used ML algorithms.
  * Training models – With SageMaker, you can train your models easily and quickly. The service has the necessary infrastructure to train and to scale.
  * Deploying models – After building and training your models, it is time to deploy them. SageMaker helps you implement ML models swiftly and with ease. You can start generating predictions on fresh data and those predictions are available to any production platform via an accessible API.
@@ -28,30 +30,36 @@ image::ml-concepts-10.png[width=480]
 
 === SageMaker Studio 
 
-image::aws_sagemaker_open.gif[width=600]
+image::sagemaker_tourv2.gif[width=600]
 
-SageMaker Studio is the dashboard product used to interact with this cloud service and access machine learning models from a variety of model providers. It provides a unified, web-based interface to manage your data, code and models in a single place. SageMaker Studio also provides easy scalability and reliable security. 
+SageMaker Studio serves as the user interface for engaging with Amazon SageMaker, a cloud-based machine learning (ML) service. This unified, web-based platform enables users to manage their data, code, and ML models from multiple providers in one centralized location. SageMaker Studio offers several advantages:
 
-==== SageMaker Features
+1. Centralized Management: Manage all your data, code, and ML models within a single interface.
 
-In SageMaker, a notebook is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized. 
+2. Easy Scalability: Effortlessly expand resources as needed to accommodate larger projects or increased demand.
 
-SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch. 
+3. Reliable Security: Ensure the protection of your sensitive data through robust security features provided by SageMaker Studio.
 
-Keep track of models over time with SageMaker’s Model Monitor feature. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.
+=== SageMaker feature overview
+
+In SageMaker, a *notebook* is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized. 
+
+SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides *access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch*. 
+
+Keep track of models over time with SageMaker’s *Model Monitor feature*. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.
 
 The platform integrates with popular DevOps tools, like AWS CodePipe and Jenkins, through the SageMaker console, APIs or other methods. This allows businesses to create continuous integration and continuous deployment (CI/CD) pipelines for continuous delivery of ML models. 
 
 SageMaker Studio has several automation tools to accelerate the ML process and provide greater visibility and control over the various steps required to build production-ready models. These are just some of the available tools:
 
- * AWS Autopilot automatically builds and trains ML models while providing you with complete visibility into model creation.
- * Data Wrangler is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.
- * Debugger monitors your models for bottlenecks.
- * Edge Manager extends ML monitoring to edge devices.
- * Ground Truth accelerates data labeling and lets you create high-quality training samples.
- * Model Monitor monitors ML models and notifies you when it detects deviations.
- * Pipelines automate ML workflows, enabling you to scale ML across your organization.
- * SageMaker Project is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.
+ * *AWS Autopilot* automatically builds and trains ML models while providing you with complete visibility into model creation.
+ * *Data Wrangler* is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.
+ * *Debugger* monitors your models for bottlenecks.
+ * *Edge Manager* extends ML monitoring to edge devices.
+ * *Ground Truth* accelerates data labeling and lets you create high-quality training samples.
+ * *Model Monitor* monitors ML models and notifies you when it detects deviations.
+ * *Pipelines* automate ML workflows, enabling you to scale ML across your organization.
+ * SageMaker *Project* is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.
 
 image::sagemaker_overviewv2.gif[width=600]
 
@@ -159,9 +167,9 @@ Explore the *SageMaker Tour*, onboarding plan, and  *getting started* areas to l
 
 image::sagemaker_tourv2.gif[width=600]
 
-== Summary
+'''
 
-In this quick take on Amazon SageMaker we setup a SageMaker domain which can be complex if your new to AWS.
+Up next Amazon Bedrock
 
 
 

@@ -9,7 +9,7 @@ For more details on these services you can use the links below.
 
  * https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html[AWS Cloud Adoption FrameWork, window=blank] for Artificial Intelligence, Machine Learning, and Generative AI
 
-AWS boasts the most comprehensive range of services, from plug-and-play AI services, to customizable models via AWS SageMaker. Users can leverage Amazon Bedrock, the easiest way to build and scale generative AI with foundation models in the cloud, to power their applications all without writing any code. Lastly, a vast network of AWS-certified partners are available to help customers drive innovation with AI/ML, offering top-tier services to fit every budget.
+AWS boasts a comprehensive range of services, from plug-and-play AI services, to customizable models via AWS SageMaker. Users can leverage Amazon Bedrock, the easiest way to build and scale generative AI with foundation models in the cloud, to power their applications all without writing any code. Lastly, a vast network of AWS-certified partners are available to help customers drive innovation with AI/ML, offering top-tier services to fit every budget.
 
 Lets take a tour of AWS AI services and instances. 
 

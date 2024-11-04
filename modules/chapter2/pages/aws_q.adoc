@@ -12,10 +12,13 @@ Amazon Q is Amazon's version of ChatGPT. Amazon Q can be used as an intelligent 
 
 Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics by connecting to enterprise data repositories and summarizing the data logically. It is built with security and privacy in mind from the start, making it easier for organizations to use generative AI to increase productivity and speed up innovation.
 
-There are two services offered as Amazon Q:
+=== Amazon Q for business and developers
 
- * Amazon Q Business - Business users can have tailored conversations, solve problems, generate content, take actions, streamline tasks, and more.
- * Amazon Q Developer - Developers can use it for all their tasks like coding, testing, upgrading, troubleshooting, and security scanning.
+Amazon Q is a versatile offering from Amazon that caters to the unique needs of both business users and developers. The platform consists of two distinct services designed to streamline tasks, enhance productivity, and provide tailored solutions for specific user groups:
+
+1. Amazon Q Business: Empowers business users with features like conversational capabilities, problem-solving tools, content generation, task automation, and more.
+
+2. Amazon Q Developer: Designed for developers to facilitate coding, testing, upgrades, troubleshooting, and security scanning tasks, ensuring a seamless development experience.
 
 ==== Amazon Q Business
 
@@ -60,7 +63,7 @@ For detailed information https://aws.amazon.com/q/pricing/[visit the Amazon Q pr
 
 == Summary
 
-AWS'S most capable generative AI-powered assistant for accelerating software development and leveraging companies' internal data.
+AWS's most capable generative AI-powered assistant for accelerating software development and leveraging companies' internal data.
 
 Amazon Q generates code, tests, debugs, and has multistep planning and reasoning capabilities that can transform and implement new code generated from developer requests. Amazon Q also makes it easier for employees to get answers to questions across business data—such as company policies, product information, business results, code base, employees, and many other topics—by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data.
 
