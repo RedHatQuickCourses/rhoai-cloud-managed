@@ -113,7 +113,7 @@ image::aws_sagemaker_open.gif[width=600]
 
 At which point an error message will appear:  There is no VPC with available Subnets in this region.  Please Create one. 
 
-image::sagemaker_vpc_error.gif[width=600]
+image::sagemaker_vpc_errorv2.gif[width=600]
 
 ====  Create a VPC to continue
 

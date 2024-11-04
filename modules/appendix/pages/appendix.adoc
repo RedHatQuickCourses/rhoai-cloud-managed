@@ -1,10 +1,5 @@
 = Appendix
 
-FIXME: Content for Appendix...
-
-
-https://proceedings.neurips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf[hidden technical debt in machine learning]
-
 == AWS ROSA
 
 === https://cloud.redhat.com/learn/red-hat-openshift-service-aws-rosa-explained[Red Hat OpenShift Service on AWS (ROSA) explained, window=blank]

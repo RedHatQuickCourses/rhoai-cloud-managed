@@ -3,41 +3,33 @@
 
 == Introduction
 
-This course is intended for Red Hat Technical Sales, Solution Architects, Support and Service team members who are discussing Red Hat AI platform managed solutions with customers who utilize AWS cloud services.
+This course provides a comprehensive understanding of how to deploy Red Hat AI's OpenShift AI and RHEL AI products on Amazon Web Services (AWS). It covers both managed offerings and self-managed configurations when no managed service is available. In addition, this course introduces various AWS AI services such as Amazon SageMaker, Amazon Bedrock, Amazon Q, and Amazon Elastic Cloud Compute (EC2) instances to help learners understand how these services complement Red Hat AI.
 
-In this course, we will focus on Red Hat AI solutions that can be instantiated on AWS Cloud while providing a brief overview of AWS AI Services that can be replaced with these Red Hat AI services.
-
-//Utilizing reserved or on-demand cloud resources to evaluate, experiment and fine tune open source  AI models to power business applications eliminates an organizations need to purchase high-cost GPUs and hardware used for model training and inference; instead consuming Red Hat AI products on AWS at an hourly basis or yearly agreements allows flexibility of adjusting resource allocations for research and development projects when complete.
+By the end of this course, learners will have a solid foundation in deploying and integrating Red Hat AI with various AWS AI Services. They will understand how to choose the right deployment model and services based on their specific use case and requirements. The course includes several sections that reference external labs where practical skills may be needed. However, it is currently missing a specific lab component showcasing the interaction between Red Hat AI and AWS AI Services in a hybrid deployment scenario. This lab will be added to provide learners with hands-on experience in deploying and managing Red Hat AI on AWS using both managed offerings and self-managed configurations while integrating various AWS AI services.
 
 
 == Objectives
 
-==== On completing this course, you should be able to:
+* Introduction to Red Hat AI and its OpenShift AI and RHEL AI products.
+* Setting up an AWS account and configuring access for Red Hat AI.
+* Deploying Red Hat AI on AWS using managed offerings (OpenShift on AWS).
+* Self-managed deployment of RHEL AI on AWS.
+* Overview of AWS AI Services: Amazon SageMaker, Amazon ECR, Amazon Braket, Amazon Q, and EC2 instances.
+* Comparing the capabilities of Red Hat AI and AWS AI Services.
+* Best practices for integrating Red Hat AI with AWS services.
+* Hands-on labs (to be added) to reinforce practical skills in deploying and managing Red Hat AI on AWS.
 
-  * Identify Red Hat’s AI platform products
-  * Describe how AWS cloud deployments can simplify *Red Hat AI* adoption
-  * Understand dependencies to deploy Red Hat AI solutions on AWS
-  * Identify use case between Red Hat AI platform and AWS SaaS offerings
-  ** Hands on Activity - Getting hands on with AWS AI Services
-  * Know the recommended instance types for RHEL AI on AWS. 
-  ** Hands on Activity - External Lab - Deploy RHEL AI on AWS
-  * Explain the customer challenges that RHOAI Cloud Service can address.
-  * Explain the value / benefits of RHOAI cloud service
-  ** Interactive Demonstrations of instantiating OpenShift ROSA
  
-
 
 === Contributors
 The PTL team acknowledges the valuable contributions of the following Red Hat associates:
 
 Karlos Knox
 
-Yogita Sona - Deploy RHEL AI on AWS Lab
-
-
-
 
 == Classroom Environment
+
+Recommended starting the lab now so it's available when you reach the AWS segment of the course.
 
 Launch an https://demo.redhat.com/catalog?search=AWS+Blank+Open+Environment&item=babylon-catalog-prod%2Fsandboxes-gpte.sandbox-open.prod[AWS Blank Open Environment, window=blank] to follow along with this guided lab.
 
