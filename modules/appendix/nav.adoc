@@ -1,1 +1,3 @@
 * xref:appendix.adoc[]
+** xref:red-hat-docs.adoc[]
+** xref:hyperscaler_lab_env.adoc[]

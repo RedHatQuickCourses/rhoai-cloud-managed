@@ -1,27 +1,39 @@
 = Appendix
 
-FIXME: Content for Appendix...
-
-
-https://proceedings.neurips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf[hidden technical debt in machine learning]
-
 == AWS ROSA
 
-https://cloud.redhat.com/learn/red-hat-openshift-service-aws-rosa-explained[Red Hat OpenShift Service on AWS (ROSA) explained]
+=== https://cloud.redhat.com/learn/red-hat-openshift-service-aws-rosa-explained[Red Hat OpenShift Service on AWS (ROSA) explained, window=blank]
 
-https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#integrate-rosa-with-other-services[Integrating ROSA with other services]
+This learning path features a series of videos exploring high-level concepts within Red Hat OpenShift Service on Amazon Web Services ROSA and its applications for various business scenarios. Follow principal solutions architect Ryan Niksch and several Red Hat OpenShift experts as they discuss specific use cases, detailed deep dives, and specialized strategies to get the most out of ROSA. 
+
+'''
+
+Explore learning materials and tools designed to help you use Red Hat OpenShift Service on AWS (ROSA), organized by the tasks you need to accomplish:
+
+ * https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#deploy-a-rosa-cluster[Deploy a ROSA cluster, window=blank]
+
+ * https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#configure-and-manage-rosa-clusters[Configure and manage ROSA clusters, window=blank]
+
+ * https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#deploy-workloads-to-rosa-clusters[Deploy workloads to ROSA clusters, window=blank]
+
+  *  https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#integrate-rosa-with-other-services[Integrating ROSA with other services, window=blank]
+
+  * https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#troubleshoot-rosa[Troubleshoot ROSA, window=blank]
+
+
+'''
+
 
 https://www.rosaworkshop.io/rosa/15-sts_explained/[ROSA with AWS STS Explained]
 
+These pages are split into three sections.
+
+ . One contains the steps to getting started on ROSA ("Getting started with ROSA").
+ . Another is about deploying an application to ROSA to get better familiar with the internals of OpenShift ("Deploy the application").
+ . Lastly, some reference pages with a summary of a few key OpenShift concepts that will be used in the workshop, an FAQ, and an explanation of ROSA with STS.
+
+'''
+
 https://www.redhat.com/en/products/interactive-walkthrough/install-rosa[Interactive walkthrough Red Hat OpenShift Service on AWS (ROSA)]
 
-== Microsoft ARO
 
-https://microsoft.github.io/aroworkshop/[Azure Red Hat OpenShift Workshop]
-
-video::Hc8emNr2igU[youtube, width=400]
-
-ROSA in this Course focuses on the  *ROSA with HCP* deployment as the option of choice. However, the other options are listed as they might meet the needs of particular customer. 
-
-[NOTE]
-_A somewhat surprising hit at a recent onsite was our discussion of deploying OpenShift using Hosted Control Planes. It turns out that none of the customers in attendance knew about this deployment option. Therefore we spent quite some time explaining how this works and the benefits (densification, cost reduction, deployment speed) of this approach._
