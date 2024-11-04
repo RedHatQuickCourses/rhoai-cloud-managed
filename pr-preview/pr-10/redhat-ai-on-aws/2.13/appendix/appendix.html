@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Appendix :: Red Hat AI on AWS Cloud</title>
+    <link rel="prev" href="../chapter2/aws_ai_instances.html">
+    <link rel="next" href="red-hat-docs.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Red Hat AI on AWS Cloud</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="redhat-ai-on-aws" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Red Hat AI on AWS Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Red Hat AI on AWS Cloud</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Red Hat AI on AWS Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
+    <li><a href="appendix.html">Appendix</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Appendix</h1>
+<div class="sect1">
+<h2 id="_aws_rosa"><a class="anchor" href="#_aws_rosa"></a>AWS ROSA</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_red_hat_openshift_service_on_aws_rosa_explained"><a class="anchor" href="#_red_hat_openshift_service_on_aws_rosa_explained"></a><a href="https://cloud.redhat.com/learn/red-hat-openshift-service-aws-rosa-explained" target="blank">Red Hat OpenShift Service on AWS (ROSA) explained</a></h3>
+<div class="paragraph">
+<p>This learning path features a series of videos exploring high-level concepts within Red Hat OpenShift Service on Amazon Web Services ROSA and its applications for various business scenarios. Follow principal solutions architect Ryan Niksch and several Red Hat OpenShift experts as they discuss specific use cases, detailed deep dives, and specialized strategies to get the most out of ROSA.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>Explore learning materials and tools designed to help you use Red Hat OpenShift Service on AWS (ROSA), organized by the tasks you need to accomplish:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#deploy-a-rosa-cluster" target="blank">Deploy a ROSA cluster</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#configure-and-manage-rosa-clusters" target="blank">Configure and manage ROSA clusters</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#deploy-workloads-to-rosa-clusters" target="blank">Deploy workloads to ROSA clusters</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#integrate-rosa-with-other-services" target="blank">Integrating ROSA with other services</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn#troubleshoot-rosa" target="blank">Troubleshoot ROSA</a></p>
+</li>
+</ul>
+</div>
+<hr>
+<div class="paragraph">
+<p><a href="https://www.rosaworkshop.io/rosa/15-sts_explained/">ROSA with AWS STS Explained</a></p>
+</div>
+<div class="paragraph">
+<p>These pages are split into three sections.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>One contains the steps to getting started on ROSA ("Getting started with ROSA").</p>
+</li>
+<li>
+<p>Another is about deploying an application to ROSA to get better familiar with the internals of OpenShift ("Deploy the application").</p>
+</li>
+<li>
+<p>Lastly, some reference pages with a summary of a few key OpenShift concepts that will be used in the workshop, an FAQ, and an explanation of ROSA with STS.</p>
+</li>
+</ol>
+</div>
+<hr>
+<div class="paragraph">
+<p><a href="https://www.redhat.com/en/products/interactive-walkthrough/install-rosa">Interactive walkthrough Red Hat OpenShift Service on AWS (ROSA)</a></p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../chapter2/aws_ai_instances.html">Amazon EC2</a></span>
+  <span class="next"><a href="red-hat-docs.html">Red Hat Documentation Reference</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
