@@ -89,7 +89,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter3/index.html">OpenShift AI Lab</a>
+    <a class="nav-link" href="#index.adoc">index.adoc</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
@@ -105,22 +105,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../LABENV/index.html">Lab Env RHOAI self-managed</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../LABENV/red-hat-docs.html">Red Hat Documentation Reference</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../LABENV/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -267,7 +260,7 @@
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/aws_sagemaker_overview.gif" alt="aws sagemaker overview" width="600">
+<img src="_images/sagemaker_overviewv2.gif" alt="sagemaker overviewv2" width="600">
 </div>
 </div>
 </div>
@@ -326,7 +319,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_lab_exercise"><a class="anchor" href="#_lab_exercise"></a>Lab Exercise:</h2>
+<h2 id="_lab_exercise_get_started_with_amazon_sagemaker"><a class="anchor" href="#_lab_exercise_get_started_with_amazon_sagemaker"></a>Lab Exercise:  Get Started with Amazon SageMaker</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_demo_platform_lab_environment"><a class="anchor" href="#_demo_platform_lab_environment"></a>Demo Platform Lab Environment</h3>
@@ -350,7 +343,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Use the link and credentials provided by Demo Hub to Logon to the AWS Console.</p>
+<p>Use the link and credentials provided by Demo Hub to logon to the AWS Console.</p>
 </li>
 <li>
 <p>Use the search bar to search for <strong>sagemaker</strong>.</p>
@@ -363,26 +356,154 @@
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>CLick on Setup Domain</p>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_create_a_sagemaker_domain"><a class="anchor" href="#_create_a_sagemaker_domain"></a>Create a SageMaker domain</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the SageMaker Studio menu option</p>
+</li>
+<li>
+<p>Select the Create a SageMaker domain option</p>
+</li>
+<li>
+<p>Choose the Set up for single user (Quick setup) option on the left.</p>
+</li>
+<li>
+<p>Click on the Set up button.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>-error message</p>
+<p>At which point an error message will appear:  There is no VPC with available Subnets in this region.  Please Create one.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sagemaker_vpc_errorv2.gif" alt="sagemaker vpc errorv2" width="600">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_a_vpc_to_continue"><a class="anchor" href="#_create_a_vpc_to_continue"></a>Create a VPC to continue</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the <strong>Create VPC</strong> option in the error message.</p>
+</li>
+<li>
+<p>At top right, select <strong>Create VPC</strong>.</p>
+</li>
+<li>
+<p>Enter the option name tag: <strong>sagemaker_domain_demo</strong></p>
+</li>
+<li>
+<p>For IPv4 CIDR enter:  <strong>172.17.0.0/16</strong></p>
+</li>
+<li>
+<p>Scroll to the bottom and select <strong>Create VPC</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sagemaker_vpc_createv2.gif" alt="sagemaker vpc createv2" width="600">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_a_subnet_in_the_vpc"><a class="anchor" href="#_create_a_subnet_in_the_vpc"></a>Create a Subnet in the VPC</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Under the Virtual privage cloud menu, <strong>select Subnets</strong></p>
+</li>
+<li>
+<p>At top right, select <strong>Create subnet</strong>.</p>
+</li>
+<li>
+<p>Select a VPC ID from the dropdown, use the name if multiple vpc&#8217;s exist (sagemaker_domain_demo).</p>
+</li>
+<li>
+<p>In the Subnet Settings, enter a Subnet name: <strong>sagemaker-demo-subnet</strong>.</p>
+</li>
+<li>
+<p>For IPv4 subnet CIDR block enter:  <strong>172.17.0.1/24</strong></p>
+</li>
+<li>
+<p>Scroll to the bottom and select <strong>Create subnet</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sagemaker_vpc_subnetv2.gif" alt="sagemaker vpc subnetv2" width="600">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_a_subnet_in_the_vpc_2"><a class="anchor" href="#_create_a_subnet_in_the_vpc_2"></a>Create a Subnet in the VPC</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Return the SageMaker Domain setup page</p>
+</li>
+<li>
+<p>Select the <strong>Set up</strong> options again.</p>
+</li>
+<li>
+<p>You&#8217;ll recieve an Preparing SageMaker Domain Banner across the page</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The domain setup takes ~5-7 minutes.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Once the setup completes the blue banner will disappears and the status will change to ready.</p>
+</li>
+<li>
+<p>Use the <strong>Amazon SageMaker</strong> link to return to the Sagemaker dashboard.</p>
+</li>
+<li>
+<p>Select the <strong>Studio</strong> link to refresh the dashboard.</p>
+</li>
+<li>
+<p>From the <strong>Get Started</strong> box select <strong>Open Studio</strong>.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>Create VPC
-Create Subnet</p>
+<p>You are now ready to use SageMaker Studio</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sagemaker_setupv2.gif" alt="sagemaker setupv2" width="600">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_explore_amazone_sagemaker_for_your_use_case"><a class="anchor" href="#_explore_amazone_sagemaker_for_your_use_case"></a>Explore Amazone SageMaker for your use case</h3>
 <div class="paragraph">
-<p>Click on Setup Domain
- . In SageMaker, a domain is an environment for your team to access SageMaker resources. A domain consists of a list of authorized users and users within a domain can share notebook files and other artifacts with each other. One account can have either one or multiple domains.</p>
+<p>Explore the <strong>SageMaker Tour</strong>, onboarding plan, and  <strong>getting started</strong> areas to learn more about SageMaker.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sagemaker_tourv2.gif" alt="sagemaker tourv2" width="600">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary_2"><a class="anchor" href="#_summary_2"></a>Summary</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>&#8201;&#8212;&#8201;similar to an OpenShift AI Data Science Project..</p>
-</div>
-<div class="paragraph">
-<p>Wait until the pending status shows ready.</p>
-</div>
+<p>In this quick take on Amazon SageMaker we setup a SageMaker domain which can be complex if your new to AWS.</p>
 </div>
 </div>
 </div>
