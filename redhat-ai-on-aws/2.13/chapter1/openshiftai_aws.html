@@ -89,22 +89,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#index.adoc">index.adoc</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -175,15 +159,8 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_openshift_ai_on_aws"><a class="anchor" href="#_openshift_ai_on_aws"></a>OpenShift AI on AWS</h2>
+<h2 id="_openshift_ai_cloud_service"><a class="anchor" href="#_openshift_ai_cloud_service"></a>OpenShift AI Cloud Service</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components.</p>
-</div>
-<div class="paragraph">
-<p>Red Hat OpenShift AI Cloud Service is a fully managed service enabling access to OpenShift AI features at committed usage or hourly rates.  The ability to use a common platform and tool set across hyperscalers or on-premises for generative and predictive AI applications and solution development solves the gap of training or hiring engineers with multiple skill sets.  Customers can experience common OpenShift AI features across locations rapidly for proof of concepts, development, data processing, and AI model production environments.</p>
-</div>
-<hr>
 <div class="paragraph">
 <p>There two subscription options available that provide entitlements for Red Hat OpenShift AI (RHOAI) on AWS:</p>
 </div>
@@ -198,7 +175,14 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>RHOAI Cloud Service is supported on OpenShift Dedicated (AWS and GCP) and on Red Hat OpenShift Service on AWS (ROSA). Currently, RHOAI Cloud Service is not supported on Microsoft Azure Red Hat OpenShift and platform services such as ROSA with hosted control planes.</p>
+<p>OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift AI Cloud Service is a fully managed service enabling access to OpenShift AI features at committed usage or hourly rates.  The ability to use a common platform and tool set across hyperscalers or on-premises for generative and predictive AI applications and solution development solves the gap of training or hiring engineers with multiple skill sets.  Customers can experience common OpenShift AI features across locations rapidly for proof of concepts, development, data processing, and AI model production environments.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>RHOAI Cloud Service is supported on OpenShift Dedicated (AWS and GCP) and on Red Hat OpenShift Service on AWS (ROSA). Currently, RHOAI Cloud Service is currently not supported on Microsoft Azure Red Hat OpenShift and ROSA with hosted control planes.</p>
 </div>
 <div class="paragraph">
 <p>For more information on the RHOAI components their current support phase and their compatibility with the underlying platforms. <a href="https://access.redhat.com/articles/rhoai-supported-configs" target="blank">This link connects to the OpenShift AI Supported Configurations.</a></p>
@@ -247,21 +231,20 @@ While not specifically mentioned in this course, there is also an OpenShift AI d
 <div class="sect3">
 <h4 id="_red_hat_openshift_service_on_aws_rosa"><a class="anchor" href="#_red_hat_openshift_service_on_aws_rosa"></a>Red Hat OpenShift Service on AWS (ROSA)</h4>
 <div class="paragraph">
-<p>For ROSA classic, customers get a subscription through the AWS Marketplace.  They subscribe to the service directly from their AWS account. After cluster creation, customers can operate their clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager.</p>
+<p>For ROSA classic, clients procure a subscription via the AWS Marketplace using their AWS account. Following cluster creation, they can manage their clusters through the OpenShift web console, ROSA CLI, or Red Hat OpenShift Cluster Manager.</p>
 </div>
 <div class="paragraph">
-<p>ROSA classic is a fully-managed, turnkey application platform that allows businesses to focus on delivering value to their customers by building and deploying applications. Red Hat site reliability engineering (SRE) experts manage the underlying platform so they do not have to worry about the complexity of infrastructure management.</p>
+<p>ROSA classic is an all-encompassing, preconfigured application platform designed to help businesses concentrate on delivering superior value to their clients by developing and deploying applications. The Red Hat Site Reliability Engineering (SRE) team manages the underlying infrastructure, thereby alleviating the burden of intricate infrastructure management for clients.</p>
 </div>
 <div class="paragraph">
-<p>ROSA provides seamless integration with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a wide range of additional AWS services to further accelerate the building and delivering of differentiating experiences to customers.</p>
+<p>ROSA seamlessly integrates with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a multitude of other AWS services to expedite the creation and delivery of customized experiences to customers</p>
 </div>
-<hr>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_getting_started_with_on_rosa_interactive_walkthrough"><a class="anchor" href="#_getting_started_with_on_rosa_interactive_walkthrough"></a>Getting Started with on ROSA Interactive Walkthrough</h2>
+<h2 id="_getting_started_rosa_interactive_walkthrough"><a class="anchor" href="#_getting_started_rosa_interactive_walkthrough"></a>Getting Started - ROSA Interactive Walkthrough</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://www.redhat.com/en/products/interactive-walkthrough/install-rosa" target="blank">Try the Interactive demo for ROSA classic on AWS</a></p>
@@ -300,43 +283,18 @@ While not specifically mentioned in this course, there is also an OpenShift AI d
 </div>
 </div>
 <div class="sect1">
-<h2 id="_explore_rosa_classic_with_openshift_ai_on_the_demo_platform"><a class="anchor" href="#_explore_rosa_classic_with_openshift_ai_on_the_demo_platform"></a>Explore ROSA Classic with OpenShift AI on the Demo Platform.</h2>
+<h2 id="_rosa_classic_with_openshift_ai_on_the_demo_platform"><a class="anchor" href="#_rosa_classic_with_openshift_ai_on_the_demo_platform"></a>ROSA Classic with OpenShift AI on the Demo Platform.</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&amp;item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod" target="blank">This workshop creates Base RHOAI environment on ROSA cluster.</a> You can use this base environment for creating and running RHOAI related use cases on ROSA.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
-<p>This workshop includes :</p>
+<p>Experience ROSA Classic with OpenShift AI in a live environment.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>OpenShift Container Platform : 4.16</p>
+<p><a href="https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&amp;item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod" target="blank">This workshop creates Base RHOAI environment on ROSA cluster.</a></p>
 </li>
 <li>
-<p>Red Hat OpenShift Data Science : 2.10</p>
-</li>
-<li>
-<p>OpenShift Pipeline</p>
-</li>
-<li>
-<p>OpenShift GitOps</p>
-</li>
-<li>
-<p>Serverless and Service Mesh Operators</p>
-</li>
-<li>
-<p>Gitea Operator</p>
-</li>
-<li>
-<p>Web Terminal</p>
-</li>
-<li>
-<p>OpenShift Cluster configured on AWS</p>
+<p>You can use this base environment for creating and running RHOAI related use cases on ROSA.</p>
 </li>
 </ul>
 </div>
@@ -372,35 +330,28 @@ While not specifically mentioned in this course, there is also an OpenShift AI d
 <div class="paragraph">
 <p>OpenShift AI Cloud Services can run within your AWS accounts, allowing your organization to stay in control of the data available to AI models.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from generative AI models using RHOAI Cloud Service.</p>
-</div>
-<div class="paragraph">
-<p>There are significant costs to run the Large Language Models that power the services provided by the AI Model SaaS service leaders such as ChatGPT, Gemini, and Claude.</p>
-</div>
-<div class="paragraph">
-<p>AWS Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than committing to huge cost investment and eliminating the need to staff a skilled AI/ ML platform operations team</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_where_red_hat_ai_open_source_solutions_add_value"><a class="anchor" href="#_where_red_hat_ai_open_source_solutions_add_value"></a>Where Red Hat AI open source solutions add value</h3>
-<div class="paragraph">
-<p>Cloud Providers incentive is to make it easy to consume more resources.</p>
+<p>Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from AI / ML models using RHOAI Cloud Service.</p>
 </div>
 <div class="paragraph">
-<p>In FY24 customers invested in generative AI projects as proof of concepts that began with the solution looking for a problem to solve. These projects were largely performed using hyperscaler services, into pilot and production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had highly variable and unpredictable costs.</p>
+<p>OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform components.</p>
 </div>
 <div class="paragraph">
-<p>During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral and IBM Granite) greatly increased, leading customers to explore private deployments of Gen AI versus using hyperscaler services.</p>
+<p>As the number and caliber of open-source and permissively licensed models (such as Llama, Mistral, and IBM Granite) grew significantly during this period, organizations started considering private deployments of generative AI instead of relying on hyperscaler services.</p>
 </div>
 <div class="paragraph">
-<p>OpenShift Container Clusters have the ability to support customer workloads across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform which eliminates the need for cloud provider specific tools and avoids vendor lock-in.</p>
+<p>Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from AI / ML models using RHOAI Cloud Service.</p>
 </div>
 <hr>
 <div class="paragraph">
 <p>Next let&#8217;s discuss RHEL AI on AWS.</p>
-</div>
 </div>
 </div>
 </div>

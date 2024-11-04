@@ -89,22 +89,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#index.adoc">index.adoc</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -175,7 +159,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_from_rhel_ai_documentation"><a class="anchor" href="#_from_rhel_ai_documentation"></a>From RHEL AI Documentation</h2>
+<h2 id="_rhel_ai"><a class="anchor" href="#_rhel_ai"></a>RHEL AI</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai" target="blank">For more detailed information: see the "InstructLab and RHEL AI" documentation section.</a></p>
@@ -189,7 +173,7 @@
 <p>Serve an LLM and interact with the open source Granite family of Large Language Models (LLMs) locally or via an exposed endpoint.</p>
 </li>
 <li>
-<p>Fine-tune a model with that data with minimal machine learning background.</p>
+<p>Fine-tune a large (or small) language model with that data with minimal machine learning background.</p>
 </li>
 <li>
 <p>Interact via chat with the model that has been fine tuned with your data.</p>
@@ -223,15 +207,15 @@
 <h2 id="_rhel_ai_on_aws"><a class="anchor" href="#_rhel_ai_on_aws"></a>RHEL AI on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This course will examine the knowledge and necessary information around making informed decisions for running RHEL AI on AWS.</p>
+<p>In this course, we will delve into the essential knowledge and information required to make well-informed decisions when deploying Red Hat Enterprise Linux (RHEL) AI on Amazon Web Services (AWS). At present, there is no managed service offering of RHEL AI available on AWS; however, clients can opt for self-managed deployment. This curriculum will provide guidance on suitable AWS instance selections to optimize resource utilization when implementing RHEL AI.</p>
 </div>
 <div class="paragraph">
-<p>Currently there is no managed service offering of RHEL AI on AWS, however RHEL AI does support self-managed deployment on AWS.  This course will explain suggestions for AWS instance selection for efficient resource usage when deploying RHEL AI.</p>
+<p>By the end of this course, you will have a comprehensive understanding of best practices and recommendations for deploying RHEL AI on AWS, ensuring efficient use of resources and optimal performance.</p>
 </div>
 <div class="sect2">
 <h3 id="_deploying_rhel_ai_on_aws"><a class="anchor" href="#_deploying_rhel_ai_on_aws"></a>Deploying RHEL AI on AWS</h3>
 <div class="paragraph">
-<p>Interested in hands-on experience deploying RHEL AI on AWS, this lab walks through the process of RHEL AI AWS AMI creation and deployment.</p>
+<p>For those eager to gain practical experience in deploying Red Hat Enterprise Linux (RHEL) AI on Amazon Web Services (AWS), this lab provides a step-by-step guide on creating and launching an RHEL AI Amazon Machine Image (AMI).</p>
 </div>
 <div class="paragraph">
 <p><a href="https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D65442902" target="blank">Deploying RHEL AI on AWS</a></p>
@@ -253,11 +237,13 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>To reduce cost this lab exercise includes a basic GPU to run RHEL AI, enought to install RHEL AI, however performance is limited in this configuration.</p>
+<p>In this lab, we offer a cost-effective approach by utilizing a fundamental GPU configuration to install Red Hat Enterprise Linux (RHEL) AI. While this setup is sufficient for getting started with RHEL AI, it may limit performance compared to more powerful configurations. This exercise allows you to explore the basics of deploying and managing RHEL AI on AWS while keeping costs minimal.</p>
 </div>
-<hr>
 <div class="paragraph">
-<p>Visit the RHEL AI documentation for instructions on installing RHEL AI on AWS <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.1/html/installing/installing_on_aws" target="blank">Installing RHEL AI on AWS</a></p>
+<p>By the end of this lab, you will have gained valuable experience in setting up a foundational RHEL AI environment on Amazon Web Services (AWS) with a cost-conscious GPU configuration. This knowledge can serve as a solid foundation for further enhancing your skills and optimizing performance when deploying RHEL AI at scale.</p>
+</div>
+<div class="paragraph">
+<p>Visit the RHEL AI documentation for full instructions on installing RHEL AI on AWS <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/installing/installing_on_aws" target="blank">Installing RHEL AI on AWS</a></p>
 </div>
 </div>
 </div>
@@ -307,7 +293,7 @@
 <tr>
 <th class="tableblock halign-left valign-top">Hardware vendor</th>
 <th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
-<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">GPU Memory</th>
 <th class="tableblock halign-left valign-top">AWS Instances</th>
 <th class="tableblock halign-left valign-top">Recommended disk storage</th>
 </tr>
@@ -361,7 +347,7 @@
 <tr>
 <th class="tableblock halign-left valign-top">Hardware vendor</th>
 <th class="tableblock halign-left valign-top">Supported Accelerators(GPUs)</th>
-<th class="tableblock halign-left valign-top">Memory</th>
+<th class="tableblock halign-left valign-top">GPU Memory</th>
 <th class="tableblock halign-left valign-top">AWS Instances</th>
 <th class="tableblock halign-left valign-top">Recommended disk storage</th>
 </tr>
@@ -397,8 +383,9 @@
 </tr>
 </tbody>
 </table>
+<hr>
 <div class="paragraph">
-<p>Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example, a 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.</p>
+<p>It is essential to note that the actual memory requirements may vary depending on factors such as model architecture, batch size, and other specific use cases. This guideline serves as a useful starting point for selecting instances with sufficient GPU memory to run AI models effectively on Amazon Web Services (AWS).</p>
 </div>
 <hr>
 <div class="paragraph">

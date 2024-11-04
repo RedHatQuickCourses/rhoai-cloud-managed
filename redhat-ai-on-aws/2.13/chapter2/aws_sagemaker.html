@@ -89,22 +89,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#index.adoc">index.adoc</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -185,6 +169,8 @@
 <p>Amazon SageMaker empowers Data Scientists, Developers, and Business Data Analysts regardless of their ML expertise to build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows.</p>
 </div>
 <hr>
+<div class="sect2">
+<h3 id="_training_models_with_sagemaker"><a class="anchor" href="#_training_models_with_sagemaker"></a>Training Models with SageMaker:</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -203,26 +189,41 @@
 <img src="_images/ml-concepts-10.png" alt="ml concepts 10" width="480">
 </div>
 </div>
+</div>
 <div class="sect2">
 <h3 id="_sagemaker_studio"><a class="anchor" href="#_sagemaker_studio"></a>SageMaker Studio</h3>
 <div class="imageblock">
 <div class="content">
-<img src="_images/aws_sagemaker_open.gif" alt="aws sagemaker open" width="600">
+<img src="_images/sagemaker_tourv2.gif" alt="sagemaker tourv2" width="600">
 </div>
 </div>
 <div class="paragraph">
-<p>SageMaker Studio is the dashboard product used to interact with this cloud service and access machine learning models from a variety of model providers. It provides a unified, web-based interface to manage your data, code and models in a single place. SageMaker Studio also provides easy scalability and reliable security.</p>
+<p>SageMaker Studio serves as the user interface for engaging with Amazon SageMaker, a cloud-based machine learning (ML) service. This unified, web-based platform enables users to manage their data, code, and ML models from multiple providers in one centralized location. SageMaker Studio offers several advantages:</p>
 </div>
-<div class="sect3">
-<h4 id="_sagemaker_features"><a class="anchor" href="#_sagemaker_features"></a>SageMaker Features</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Centralized Management: Manage all your data, code, and ML models within a single interface.</p>
+</li>
+<li>
+<p>Easy Scalability: Effortlessly expand resources as needed to accommodate larger projects or increased demand.</p>
+</li>
+<li>
+<p>Reliable Security: Ensure the protection of your sensitive data through robust security features provided by SageMaker Studio.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sagemaker_feature_overview"><a class="anchor" href="#_sagemaker_feature_overview"></a>SageMaker feature overview</h3>
 <div class="paragraph">
-<p>In SageMaker, a notebook is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized.</p>
+<p>In SageMaker, a <strong>notebook</strong> is a web-based interface that allows data scientists and developers to create and share documents that contain code, visualizations and narrative text. They provide a secure and collaborative environment for ML projects, allowing users to easily track changes while keeping their data and code organized.</p>
 </div>
 <div class="paragraph">
-<p>SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch.</p>
+<p>SageMaker comes with several preloaded algorithms and solution templates for supervised and unsupervised learning.. The platform also provides <strong>access to popular deep learning frameworks like TensorFlow, MXNet and PyTorch</strong>.</p>
 </div>
 <div class="paragraph">
-<p>Keep track of models over time with SageMaker’s Model Monitor feature. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.</p>
+<p>Keep track of models over time with SageMaker’s <strong>Model Monitor feature</strong>. This allows for continuous monitoring and reporting with a real-time endpoint. The Model Monitor feature integrates with Amazon SageMaker Clarify to detect any bias that emerges.</p>
 </div>
 <div class="paragraph">
 <p>The platform integrates with popular DevOps tools, like AWS CodePipe and Jenkins, through the SageMaker console, APIs or other methods. This allows businesses to create continuous integration and continuous deployment (CI/CD) pipelines for continuous delivery of ML models.</p>
@@ -233,35 +234,34 @@
 <div class="ulist">
 <ul>
 <li>
-<p>AWS Autopilot automatically builds and trains ML models while providing you with complete visibility into model creation.</p>
+<p><strong>AWS Autopilot</strong> automatically builds and trains ML models while providing you with complete visibility into model creation.</p>
 </li>
 <li>
-<p>Data Wrangler is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.</p>
+<p><strong>Data Wrangler</strong> is a quick way to prepare data. It has many common data cleaning techniques that can reduce the time for data cleansing from weeks to minutes.</p>
 </li>
 <li>
-<p>Debugger monitors your models for bottlenecks.</p>
+<p><strong>Debugger</strong> monitors your models for bottlenecks.</p>
 </li>
 <li>
-<p>Edge Manager extends ML monitoring to edge devices.</p>
+<p><strong>Edge Manager</strong> extends ML monitoring to edge devices.</p>
 </li>
 <li>
-<p>Ground Truth accelerates data labeling and lets you create high-quality training samples.</p>
+<p><strong>Ground Truth</strong> accelerates data labeling and lets you create high-quality training samples.</p>
 </li>
 <li>
-<p>Model Monitor monitors ML models and notifies you when it detects deviations.</p>
+<p><strong>Model Monitor</strong> monitors ML models and notifies you when it detects deviations.</p>
 </li>
 <li>
-<p>Pipelines automate ML workflows, enabling you to scale ML across your organization.</p>
+<p><strong>Pipelines</strong> automate ML workflows, enabling you to scale ML across your organization.</p>
 </li>
 <li>
-<p>SageMaker Project is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.</p>
+<p>SageMaker <strong>Project</strong> is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.</p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/sagemaker_overviewv2.gif" alt="sagemaker overviewv2" width="600">
-</div>
 </div>
 </div>
 </div>
@@ -496,14 +496,10 @@
 <img src="_images/sagemaker_tourv2.gif" alt="sagemaker tourv2" width="600">
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_summary_2"><a class="anchor" href="#_summary_2"></a>Summary</h2>
-<div class="sectionbody">
+<hr>
 <div class="paragraph">
-<p>In this quick take on Amazon SageMaker we setup a SageMaker domain which can be complex if your new to AWS.</p>
+<p>Up next Amazon Bedrock</p>
+</div>
 </div>
 </div>
 </div>

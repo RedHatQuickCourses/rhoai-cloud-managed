@@ -89,22 +89,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#index.adoc">index.adoc</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -167,9 +151,6 @@
 <li>
 <p>Understand when Openshift AI and RHEL AI products solutions are applicable.</p>
 </li>
-<li>
-<p>Explain the customer challenges that RHOAI Cloud Service can address.</p>
-</li>
 </ul>
 </div>
 </div>
@@ -178,31 +159,37 @@
 <h2 id="_red_hat_ai_platform"><a class="anchor" href="#_red_hat_ai_platform"></a>Red Hat AI Platform</h2>
 <div class="sectionbody">
 <div class="sect3">
-<h4 id="_subscription_specifics"><a class="anchor" href="#_subscription_specifics"></a>Subscription Specifics</h4>
+<h4 id="_for_those_new_to_red_hat_ai_platform_lets_break_down_the_subscription_offerings"><a class="anchor" href="#_for_those_new_to_red_hat_ai_platform_lets_break_down_the_subscription_offerings"></a>For those new to Red Hat AI Platform, let&#8217;s break down the subscription offerings:</h4>
 <div class="paragraph">
-<p>The Red Hat AI platform includes RHEL AI and Red Hat OpenShift AI which are in phase of an integration process so both products are delivered as a harmonized solution. RHEL AI entitlements are included with an RHOAI subscription or available as a standalone product.</p>
-</div>
-<div class="paragraph">
-<p>While RHEL AI can be purchased and installed without any additional subscriptions, RHOAI is an add-on feature set which also requires an OpenShift Container Platform cluster subscription.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_rhel_ai"><a class="anchor" href="#_rhel_ai"></a>RHEL AI</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-While customers can bring their own large language models (LLMs), RHEL AI is optimized to work with IBM&#8217;s Granite family of AI models. These open source, enterprise-grade models are tailored for business and <strong>indemnified</strong> against generating copyrighted text. Currently, as of Q4/24, only the Granite starter model is indemnified if not modified and downloaded from the Red Hat Registry.
-</td>
-</tr>
-</table>
+<p>Red Hat AI platform consists of two main components: RHEL AI and OpenShift AI. Currently, these solutions are being integrated to provide a seamless experience.</p>
 </div>
 <div class="paragraph">
-<p>RHEL AI is specially designed for open source generative AI model fine tuning and inference.</p>
+<p>RHEL AI is a standalone product that can be installed and used independently. If you prefer, it&#8217;s also included as part of an RHOAI (Red Hat OpenShift AI) subscription.</p>
+</div>
+<div class="paragraph">
+<p>OpenShift AI provides additional feature sets that requires a separate OpenShift Container Platform cluster subscription. This means that to fully utilize OpenShift AI, you will need both an OpenShift AI entitlement and an active OpenShift Container Platform cluster subscription.</p>
+</div>
+<div class="paragraph">
+<p>In summary:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RHEL AI can be used with or without an RHOAI subscription</p>
+</li>
+<li>
+<p>OpenShift AI requires both an RHOAI entitlement and an active OpenShift Container Platform cluster subscription.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rhel_ai"><a class="anchor" href="#_rhel_ai"></a>RHEL AI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL AI is designed for open source generative AI model fine tuning and inference.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -220,10 +207,24 @@ While customers can bring their own large language models (LLMs), RHEL AI is opt
 <div class="paragraph">
 <p>More details are available in the RHEL AI on AWS section.</p>
 </div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Red Hat Enterprise Linux for AI (RHEL AI) supports both custom large language models (LLMs) brought by customers and IBM&#8217;s Granite family of AI models. While you can use your own LLMs, RHEL AI is specifically optimized to work best with IBM&#8217;s offerings. The Granite models are open source, enterprise-grade solutions designed for businesses, and they come with an added benefit: they are indemnified against generating copyrighted text. As of now, only the unmodified Granite starter model, which can be downloaded from the Red Hat Registry, is indemnified under this policy. For other models or customizations, it&#8217;s essential to consult with IBM and Red Hat for specific terms and conditions.
+</td>
+</tr>
+</table>
+</div>
 <hr>
 </div>
-<div class="sect2">
-<h3 id="_red_hat_openshift_ai"><a class="anchor" href="#_red_hat_openshift_ai"></a>Red Hat OpenShift AI</h3>
+</div>
+<div class="sect1">
+<h2 id="_red_hat_openshift_ai"><a class="anchor" href="#_red_hat_openshift_ai"></a>Red Hat OpenShift AI</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>RHOAI is a fully functional MLOPs platform which is capable of providing life cycle management for both <strong>predictive AI</strong> and <strong>generative AI</strong> solutions.</p>
 </div>
@@ -244,11 +245,11 @@ While customers can bring their own large language models (LLMs), RHEL AI is opt
 </ol>
 </div>
 <hr>
+<div class="sect2">
+<h3 id="_summary"><a class="anchor" href="#_summary"></a>Summary:</h3>
 <div class="paragraph">
 <p>Depending on an organization&#8217;s maturity in AI model powered application development. Red Hat AI provides both an out the box Generative AI model product with RHEL AI which scales to integrate with OpenShift AI to provide the full MLOps platform for multi-model AI lifecycle management.</p>
 </div>
-<div class="sect3">
-<h4 id="_summary"><a class="anchor" href="#_summary"></a>Summary:</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -260,8 +261,7 @@ While customers can bring their own large language models (LLMs), RHEL AI is opt
 </ul>
 </div>
 <div class="paragraph">
-<p>While this course focuses on AWS deployments, both of these Red Hat AI services can be deployed across multiple hyperscalers or on-premises environments, including <em>disconnected or air-gapped environment which going forward will be known as <strong>Private AI</strong>.</em></p>
-</div>
+<p>In this course, we will primarily discuss deploying Red Hat AI services on Amazon Web Services (AWS). However, it&#8217;s important to note that both RHEL AI and OpenShift AI are versatile solutions capable of being deployed across various cloud providers and on-premises environments. This includes private or air-gapped setups, which will be referred to as "Private AI" moving forward. While the focus is on AWS in this course, the concepts and techniques learned can be applied to other deployment scenarios as well.</p>
 </div>
 </div>
 </div>

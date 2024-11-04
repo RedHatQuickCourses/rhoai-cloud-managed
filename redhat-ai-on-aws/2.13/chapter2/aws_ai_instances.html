@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Amazon EC2 :: Red Hat AI on AWS Cloud</title>
     <link rel="prev" href="aws_q.html">
-    <link rel="next" href="#index.adoc">
+    <link rel="next" href="../appendix/appendix.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -89,22 +89,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#index.adoc">index.adoc</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/oai_install.html">OpenShift AI Install</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/minio-install.html">MinIO S3 Compatible Storage Setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -171,18 +155,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>In this section we&#8217;ll investigate a few of the instance types (virtual machines) available on Amazon EC2 that are optimized for AI workloads.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_what_is_amazon_ec2"><a class="anchor" href="#_what_is_amazon_ec2"></a>What is Amazon EC2 ?</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The primary service that provides instances in AWS is called Elastic Cloud Compute (EC2).</p>
-</div>
-<div class="paragraph">
-<p>Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.</p>
+<p>In this section we&#8217;ll investigate a few of the instance types (virtual machines) available on Amazon Elastic Compute Cloud (Amazon EC2) that are optimized for AI workloads.</p>
 </div>
 <div class="sect3">
 <h4 id="_reference_terms"><a class="anchor" href="#_reference_terms"></a>Reference terms:</h4>
@@ -196,10 +169,21 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="_what_is_amazon_ec2"><a class="anchor" href="#_what_is_amazon_ec2"></a>What is Amazon EC2 ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Amazon Elastic Compute Cloud (Amazon EC2) is a web service provided by Amazon Web Services (AWS). It offers scalable computing capacity in the cloud, enabling users to rent virtual computers on-demand. These virtual machines come with various configurations, including different processors, storage options, and operating systems, allowing users to choose the best fit for their applications or workloads.</p>
+</div>
+<div class="paragraph">
+<p>Amazon EC2 provides over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_ec2_instance_types"><a class="anchor" href="#_ec2_instance_types"></a>EC2 - Instance Types</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Amazon EC2 provides the broadest and deepest instance choice to match your workload’s needs. General purpose, compute optimized, memory optimized, storage optimized, and accelerated computing instance types are available that provide the optimal compute, memory, storage, and networking balance for your workloads.</p>
+<p>Amazon EC2 provides <strong>general purpose, compute optimized, memory optimized, storage optimized, and accelerated computing</strong> instance types that provide the optimal compute, memory, storage, and networking balance for your workloads.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -279,16 +263,18 @@ Explore the dashboard to search through the list and identify the instance types
 <div class="paragraph">
 <p>On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.</p>
 </div>
+<div class="sect2">
+<h3 id="_cost_effecitive_pricing_options"><a class="anchor" href="#_cost_effecitive_pricing_options"></a>Cost effecitive pricing options</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Savings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.</p>
+<p><strong>Savings Plans</strong> is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.</p>
 </li>
 <li>
-<p>Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.</p>
+<p><strong>Amazon EC2 Spot Instances</strong> let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.</p>
 </li>
 <li>
-<p>Amazon EC2 Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.</p>
+<p><strong>Amazon EC2 Auto Scaling</strong> allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.</p>
 </li>
 </ul>
 </div>
@@ -299,6 +285,7 @@ Explore the dashboard to search through the list and identify the instance types
 </div>
 <div class="paragraph">
 <p>For more details visit <a href="https://aws.amazon.com/ec2/pricing/" target="blank">Amazon EC2 pricing</a></p>
+</div>
 </div>
 </div>
 </div>
@@ -322,7 +309,7 @@ Explore the dashboard to search through the list and identify the instance types
 </div>
 <nav class="pagination">
   <span class="prev"><a href="aws_q.html">Amazon Q</a></span>
-  <span class="next"><a href="#index.adoc">index.adoc</a></span>
+  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
 </nav>
 </article>
   </div>
