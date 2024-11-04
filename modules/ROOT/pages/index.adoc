@@ -14,14 +14,14 @@ The course includes several sections that reference external labs where practica
 
 == Objectives
 
-* Introduction to Red Hat AI and its OpenShift AI and RHEL AI products.
-* Setting up an AWS account and configuring access for Red Hat AI.
-* Deploying Red Hat AI on AWS using managed offerings (OpenShift on AWS).
-* Self-managed deployment of RHEL AI on AWS. (managed offering coming soon)
-* Overview of AWS AI Services: Amazon SageMaker, Amazon ECR, Amazon Braket, Amazon Q, and EC2 instances.
-* Comparing the capabilities of Red Hat AI and AWS AI Services.
-* Best practices for integrating Red Hat AI with AWS services.
-* Hands-on labs (to be added) to reinforce practical skills in deploying and managing Red Hat AI on AWS.
+* Understand the Red Hat AI Platform comprised of OpenShift AI and RHEL AI.
+* Knowledge of configuring AWS to host for Red Hat AI workloads.
+* Describe the benefits of Red Hat OpenShift AI Cloud Service.
+* Understand design decisions for self-managed deployment of RHEL AI on AWS. (managed offering coming soon)
+* Knowledge of AWS AI Services: Amazon SageMaker, Amazon Bedrock, Amazon Q, and EC2 instances.
+* Evaluate the differences between Red Hat AI and (AWS) AI offerings.
+* Understand the best practices for integrating Red Hat AI with AWS services.
+* Hands-on labs (to be added) to reinforce practical skills in deploying and managing Red Hat AI integration with AWS AI Services.
 
  
 
