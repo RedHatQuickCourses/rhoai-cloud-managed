@@ -1,4 +1,4 @@
-* xref:index.adoc[]
+* xref:rhoai_self_managed.adoc[]
 // ** xref:section1.adoc[]
 ** xref:oai_install.adoc[]
 ** xref:minio-install.adoc[]

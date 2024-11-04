@@ -6,14 +6,15 @@
  * Optional: Hands-on Activity: Deploy Red Hat AI on AWS
  * Analyze the RHEL AI server requirements for *training* versus *inference*
 
-== From RHEL AI Documentation
+== RHEL AI
+
 
 Red Hat Enterprise Linux AI (RHEL AI) is a platform that allows you to develop enterprise applications on open source Large Language Models (LLMs). RHEL AI is built from the Red Hat InstructLab open source project. https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/getting_started/rhelai-overview#instructlab-and-rhel-ai[For more detailed information: see the "InstructLab and RHEL AI" documentation section., window=blank]
 
 Red Hat Enterprise Linux AI allows you to do the following:
 
  * Serve an LLM and interact with the open source Granite family of Large Language Models (LLMs) locally or via an exposed endpoint.
- * Fine-tune a model with that data with minimal machine learning background.
+ * Fine-tune a large (or small) language model with that data with minimal machine learning background.
  * Interact via chat with the model that has been fine tuned with your data.
  * Store data within a taxonomy format to organize knowledge and skills
  * Generate synthetic data to utilize in AI model alignment / fine tuning the model with new knowledge or skills.
@@ -32,13 +33,15 @@ https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkofferin
 
 ==  RHEL AI on AWS
 
-This course will examine the knowledge and necessary information around making informed decisions for running RHEL AI on AWS.
+In this course, we will delve into the essential knowledge and information required to make well-informed decisions when deploying Red Hat Enterprise Linux (RHEL) AI on Amazon Web Services (AWS). At present, there is no managed service offering of RHEL AI available on AWS; however, clients can opt for self-managed deployment. This curriculum will provide guidance on suitable AWS instance selections to optimize resource utilization when implementing RHEL AI.
 
-Currently there is no managed service offering of RHEL AI on AWS, however RHEL AI does support self-managed deployment on AWS.  This course will explain suggestions for AWS instance selection for efficient resource usage when deploying RHEL AI.  
+By the end of this course, you will have a comprehensive understanding of best practices and recommendations for deploying RHEL AI on AWS, ensuring efficient use of resources and optimal performance.
+
 
 === Deploying RHEL AI on AWS
 
-Interested in hands-on experience deploying RHEL AI on AWS, this lab walks through the process of RHEL AI AWS AMI creation and deployment.
+For those eager to gain practical experience in deploying Red Hat Enterprise Linux (RHEL) AI on Amazon Web Services (AWS), this lab provides a step-by-step guide on creating and launching an RHEL AI Amazon Machine Image (AMI).
+
 
 https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D65442902[Deploying RHEL AI on AWS, window=blank]
 
@@ -48,11 +51,12 @@ The overall objectives of the Deploying RHEL AI on AWS includes:
 * Upload the RHEL AI AMI to an AWS S3 bucket for storage and retrieval.
 * Provision a _limited resource_ fully functional RHEL AI server on AWS.
 
-To reduce cost this lab exercise includes a basic GPU to run RHEL AI, enought to install RHEL AI, however performance is limited in this configuration.
+In this lab, we offer a cost-effective approach by utilizing a fundamental GPU configuration to install Red Hat Enterprise Linux (RHEL) AI. While this setup is sufficient for getting started with RHEL AI, it may limit performance compared to more powerful configurations. This exercise allows you to explore the basics of deploying and managing RHEL AI on AWS while keeping costs minimal.
 
-'''
+By the end of this lab, you will have gained valuable experience in setting up a foundational RHEL AI environment on Amazon Web Services (AWS) with a cost-conscious GPU configuration. This knowledge can serve as a solid foundation for further enhancing your skills and optimizing performance when deploying RHEL AI at scale.
 
-Visit the RHEL AI documentation for instructions on installing RHEL AI on AWS https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.1/html/installing/installing_on_aws[Installing RHEL AI on AWS, window=blank]
+
+Visit the RHEL AI documentation for full instructions on installing RHEL AI on AWS https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_ai/1.2/html/installing/installing_on_aws[Installing RHEL AI on AWS, window=blank]
 
 == RHEL AI Deployment on AWS
 
@@ -75,7 +79,7 @@ The following charts show the recommended hardware requirements for running the 
 
 *Amazon Web Service Instance Types*
 |===
-| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+| Hardware vendor | Supported Accelerators(GPUs) | GPU Memory | AWS Instances | Recommended disk storage
  
 | Nvidia
 | 8xA100
@@ -108,7 +112,7 @@ The following charts display the minimum hardware requirements for inference ser
 
 *Amazon Web Service Instance Types*
 |===
-| Hardware vendor | Supported Accelerators(GPUs) | Memory | AWS Instances | Recommended disk storage
+| Hardware vendor | Supported Accelerators(GPUs) | GPU Memory | AWS Instances | Recommended disk storage
  
 | Nvidia
 | A100
@@ -136,7 +140,10 @@ The following charts display the minimum hardware requirements for inference ser
 
 |===
 
-Selecting instance types can be calculated based on the size of the model that will be loaded into memory.  A good rule of thumb is to double the number of parameters. For example, a 13B parameter model is recommended to have at least 26GB of GPU memory available.  In this case the 40GB A100 GPU would be a good choice.
+'''
+
+
+It is essential to note that the actual memory requirements may vary depending on factors such as model architecture, batch size, and other specific use cases. This guideline serves as a useful starting point for selecting instances with sufficient GPU memory to run AI models effectively on Amazon Web Services (AWS).
 
 
 '''
