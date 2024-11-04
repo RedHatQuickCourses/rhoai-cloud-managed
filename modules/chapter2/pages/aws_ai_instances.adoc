@@ -5,15 +5,7 @@
  * Understand the AWS recommended instances AI Model training & inference
  * Understand about the cost of these instances per month
 
-In this section we'll investigate a few of the instance types (virtual machines) available on Amazon EC2 that are optimized for AI workloads. 
-
-== What is Amazon EC2 ?
-
-The primary service that provides instances in AWS is called Elastic Cloud Compute (EC2). 
-
-// The standard Service Level Agreement(SLA) commitment from AWS is: access reliable, scalable infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
-
-Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.
+In this section we'll investigate a few of the instance types (virtual machines) available on Amazon Elastic Compute Cloud (Amazon EC2) that are optimized for AI workloads. 
 
 ==== Reference terms:
 
@@ -21,10 +13,16 @@ Amazon Elastic Compute Cloud (Amazon EC2) offers a broadest and deep compute pla
 
 An *Amazon instances type* is a virtual machine (VM) that's optimized for a specific use case and includes a combination of CPU, memory, storage, and networking capacity.
 
+== What is Amazon EC2 ?
+
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service provided by Amazon Web Services (AWS). It offers scalable computing capacity in the cloud, enabling users to rent virtual computers on-demand. These virtual machines come with various configurations, including different processors, storage options, and operating systems, allowing users to choose the best fit for their applications or workloads. 
+
+Amazon EC2 provides over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. AWS  supports Intel, AMD, and Arm processors. AWS advertises that it offers the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud.
+
 
 == EC2 - Instance Types
 
-Amazon EC2 provides the broadest and deepest instance choice to match your workload’s needs. General purpose, compute optimized, memory optimized, storage optimized, and accelerated computing instance types are available that provide the optimal compute, memory, storage, and networking balance for your workloads. 
+Amazon EC2 provides *general purpose, compute optimized, memory optimized, storage optimized, and accelerated computing* instance types that provide the optimal compute, memory, storage, and networking balance for your workloads. 
 
 
  * Processors from Intel, AMD, NVIDIA and AWS power these instance types and provide additional performance and cost optimizations.    
@@ -67,11 +65,13 @@ If you're a researcher who wants to try out a new framework, test a new model, o
 
 On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
 
- * Savings Plans is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.
+=== Cost effecitive pricing options
 
- * Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.
+ * *Savings Plans* is a flexible pricing model that can help you reduce your bill by up to 72% compared to On-Demand prices, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term.
 
- * Amazon EC2 Auto Scaling allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.
+ * *Amazon EC2 Spot Instances* let you take advantage of unused EC2 capacity in the AWS cloud and are available at a discount of up to 90% compared to On-Demand prices.
+
+ * *Amazon EC2 Auto Scaling* allows you to automatically scale your Amazon EC2 capacity up or down according to conditions you define. You can use the dynamic and predictive scaling policies within EC2 Auto Scaling to add or remove EC2 instances. Predictive scaling uses machine learning to proactively allocate instances based on anticipated demand, and dynamic scaling allows you to scale compute based on defined metrics. With EC2 Auto Scaling, you can ensure that the number of Amazon EC2 instances you’re using scales up seamlessly during demand spikes to maintain performance, and scales down automatically during demand lulls to minimize costs.
 
 
 ==== For AI / ML workloads

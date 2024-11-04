@@ -7,7 +7,12 @@
  * Explain the customer challenges that RHOAI Cloud Service can address
 
 
-== OpenShift AI on AWS
+== OpenShift AI Cloud Service
+
+There two subscription options available that provide entitlements for Red Hat OpenShift AI (RHOAI) on AWS:
+
+ * Red Hat OpenShift AI Self-Managed
+ * Red Hat OpenShift AI Cloud Service 
 
 OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform (backend) components. 
 
@@ -15,12 +20,8 @@ Red Hat OpenShift AI Cloud Service is a fully managed service enabling access to
 
 '''
 
-There two subscription options available that provide entitlements for Red Hat OpenShift AI (RHOAI) on AWS:
 
- * Red Hat OpenShift AI Self-Managed
- * Red Hat OpenShift AI Cloud Service 
-
-RHOAI Cloud Service is supported on OpenShift Dedicated (AWS and GCP) and on Red Hat OpenShift Service on AWS (ROSA). Currently, RHOAI Cloud Service is not supported on Microsoft Azure Red Hat OpenShift and platform services such as ROSA with hosted control planes.
+RHOAI Cloud Service is supported on OpenShift Dedicated (AWS and GCP) and on Red Hat OpenShift Service on AWS (ROSA). Currently, RHOAI Cloud Service is currently not supported on Microsoft Azure Red Hat OpenShift and ROSA with hosted control planes.
 
 For more information on the RHOAI components their current support phase and their compatibility with the underlying platforms. https://access.redhat.com/articles/rhoai-supported-configs[This link connects to the OpenShift AI Supported Configurations., window=blank]
 
@@ -48,31 +49,15 @@ While not specifically mentioned in this course, there is also an OpenShift AI d
 
 ==== Red Hat OpenShift Service on AWS (ROSA)
 
+For ROSA classic, clients procure a subscription via the AWS Marketplace using their AWS account. Following cluster creation, they can manage their clusters through the OpenShift web console, ROSA CLI, or Red Hat OpenShift Cluster Manager.
 
-For ROSA classic, customers get a subscription through the AWS Marketplace.  They subscribe to the service directly from their AWS account. After cluster creation, customers can operate their clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager.
+ROSA classic is an all-encompassing, preconfigured application platform designed to help businesses concentrate on delivering superior value to their clients by developing and deploying applications. The Red Hat Site Reliability Engineering (SRE) team manages the underlying infrastructure, thereby alleviating the burden of intricate infrastructure management for clients.
 
-ROSA classic is a fully-managed, turnkey application platform that allows businesses to focus on delivering value to their customers by building and deploying applications. Red Hat site reliability engineering (SRE) experts manage the underlying platform so they do not have to worry about the complexity of infrastructure management. 
-
-ROSA provides seamless integration with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a wide range of additional AWS services to further accelerate the building and delivering of differentiating experiences to customers.
+ROSA seamlessly integrates with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a multitude of other AWS services to expedite the creation and delivery of customized experiences to customers
 
 
-//image::rosa_setup.gif[width=600]
 
-'''
-
-//==== Red Hat OpenShift Service on AWS (ROSA) with hosted control planes
- 
-//Red Hat OpenShift Service on AWS with hosted control planes (ROSA with HCP) is a fully-managed and jointly supported Red Hat OpenShift offering. Hosting and management of the control plane is accomplished *using resources (infrastructure) deployed into a Red Hat owned / managed AWS Account*. The customer only hosts worker nodes in their AWS Account which allows the environment to scale with exactly what the customer needs providing effective and efficient use of customer resources, resulting in significant cost savings, faster provisioning time, improved security posture and increased reliability for ROSA customers. 
-
-//[WARNING]
-//====
-//OpenShift AI is not supported on ROSA with HCP as Cloud Manage Service as OpenShift AI Operators are not supported on infrastructure or Worker nodes at this time.
-
-//====
-
-//Head to the next section to understand what AI services are accessible by deploying on AWS.
-
-== Getting Started with on ROSA Interactive Walkthrough
+== Getting Started - ROSA Interactive Walkthrough
 
 https://www.redhat.com/en/products/interactive-walkthrough/install-rosa[Try the Interactive demo for ROSA classic on AWS, window=blank]
 
@@ -89,21 +74,13 @@ or follow along in the provided image below.
 image::rosa_overview.gif[width=600]
 
 '''
-== Explore ROSA Classic with OpenShift AI on the Demo Platform.
+== ROSA Classic with OpenShift AI on the Demo Platform.
 
- * https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod[This workshop creates Base RHOAI environment on ROSA cluster., window=blank] You can use this base environment for creating and running RHOAI related use cases on ROSA.
+Experience ROSA Classic with OpenShift AI in a live environment. 
 
+ * https://demo.redhat.com/catalog?labels=%7B%22product%22%3A%5B%22red_hat_openshift_ai%22%5D%7D&item=babylon-catalog-prod%2Fsandboxes-gpte.ocp4-workshop-rhods-base-aws.prod[This workshop creates Base RHOAI environment on ROSA cluster., window=blank] 
+ * You can use this base environment for creating and running RHOAI related use cases on ROSA.
 
-This workshop includes :
-
- * OpenShift Container Platform : 4.16
- * Red Hat OpenShift Data Science : 2.10
- * OpenShift Pipeline
- * OpenShift GitOps
- * Serverless and Service Mesh Operators
- * Gitea Operator
- * Web Terminal
- * OpenShift Cluster configured on AWS
 
 '''
 
@@ -134,23 +111,18 @@ OpenShift AI Cloud Services can run within your AWS accounts, allowing your orga
 
 //Companies moving from POC stages to pilots and production environments often struggle with the burdens of operationalizing AI Models lifecycle management actions such as model viability, security, cost, and agility. 
 
-Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from generative AI models using RHOAI Cloud Service.
 
-There are significant costs to run the Large Language Models that power the services provided by the AI Model SaaS service leaders such as ChatGPT, Gemini, and Claude.  
- 
-AWS Cloud with Red Hat AI creates opportunities to experiment, pilot, and implement new solutions using on-demand hardware and software solutions rather than committing to huge cost investment and eliminating the need to staff a skilled AI/ ML platform operations team
 
-=== Where Red Hat AI open source solutions add value
+== Summary
 
-Cloud Providers incentive is to make it easy to consume more resources.
+Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from AI / ML models using RHOAI Cloud Service.
 
-In FY24 customers invested in generative AI projects as proof of concepts that began with the solution looking for a problem to solve. These projects were largely performed using hyperscaler services, into pilot and production. In that move, customers realized the generalized hyperscaler AI services may not provide enough value to the business and had highly variable and unpredictable costs.
+OpenShift AI Cloud Service provides a turnkey platform environment managed by Red Hat Specialist who handle all support and operations for the OpenShift AI platform components. 
 
-During this time, the quantity and quality of viable open and permissively licensed models (ie Llama, Mistral and IBM Granite) greatly increased, leading customers to explore private deployments of Gen AI versus using hyperscaler services.
+As the number and caliber of open-source and permissively licensed models (such as Llama, Mistral, and IBM Granite) grew significantly during this period, organizations started considering private deployments of generative AI instead of relying on hyperscaler services.
 
-OpenShift Container Clusters have the ability to support customer workloads across hybrid cloud footprints for container, virtualization and AI workloads on a single enterprise platform which eliminates the need for cloud provider specific tools and avoids vendor lock-in.
+Openshift AI Cloud Services is a trusted open source offering that provides a bring your own model machine learning operations platform environment.  Organizations can easily version, manage, train, and inference solutions from AI / ML models using RHOAI Cloud Service.
 
 '''
-
 
 Next let's discuss RHEL AI on AWS.
