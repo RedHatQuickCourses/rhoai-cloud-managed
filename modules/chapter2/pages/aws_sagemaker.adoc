@@ -53,7 +53,7 @@ SageMaker Studio has several automation tools to accelerate the ML process and p
  * Pipelines automate ML workflows, enabling you to scale ML across your organization.
  * SageMaker Project is an AWS Service Catalog provisioned product used to create end-to-end ML solutions.
 
-image::aws_sagemaker_overview.gif[width=600]
+image::sagemaker_overviewv2.gif[width=600]
 
 === How much does SageMaker cost ?
 
@@ -81,8 +81,7 @@ SageMaker includes all of the tools you need to take your models from data prepa
 With Amazon SageMaker, data scientists and developers can quickly build and train machine learning models, and then deploy them into a production-ready hosted environment.
 
 
-== Lab Exercise:
-
+== Lab Exercise:  Get Started with Amazon SageMaker
 
 
 === Demo Platform Lab Environment
@@ -97,25 +96,73 @@ This lab environment can take up to 20 minutes to become available, however it's
 
 image::aws_sagemaker_open.gif[width=600]
 
- . Use the link and credentials provided by Demo Hub to Logon to the AWS Console.
+ . Use the link and credentials provided by Demo Hub to logon to the AWS Console.
  . Use the search bar to search for *sagemaker*.
  . Under service click the *Amazon SageMaker* tile to open Amazon SageMaker.
  . Explore the SageMaker home page.
 
 
-CLick on Setup Domain
+'''
 
--error message
+=== Create a SageMaker domain
 
-Create VPC
-Create Subnet
+ . Select the SageMaker Studio menu option
+ . Select the Create a SageMaker domain option
+ . Choose the Set up for single user (Quick setup) option on the left.
+ . Click on the Set up button. 
 
-Click on Setup Domain
- . In SageMaker, a domain is an environment for your team to access SageMaker resources. A domain consists of a list of authorized users and users within a domain can share notebook files and other artifacts with each other. One account can have either one or multiple domains.
+At which point an error message will appear:  There is no VPC with available Subnets in this region.  Please Create one. 
 
--- similar to an OpenShift AI Data Science Project..
+image::sagemaker_vpc_error.gif[width=600]
 
-Wait until the pending status shows ready.
+====  Create a VPC to continue
+
+ . Select the *Create VPC* option in the error message.
+ . At top right, select *Create VPC*.
+ . Enter the option name tag: *sagemaker_domain_demo*
+ . For IPv4 CIDR enter:  *172.17.0.0/16*
+ . Scroll to the bottom and select *Create VPC*.
+ 
+image::sagemaker_vpc_createv2.gif[width=600]
+
+==== Create a Subnet in the VPC
+
+ . Under the Virtual privage cloud menu, *select Subnets*
+ . At top right, select *Create subnet*.
+ . Select a VPC ID from the dropdown, use the name if multiple vpc's exist (sagemaker_domain_demo).
+ . In the Subnet Settings, enter a Subnet name: *sagemaker-demo-subnet*.
+ . For IPv4 subnet CIDR block enter:  *172.17.0.1/24*
+ . Scroll to the bottom and select *Create subnet*.
+
+image::sagemaker_vpc_subnetv2.gif[width=600]
+
+==== Create a Subnet in the VPC
+
+ . Return the SageMaker Domain setup page
+ . Select the *Set up* options again.
+ . You'll recieve an Preparing SageMaker Domain Banner across the page
+ .. The domain setup takes ~5-7 minutes.
+ . Once the setup completes the blue banner will disappears and the status will change to ready.
+ . Use the *Amazon SageMaker* link to return to the Sagemaker dashboard.
+ . Select the *Studio* link to refresh the dashboard.
+ . From the *Get Started* box select *Open Studio*.
+
+You are now ready to use SageMaker Studio
+
+image::sagemaker_setupv2.gif[width=600]
+
+'''
+
+=== Explore Amazone SageMaker for your use case
+
+Explore the *SageMaker Tour*, onboarding plan, and  *getting started* areas to learn more about SageMaker. 
+
+image::sagemaker_tourv2.gif[width=600]
+
+== Summary
+
+In this quick take on Amazon SageMaker we setup a SageMaker domain which can be complex if your new to AWS.
+
 
 
 
