@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Red Hat AI and AWS Together :: Red Hat AI on AWS Cloud</title>
+    <link rel="prev" href="../chapter2/aws_ai_instances.html">
+    <link rel="next" href="../appendix/appendix.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Red Hat AI on AWS Cloud</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="redhat-ai-on-aws" data-version="2.13">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Red Hat AI on AWS Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter1/index.html">Red Hat AI on AWS Cloud</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/redhatai_overview.html">Red Hat AI Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/openshiftai_aws.html">OpenShift (AI) on AWS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter1/rhel_ai.html">RHEL AI on AWS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/index.html">AWS AI Services</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../chapter2/aws_sagemaker.html">Amazon SageMaker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chapter2/aws_sagemaker_lab.html">Amazon SageMaker Hands On</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_bedrock.html">Amazon Bedrock</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_q.html">Amazon Q</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../chapter2/aws_ai_instances.html">Amazon EC2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="index.html">Red Hat AI and AWS Together</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/red-hat-docs.html">Red Hat Documentation Reference</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../appendix/hyperscaler_lab_env.html">Cloud Provider Lab Environments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Red Hat AI on AWS Cloud</span>
+    <span class="version">2.13</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Red Hat AI on AWS Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">2.13</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Red Hat AI on AWS Cloud</a></li>
+    <li><a href="index.html">Red Hat AI and AWS Together</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Red Hat AI and AWS Together</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Together with AWS&#8217;s cloud offering, Red Hat helps organizations create consistent, security-focused, and trusted solutions that simplify the complexities of the latest advancements in AI and accelerate the return on investment (ROI). Whether customers are starting their AI journey using Amazon SageMaker, or are already using Red Hat AI tools such as Red Hat Enterprise Linux AI and Red Hat OpenShift AI, they gain the tight integration of MLOps with DevOps platforms to reduce the friction and time needed to launch business-ready applications.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat AI provides a consistent, security-focused, and trusted solution that simplifies the development and delivery of containerized applications and AI-enabled applications. When combined with the flexibility and scalability of the AWS cloud, Red Hat AI helps enterprise organizations adopt AI innovation with a consistent environment across on-premise and cloud with the ability to scale when they choose.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/redhatandaws.png" alt="redhatandaws" width="600">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_benefits"><a class="anchor" href="#_benefits"></a>Benefits</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red Hat&#8217;s open hybrid cloud approach allows AWS customers to take advantage of their existing hybrid IT while setting themselves up for future advances in AI. Customers can deploy, run, and manage AI workloads and AI-enabled applications consistently across any environment.</p>
+</div>
+<div class="paragraph">
+<p>This flexibility allows enterprises to use their preferred tools and platforms while implementing Red Hat&#8217;s robust infrastructure for deploying AI-driven applications. Red Hat&#8217;s approach to AI draws on its commitment to open source and includes Red Hat OpenShift AI, which offers a more composable environment, supporting any GPU, datacenter, or cloud (AWS).</p>
+</div>
+<div class="paragraph">
+<p>As a native AWS service, Red Hat OpenShift Service on AWS (ROSA) provides flexible consumption-based billing, integrated cluster creation, and joint support and operation from Red Hat and AWS.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sagemaker_integration"><a class="anchor" href="#_sagemaker_integration"></a>SageMaker integration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red Hat OpenShift Service on AWS is designed to integrate with Amazon SageMaker and other tools, allowing for a streamlined workflow from AI model training to application deployment. This interoperability helps enterprises train models using preferred data science tools and deploy those models across various environments, whether on-premise, in the cloud, or in hybrid settings.</p>
+</div>
+<div class="paragraph">
+<p>SageMaker works with Red Hat OpenShift Service on AWS (ROSA) to combine the benefits of the AWS Managed Service for model training, model lifecycle, and model deployment with the use of Red Hat OpenShift Service on AWS for the application lifecycle and integrated developer experience.</p>
+</div>
+<div class="paragraph">
+<p>Models can be trained, developed, and delivered to RedHat OpenShift Service on AWS via Amazon CodeDeploy, integrated into cloud-native applications developed on Red Hat OpenShift Service on AWS, and deployed anywhere Red Hat OpenShift can run.</p>
+</div>
+<div class="paragraph">
+<p>SageMaker appeals to data scientists that are fully invested in the AWS ecosystem for AI but want the ability to manage the deployment of models into applications anywhere Red Hat OpenShift can run.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aws_with_openshift_ai"><a class="anchor" href="#_aws_with_openshift_ai"></a>AWS with OpenShift AI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AWS provides robust protections and certifications to safeguard business and customer data, and Red Hat&#8217;s security capabilities and operator lifecycle integration are built into intelligent applications to simplify the deployment and maintenance of models.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift AI is built on open source technologies and designed as composable AI with the ability to help develop models. It can train models, tune and publish models into ML/Ops workflows, with the ability to run on Red Hat OpenShift Service on AWS (ROSA) or on Red Hat OpenShift in other hybrid deployment models.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift AI is fully integrated with Red Hat OpenShift Service on AWS application platform so that ML/Ops and DevOps workflows can integrate and interact to accelerate the benefits of AI, while providing a predictable support experience.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift AI appeals to application teams, data engineers, and data scientists wanting more control over what components they use.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_whats_next"><a class="anchor" href="#_whats_next"></a>What&#8217;s Next</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vist the Appendix section for view deep dives on Red Hat OpenShift Service on AWS (ROSA), Links to Red Hat AI documentation pages for OpenShift AI and RHEL AI, and listing of open lab environments available on Red Hat Demo Hub.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../chapter2/aws_ai_instances.html">Amazon EC2</a></span>
+  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
