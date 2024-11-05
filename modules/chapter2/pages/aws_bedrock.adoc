@@ -14,6 +14,7 @@ Using Amazon Bedrock, you can easily experiment with and evaluate top foundation
 
 Since Amazon Bedrock is serverless, you don't have to manage any infrastructure, and you can securely integrate and deploy generative AI capabilities into your applications using the AWS services you are already familiar with.
 
+.Animated - Amazon Bedrock tour
 image::aws_bedrock_overview.gif[width=600]
 
 
